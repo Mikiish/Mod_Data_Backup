@@ -9,7 +9,7 @@ DB_ThrownBlade_ArchetypeToApply("goblin_ranged");
 DB_ThrownBlade_ArchetypeToApply("ranged_smart");
 DB_ThrownBlade_ArchetypeToApply("orthon_ranged");
 DB_ThrownBlade_ArchetypeToApply("rogue");
-
+ENDI
 
 KB:
 IF
@@ -119,6 +119,6 @@ AND
 HasActiveStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", 1)
 THEN
 RequestDelete((ITEM)_ShadowBlade);
-
+KBI
 
 EXIT:

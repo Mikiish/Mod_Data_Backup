@@ -9,7 +9,7 @@ DB_SBSharThrowDagger_ArchetypeToGive("ranged_smart");
 DB_SBSharThrowDagger_ArchetypeToGive("orthon_ranged");
 DB_SBSharThrowDagger_ArchetypeToGive("rogue");
 DB_SBSharThrowDagger_ArchetypeToGive("ranged_smart_SCL");
-
+ENDI
 
 KB:
 IF
@@ -64,6 +64,7 @@ AND
 HasActiveStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", 1)
 THEN
 RequestDelete((ITEM)_ShadowBlade);
-
+KBI
 
 EXIT:
+

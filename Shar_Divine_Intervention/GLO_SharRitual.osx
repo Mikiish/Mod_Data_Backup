@@ -15,7 +15,7 @@ DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_B", "B");
 DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_C", "C");
 DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_D", "D");
 DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_E", "E");
-
+ENDI
 
 KB:
 IF
@@ -577,6 +577,6 @@ _Template == LOOT_GEN_Idol_Selune_Silver_Corrupted_e52755c7-165c-4c30-b75b-c7f8a
 THEN
 ClearTag(_Player, (TAG)CORRUPTED_IDOL_OWNER_8cf5adec-a83e-41dc-bc6d-2c9e2fcea8ef);
 //END_REGION Tag Idol Owner
-
+KBI
 
 EXIT:
