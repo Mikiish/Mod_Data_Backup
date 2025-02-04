@@ -1,0 +1,582 @@
+INIT:
+DB_GLO_HolyCandle_Ritual_Initialized(0);
+
+DB_GLO_HolyCandle_Ritual_RootTemplates(Nightbringer_Holy_Candle_Ritual_A_2166253e-f02e-48b8-be7a-e6f8fbc12c2a);
+DB_GLO_HolyCandle_Ritual_RootTemplates(Nightbringer_Holy_Candle_Ritual_B_b6cc0829-6640-4403-9e32-70d4c2c03475);
+DB_GLO_HolyCandle_Ritual_RootTemplates(Nightbringer_Holy_Candle_Ritual_C_daf4df74-a4d3-4320-9f20-604582742dc5);
+DB_GLO_HolyCandle_Ritual_RootTemplates(Nightbringer_Holy_Candle_Ritual_D_f17367cc-4ef5-465b-8625-ee875be66a14);
+DB_GLO_HolyCandle_Ritual_RootTemplates(Nightbringer_Holy_Candle_Ritual_E_e2b450d5-2c8a-4a36-9833-c27cb861af35);
+DB_GLO_HolyCandle_Ritual_RootTemplates(LOOT_GEN_Idol_Selune_Silver_A_a8491759-fcb1-41bb-8290-035de4bd747f);
+DB_GLO_HolyCandle_Ritual_RootTemplates(LOOT_GEN_Idol_Selune_Silver_A_Old_358e6597-625a-4563-81d0-750d11f30707);
+DB_GLO_HolyCandle_Ritual_RootTemplates(LOOT_GEN_Idol_Shar_Onyx_A_f48ab49f-943b-4702-aabe-e6c17867ec86);
+
+DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_A", "A");
+DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_B", "B");
+DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_C", "C");
+DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_D", "D");
+DB_GLO_HolyCandle_Ritual_Statuses("HOLY_CANDLE_STATUS_E", "E");
+
+
+KB:
+IF
+LevelLoaded(_)
+AND
+DB_GLO_HolyCandle_Ritual_Initialized(0)
+THEN
+TimerLaunch("GLO_HolyCandle_Ritual_InitDelay", 0);
+
+IF
+SavegameLoaded()
+AND
+DB_GLO_HolyCandle_Ritual_Initialized(0)
+THEN
+TimerLaunch("GLO_HolyCandle_Ritual_InitDelay", 0);
+
+IF
+TimerFinished("GLO_HolyCandle_Ritual_InitDelay")
+THEN
+NOT DB_GLO_HolyCandle_Ritual_Initialized(0);
+DB_GLO_HolyCandle_Ritual_Initialized(1);
+
+IF
+LevelLoaded("WLD_OwlbearCave_B")
+THEN
+ApplyStatus(BASE_BOOK_Scroll_Letter_SharsDivineIntervention_000_7c728f04-3818-4d08-8331-56c1876c7735,"INVISIBLE",-1.0,1);
+ApplyStatus(Humans_InvisibleHelper_Aura_002_ce38d538-2076-4dc7-a81b-5c825f5d3e25,"HOLY_IDOL_AURA",-1.0,1);
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_f4fa634d-f62e-4871-b310-6d9f4f2cd16d,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+EnteredLevel(_Player,_,"WLD_OwlbearCave_B")
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(Humans_InvisibleHelper_Aura_002_ce38d538-2076-4dc7-a81b-5c825f5d3e25,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+EnteredTrigger(_Player,BoxTrigger_000_00599350-528a-4a95-8c86-fd0784e10ef8)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+GetPosition(Humans_InvisibleHelper_Aura_002_ce38d538-2076-4dc7-a81b-5c825f5d3e25,_X,_Y,_Z)
+THEN
+UseSpellAtPosition(Humans_InvisibleHelper_Aura_002_ce38d538-2076-4dc7-a81b-5c825f5d3e25,"Target_Shar_InvisibleHelperSpawn",_X,_Y,_Z);
+
+IF
+LevelLoaded("WLD_VillageSubs_C")
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_c9c133ae-ccb0-476e-bcad-f0fed469ca67,"HOLY_GEM_AURA",-1.0,1);
+
+IF
+LevelLoaded("SCL_Nightsong_A")
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_67db3c68-faa7-4d26-9ade-55be62fb9a5b,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+LevelLoaded("BGO_Main_A")
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_e2454f41-3c92-4fe4-81b5-365003fbd9f8,"HOLY_IDOL_AURA",-1.0,1);
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_19bfb29d-f940-4536-bf8c-561a5621b521,"HOLY_GEM_AURA",-1.0,1);
+
+// Apply status once on local object once per level loaded
+
+//REGION Auras Setup
+IF
+StatusApplied(_HolyCandleRitualA,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualA,1)
+AND
+GetTemplate(_HolyCandleRitualA, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_A_2166253e-f02e-48b8-be7a-e6f8fbc12c2a
+AND
+HasActiveStatus(_HolyCandleRitualA,"HOLY_CANDLE_AURA_A",0)
+THEN
+ApplyStatus(_HolyCandleRitualA,"HOLY_CANDLE_AURA_A",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandleRitualA,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualA,1)
+AND
+GetTemplate(_HolyCandleRitualA, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_A_2166253e-f02e-48b8-be7a-e6f8fbc12c2a
+AND
+HasActiveStatus(_HolyCandleRitualA,"HOLY_CANDLE_AURA_A",1)
+THEN
+RemoveStatus(_HolyCandleRitualA,"HOLY_CANDLE_AURA_A");
+
+
+IF
+StatusApplied(_HolyCandleRitualB,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualB,1)
+AND
+GetTemplate(_HolyCandleRitualB, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_B_b6cc0829-6640-4403-9e32-70d4c2c03475
+AND
+HasActiveStatus(_HolyCandleRitualB,"HOLY_CANDLE_AURA_B",0)
+THEN
+ApplyStatus(_HolyCandleRitualB,"HOLY_CANDLE_AURA_B",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandleRitualB,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualB,1)
+AND
+GetTemplate(_HolyCandleRitualB, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_B_b6cc0829-6640-4403-9e32-70d4c2c03475
+AND
+HasActiveStatus(_HolyCandleRitualB,"HOLY_CANDLE_AURA_B",1)
+THEN
+RemoveStatus(_HolyCandleRitualB,"HOLY_CANDLE_AURA_B");
+
+
+IF
+StatusApplied(_HolyCandleRitualC,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualC,1)
+AND
+GetTemplate(_HolyCandleRitualC, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_C_daf4df74-a4d3-4320-9f20-604582742dc5
+AND
+HasActiveStatus(_HolyCandleRitualC,"HOLY_CANDLE_AURA_C",0)
+THEN
+ApplyStatus(_HolyCandleRitualC,"HOLY_CANDLE_AURA_C",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandleRitualC,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualC,1)
+AND
+GetTemplate(_HolyCandleRitualC, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_C_daf4df74-a4d3-4320-9f20-604582742dc5
+AND
+HasActiveStatus(_HolyCandleRitualC,"HOLY_CANDLE_AURA_C",1)
+THEN
+RemoveStatus(_HolyCandleRitualC,"HOLY_CANDLE_AURA_C");
+
+
+IF
+StatusApplied(_HolyCandleRitualD,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualD,1)
+AND
+GetTemplate(_HolyCandleRitualD, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_D_f17367cc-4ef5-465b-8625-ee875be66a14
+AND
+HasActiveStatus(_HolyCandleRitualD,"HOLY_CANDLE_AURA_D",0)
+THEN
+ApplyStatus(_HolyCandleRitualD,"HOLY_CANDLE_AURA_D",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandleRitualD,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualD,1)
+AND
+GetTemplate(_HolyCandleRitualD, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_D_f17367cc-4ef5-465b-8625-ee875be66a14
+AND
+HasActiveStatus(_HolyCandleRitualD,"HOLY_CANDLE_AURA_D",1)
+THEN
+RemoveStatus(_HolyCandleRitualD,"HOLY_CANDLE_AURA_D");
+
+
+IF
+StatusApplied(_HolyCandleRitualE,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualE,1)
+AND
+GetTemplate(_HolyCandleRitualE, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_E_e2b450d5-2c8a-4a36-9833-c27cb861af35
+AND
+HasActiveStatus(_HolyCandleRitualE,"HOLY_CANDLE_AURA_E",0)
+THEN
+ApplyStatus(_HolyCandleRitualE,"HOLY_CANDLE_AURA_E",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandleRitualE,"BURNING",_,_)
+AND
+Exists(_HolyCandleRitualE,1)
+AND
+GetTemplate(_HolyCandleRitualE, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_E_e2b450d5-2c8a-4a36-9833-c27cb861af35
+AND
+HasActiveStatus(_HolyCandleRitualE,"HOLY_CANDLE_AURA_E",1)
+THEN
+RemoveStatus(_HolyCandleRitualE,"HOLY_CANDLE_AURA_E");
+
+IF
+AddedTo(_HolyCandleRitual, _Player, _)
+AND
+Exists(_HolyCandleRitual,1)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+AND
+HasActiveStatus(_HolyCandleRitual,"BURNING",1)
+THEN
+RemoveStatus(_HolyCandleRitual,"BURNING");
+
+IF
+AddedTo(_HolyCandleRitual, _Player, _)
+AND
+Exists(_HolyCandleRitual,1)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+DB_GLO_HolyCandle_Ritual_RootTemplates(_Template)
+THEN
+RemoveStatus(_HolyCandleRitual,"BURNING");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUS_A");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUS_B");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUS_C");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUS_D");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUS_E");
+RemoveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUSEFFECT");
+//END_REGION Auras Setup
+
+
+//REGION Puzzle Effects
+IF
+StatusApplied(_HolyIdolRitual,_Status,_HolyCandleRitual,_)
+AND
+DB_GLO_HolyCandle_Ritual_Statuses(_Status,_Letter)
+AND
+HasActiveStatus(_HolyIdolRitual,_Status,1)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUSEFFECT",0)
+THEN
+ApplyStatus(_HolyCandleRitual,"HOLY_CANDLE_STATUSEFFECT",-1.0,1);
+//END_REGION Puzzle Effects
+
+
+
+//REGION Selune Idol Erase
+// Apply Trigger Status when puzzle is completed.
+IF
+StatusApplied(_HolyIdolRitual,"HOLY_IDOL_TAGGER",_,_)
+AND
+IsTagged(_HolyIdolRitual,(TAG)NIGHTBRINGER_HOLY_IDOL_b52b462a-995a-43e9-9544-a12e882415dd,1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_STATUS_A",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_STATUS_B",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_STATUS_C",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_STATUS_D",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_STATUS_E",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_IDOL_TRIGGERSTATUS",1)
+AND
+HasActiveStatus(_HolyIdolRitual,"HOLY_CANDLE_ERASER",0)
+THEN
+ApplyStatus(_HolyIdolRitual,"HOLY_CANDLE_ERASER",-1.0,1);
+
+
+// Delete Selune Idol and create Corrupted Selune Idol
+IF
+StatusApplied(_HolyIdolRitual,"HOLY_CANDLE_ERASER",_,_)
+AND
+IsTagged(_HolyIdolRitual, (TAG)NIGHTBRINGER_HOLY_IDOL_b52b462a-995a-43e9-9544-a12e882415dd,1)
+AND
+GetPosition(_HolyIdolRitual, _X, _Y, _Z)
+AND
+CreateAtObject(LOOT_GEN_Idol_Selune_Silver_Corrupted_e52755c7-165c-4c30-b75b-c7f8afc5b29c,_HolyIdolRitual,0,0,"",1,_CorruptedIdolRitual)
+THEN
+UseSpellAtPosition(_HolyIdolRitual,"Target_CircleOfDeath_Shar",_X,_Y,_Z);
+PlayEffect(_HolyIdolRitual,VFX_Spells_Cast_Damage_Necrotic_TargetAoE_CircleOfDeath_Impact_BodyFX_Textkey_01_3c48f934-629d-0e94-4b6f-66f359cafb03,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Necrotic_TargetAoE_CircleOfDeath_Position_01_55015577-edce-13a7-bfc7-a71f41994b01,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyIdolRitual);
+ApplyStatus(_CorruptedIdolRitual,"HOLY_CANDLE_AURA",-1.0,1);
+//END_REGION Selune Idol Erase
+
+//REGION Generating Idols
+IF
+UsingSpellOnTarget(_Player,_Target,"Target_Shar_Voidbeam", _, _, _)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsInInventory(LOOT_GEN_Idol_Selune_Silver_Corrupted_001_d921f1b4-bcc6-452c-b8b1-03e2578af887,1)
+AND
+HasActiveStatus(_Target,"HOLY_IDOL_TRIGGERSTATUS",1)
+AND
+GetPosition(_Target,_X,_Y,_Z)
+AND
+CreateAtObject(LOOT_GEN_Idol_Selune_Silver_Corrupted_e52755c7-165c-4c30-b75b-c7f8afc5b29c,_Target,0,0,"",1,_CorruptedIdol)
+THEN
+UseSpellAtPosition(_Target,"Target_CircleOfDeath_Shar",_X,_Y,_Z);
+PlayEffect(_Target,VFX_Spells_Cast_Damage_Necrotic_TargetAoE_CircleOfDeath_Impact_BodyFX_Textkey_01_3c48f934-629d-0e94-4b6f-66f359cafb03,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Necrotic_TargetAoE_CircleOfDeath_Position_01_55015577-edce-13a7-bfc7-a71f41994b01,_X,_Y,_Z);
+RequestDelete((ITEM)_Target);
+ApplyStatus(_CorruptedIdol,"HOLY_CANDLE_AURA",-1.0,1);
+
+//END_REGION Generating Idols
+
+
+
+
+//REGION Shar Candle Erase
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TRIGGERSTATUS",_,_)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_A_b6cc0829-6640-4403-9e32-70d4c2c03475
+AND
+GetPosition(_HolyCandleRitual, _X, _Y, _Z)
+THEN
+PlaySoundResource(_HolyCandleRitual,Spell_Impact_Damage_Lightning_CallLightning_L1to3_3920865e-fd09-4ed4-8eeb-953706e5beab);
+PlayEffect(_HolyCandleRitual,VFX_Spells_Cast_Damage_Lightning_TargetTouch_Impact_BodyFX_Textkey_01_e86deced-cb7c-aff4-1b7a-156d096c704c,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Lightning_TargetAoE_CallLightning_Position_01_cfe52c1f-7545-2c8f-7d51-b6a565458ac6,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyCandleRitual);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TRIGGERSTATUS",_,_)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_B_daf4df74-a4d3-4320-9f20-604582742dc5
+AND
+GetPosition(_HolyCandleRitual, _X, _Y, _Z)
+THEN
+PlaySoundResource(_HolyCandleRitual,Spell_Impact_Damage_Lightning_CallLightning_L1to3_3920865e-fd09-4ed4-8eeb-953706e5beab);
+PlayEffect(_HolyCandleRitual,VFX_Spells_Cast_Damage_Lightning_TargetTouch_Impact_BodyFX_Textkey_01_e86deced-cb7c-aff4-1b7a-156d096c704c,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Lightning_TargetAoE_CallLightning_Position_01_cfe52c1f-7545-2c8f-7d51-b6a565458ac6,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyCandleRitual);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TRIGGERSTATUS",_,_)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_C_f17367cc-4ef5-465b-8625-ee875be66a14
+AND
+GetPosition(_HolyCandleRitual, _X, _Y, _Z)
+THEN
+PlaySoundResource(_HolyCandleRitual,Spell_Impact_Damage_Lightning_CallLightning_L1to3_3920865e-fd09-4ed4-8eeb-953706e5beab);
+PlayEffect(_HolyCandleRitual,VFX_Spells_Cast_Damage_Lightning_TargetTouch_Impact_BodyFX_Textkey_01_e86deced-cb7c-aff4-1b7a-156d096c704c,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Lightning_TargetAoE_CallLightning_Position_01_cfe52c1f-7545-2c8f-7d51-b6a565458ac6,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyCandleRitual);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TRIGGERSTATUS",_,_)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_D_e2b450d5-2c8a-4a36-9833-c27cb861af35
+AND
+GetPosition(_HolyCandleRitual, _X, _Y, _Z)
+THEN
+PlaySoundResource(_HolyCandleRitual,Spell_Impact_Damage_Lightning_CallLightning_L1to3_3920865e-fd09-4ed4-8eeb-953706e5beab);
+PlayEffect(_HolyCandleRitual,VFX_Spells_Cast_Damage_Lightning_TargetTouch_Impact_BodyFX_Textkey_01_e86deced-cb7c-aff4-1b7a-156d096c704c,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Lightning_TargetAoE_CallLightning_Position_01_cfe52c1f-7545-2c8f-7d51-b6a565458ac6,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyCandleRitual);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TRIGGERSTATUS",_,_)
+AND
+GetTemplate(_HolyCandleRitual, _Template)
+AND
+_Template == Nightbringer_Holy_Candle_Ritual_E_2166253e-f02e-48b8-be7a-e6f8fbc12c2a
+AND
+GetPosition(_HolyCandleRitual, _X, _Y, _Z)
+THEN
+PlaySoundResource(_HolyCandleRitual,Spell_Impact_Damage_Lightning_CallLightning_L1to3_3920865e-fd09-4ed4-8eeb-953706e5beab);
+PlayEffect(_HolyCandleRitual,VFX_Spells_Cast_Damage_Lightning_TargetTouch_Impact_BodyFX_Textkey_01_e86deced-cb7c-aff4-1b7a-156d096c704c,"",1.0);
+PlayEffectAtPosition(VFX_Spells_Cast_Damage_Lightning_TargetAoE_CallLightning_Position_01_cfe52c1f-7545-2c8f-7d51-b6a565458ac6,_X,_Y,_Z);
+RequestDelete((ITEM)_HolyCandleRitual);
+
+//END_REGION Shar Candle Erase
+
+//REGION Shar Candle Spawn
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TAGGER",_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_AURA_A",1)
+THEN
+ApplyStatus(_Player,"HOLY_CANDLE_GIFTFORU_A",0.0,0);
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TAGGER",_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_AURA_B",1)
+THEN
+ApplyStatus(_Player,"HOLY_CANDLE_GIFTFORU_B",0.0,0);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TAGGER",_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_AURA_C",1)
+THEN
+ApplyStatus(_Player,"HOLY_CANDLE_GIFTFORU_C",0.0,0);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TAGGER",_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_AURA_D",1)
+THEN
+ApplyStatus(_Player,"HOLY_CANDLE_GIFTFORU_D",0.0,0);
+
+
+IF
+StatusApplied(_HolyCandleRitual,"HOLY_CANDLE_TAGGER",_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasActiveStatus(_HolyCandleRitual,"HOLY_CANDLE_AURA_E",1)
+THEN
+ApplyStatus(_Player,"HOLY_CANDLE_GIFTFORU_E",0.0,0);
+
+
+
+//END_REGION Shar Candle Spawn
+
+//REGION The Dark Key
+//Void Gem
+IF
+MovedBy(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_c9c133ae-ccb0-476e-bcad-f0fed469ca67,_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_c9c133ae-ccb0-476e-bcad-f0fed469ca67,"HOLY_GEM_AURA",-1.0,1);
+
+IF
+AddedTo(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_c9c133ae-ccb0-476e-bcad-f0fed469ca67,_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+RemoveStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_c9c133ae-ccb0-476e-bcad-f0fed469ca67,"HOLY_GEM_AURA");
+
+IF
+MovedBy(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_19bfb29d-f940-4536-bf8c-561a5621b521,_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_19bfb29d-f940-4536-bf8c-561a5621b521,"HOLY_GEM_AURA",-1.0,1);
+
+IF
+AddedTo(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_19bfb29d-f940-4536-bf8c-561a5621b521,_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+RemoveStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Vide_000_19bfb29d-f940-4536-bf8c-561a5621b521,"HOLY_GEM_AURA");
+
+//Light Gem
+
+IF
+MovedBy(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_e2454f41-3c92-4fe4-81b5-365003fbd9f8,_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_e2454f41-3c92-4fe4-81b5-365003fbd9f8,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+AddedTo(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_e2454f41-3c92-4fe4-81b5-365003fbd9f8,_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+RemoveStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_e2454f41-3c92-4fe4-81b5-365003fbd9f8,"HOLY_IDOL_AURA");
+
+IF
+MovedBy(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_67db3c68-faa7-4d26-9ade-55be62fb9a5b,_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_67db3c68-faa7-4d26-9ade-55be62fb9a5b,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+AddedTo(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_67db3c68-faa7-4d26-9ade-55be62fb9a5b,_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+RemoveStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_67db3c68-faa7-4d26-9ade-55be62fb9a5b,"HOLY_IDOL_AURA");
+
+IF
+MovedBy(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_f4fa634d-f62e-4871-b310-6d9f4f2cd16d,_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ApplyStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_f4fa634d-f62e-4871-b310-6d9f4f2cd16d,"HOLY_IDOL_AURA",-1.0,1);
+
+IF
+AddedTo(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_f4fa634d-f62e-4871-b310-6d9f4f2cd16d,_Player,_)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+RemoveStatus(BOOK_Tome_Thayan_Necromancy_A_Gem_A_Infini_000_f4fa634d-f62e-4871-b310-6d9f4f2cd16d,"HOLY_IDOL_AURA");
+//END_REGION The Dark Key
+
+
+//REGION Tag Idol Owner
+IF
+AddedTo(_CorruptedIdolRitual, _Player, _)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+GetTemplate(_CorruptedIdolRitual, _Template)
+AND
+_Template == LOOT_GEN_Idol_Selune_Silver_Corrupted_e52755c7-165c-4c30-b75b-c7f8afc5b29c
+THEN
+SetTag(_Player, (TAG)CORRUPTED_IDOL_OWNER_8cf5adec-a83e-41dc-bc6d-2c9e2fcea8ef);
+
+IF
+RemovedFrom(_CorruptedIdolRitual, _Player)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+GetTemplate(_CorruptedIdolRitual, _Template)
+AND
+_Template == LOOT_GEN_Idol_Selune_Silver_Corrupted_e52755c7-165c-4c30-b75b-c7f8afc5b29c
+THEN
+ClearTag(_Player, (TAG)CORRUPTED_IDOL_OWNER_8cf5adec-a83e-41dc-bc6d-2c9e2fcea8ef);
+//END_REGION Tag Idol Owner
+
+
+EXIT:
