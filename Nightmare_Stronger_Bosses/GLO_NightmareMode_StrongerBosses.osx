@@ -1,4 +1,5 @@
 INIT:
+
 DB_NightmareMode_StrongerBosses_Initialized(0);
 NOT DB_NightmareMode_StrongerBosses_GlobalCharacters((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
 NOT DB_NightmareMode_StrongerBosses_GlobalCharactersVect((CHARACTER)NULL_00000000-0000-0000-0000-000000000000,"");
@@ -400,6 +401,7 @@ DB_NightmareMode_StrongerBosses_Gods(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-
 DB_NightmareMode_StrongerBosses_GodsVect(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,"Jergal");
 //DB_NightmareMode_StrongerBosses_GodsVect(,"");
 //END_REGION God Avatars
+ENDI
 
 
 KB:
@@ -473,7 +475,7 @@ THEN
 DB_NOOP(1);
 //END_REGION InitDev
 
-//REGION Death Ward on Long Rest.
+//REGION Death Ward on Long Rest
 IF
 LongRestFinished()
 AND
@@ -503,7 +505,7 @@ AND
 QRY_OnlyOnce(_OnlyOnceQry)
 THEN
 ApplyStatus(_Character, "DEATH_WARD", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
-//END_REGION Death Ward on Long Rest.
+//END_REGION Death Ward on Long Rest
 
 
 //REGION Applying Passive for each type of foe.
@@ -627,6 +629,6 @@ ApplyStatus((CHARACTER)S_LOW_Elfsong_GithyankiShield_Gishra_001_312f63b5-4b05-42
 ApplyStatus((CHARACTER)S_LOW_Elfsong_GithyankiShield_Gishra_001_312f63b5-4b05-4208-b205-bed410aacc84, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
 
 //END_REGION Gith Portal Summoner Extra Check
-
+KBI
 
 EXIT:
