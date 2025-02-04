@@ -1,5 +1,12 @@
 INIT:
+DB_Initialisation(0);
 ENDI
 KB:
+IF
+SavegameLoaded()
+AND
+DB_Initialisation(0)
+THEN
+DB_Initialisation(1);
 KBI
 EXIT:
