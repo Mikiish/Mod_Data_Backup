@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="10"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Nightbringer"/>
+                    <attribute id="Description" type="TranslatedString" handle="h11aeb1c8g1d9dg4976gdaacg54f6d18134db" version="9"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h639c07f5g1f5dg4f63g23f4g19756654c26f" version="1"/>
+                    <attribute id="HasGod" type="bool" value="true"/>
+                    <attribute id="HpPerLevel" type="int32" value="5"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MulticlassSpellcasterModifier" type="double" value="0.67000000000000004"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Nightbringer"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="2a69e6ee-e807-4b80-8c57-132e375153dd"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Warlock"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="SpellList" type="guid" value="8a63c2e7-8ab8-4605-835b-866aad07021a"/>
+                    <attribute id="SubclassTitle" type="TranslatedString" handle="hf8cb9c04g0d25g42e3gcf3dgba71cc4dacb0" version="2"/>
+                    <attribute id="UUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="69f20819-525f-4c92-b0bb-8fcee0b46b0f"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="hd9612f8bg3130gee94g5148g0351ff0e5c95" version="3"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h72330aa2gd055g93b7g1378g5d591e8169b9" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="HandOfShar"/>
+                    <attribute id="ParentGuid" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="7b27f10a-289b-411c-a05c-601d1cc520ac"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="hd7ad866cg25abg9ef5gdbd6gbf0b120400df" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Paladin"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="SpellList" type="guid" value="c7dc4180-580a-4d37-a6e8-9078ab88264c"/>
+                    <attribute id="UUID" type="guid" value="43d53492-21ba-4db3-af08-83a7f43be83b"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="826714c9-b2e3-4372-9f5a-e59271d5a426"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4c290ff6g82e9g1dc6gac6ag5fc52e1dad15" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc55b0322g044bg7780g88e8ge47165c7c109" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Nightcloak"/>
+                    <attribute id="ParentGuid" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="1f94814d-b536-4564-b88b-779c23dd84fa"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="hd8c8c5adg0d3agdf84g985cg3f620cdf0e81" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Monk"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="SpellList" type="guid" value="a9b9ce91-3a01-4f88-aa69-8bfac5697cf8"/>
+                    <attribute id="UUID" type="guid" value="d40d8120-5639-49c0-aa53-6c1b99e2bd81"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="aa9f126f-ac9a-48d9-a128-1394fae8f4e8"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="he5e53803g9e2fg0e7fge5b6gea07fde115c0" version="5"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hfb48a18ag49ffg2135gd15cg0f460d0a1292" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="EnemyOfShar"/>
+                    <attribute id="ParentGuid" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="feb715e4-2c76-4837-b072-f70c529b2ecf"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h67269192gffadg573dgbc22g9cb78a065875" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="SpellList" type="guid" value="e95087eb-8405-480b-a6dc-422129f22766"/>
+                    <attribute id="UUID" type="guid" value="21cdef8c-66fa-46c2-913e-ffe0c29d3200"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="64dc9d31-db7a-418e-bbbe-6f5b4d32608f"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

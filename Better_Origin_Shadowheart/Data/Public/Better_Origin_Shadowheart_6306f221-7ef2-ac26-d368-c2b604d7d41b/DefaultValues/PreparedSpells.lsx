@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="OriginUUID" type="guid" value="2bb39cf2-4649-4238-8d0c-44f62b5a3dfd"/>
+                    <attribute id="Prepare" type="LSString" value="Target_InflictWounds;Shout_SharAegis;Target_Command_Container"/>
+                    <attribute id="TableUUID" type="guid" value="2a69e6ee-e807-4b80-8c57-132e375153dd"/>
+                    <attribute id="UUID" type="guid" value="7898503a-c24d-4c4b-8250-9fc9a499d03c"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="Prepare" type="LSString" value="Target_InflictWounds;Shout_SharAegis;Target_Command_Container"/>
+                    <attribute id="TableUUID" type="guid" value="2a69e6ee-e807-4b80-8c57-132e375153dd"/>
+                    <attribute id="UUID" type="guid" value="dfced246-c003-458c-ae70-49c1bf785609"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

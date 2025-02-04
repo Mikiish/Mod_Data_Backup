@@ -1,0 +1,30 @@
+local __util = require 'larian.util'
+
+function IsPoisonMaster(entity)
+    local entity = entity or context.Source
+    return HasStatus('STOLEN_SECRET_POISONMASTER',entity)
+end
+
+function RuptureDamageFlattener()
+	local value = math.random(0.0,100,0)
+    return ConditionResult(value <= 33)
+end
+
+function HasDaggerEquipped(entity)
+    local entity = entity or context.Target
+    local items = GetItemsInInventory(entity)
+    if items ~= nil then
+        for _, entity in ipairs(items.Items) do
+            if IsOfProficiencyGroup('Daggers', entity).Result and IsEquipped(entity).Result then
+                return ConditionResult(true)
+            end
+        end
+    end
+
+    return ConditionResult(false)
+end
+
+function PiercingDaggersExecuteRequirement(entity)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration('BLEEDING_HARDER', entity) >= 5)
+end

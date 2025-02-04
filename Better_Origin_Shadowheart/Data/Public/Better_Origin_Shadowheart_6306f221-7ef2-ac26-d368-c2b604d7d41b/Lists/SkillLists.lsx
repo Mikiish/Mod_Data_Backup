@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Stealth, History, Nature, Deception, Persuasion, SleightOfHand"/>
+                    <attribute id="UUID" type="guid" value="79f45745-d359-4639-b7f0-50d999b4f680"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Expertise List"/>
+                    <attribute id="Skills" type="LSString" value="Religion, History"/>
+                    <attribute id="UUID" type="guid" value="28f25c20-982d-48c6-96ae-f467a5e017ff"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Expertise List 3"/>
+                    <attribute id="Skills" type="LSString" value="Stealth"/>
+                    <attribute id="UUID" type="guid" value="a9bbddb9-8c3b-4e4b-bace-d2a42537d0df"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Skill List 3"/>
+                    <attribute id="Skills" type="LSString" value="Stealth, Religion, SleightOfHand, AnimalHandling"/>
+                    <attribute id="UUID" type="guid" value="b18883d6-7382-4e3b-9fcc-0bb5fd2085e1"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

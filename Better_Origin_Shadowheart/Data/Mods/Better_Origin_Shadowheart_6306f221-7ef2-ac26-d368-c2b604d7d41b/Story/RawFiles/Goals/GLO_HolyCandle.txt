@@ -1,0 +1,46 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_HolyCandle_RootTemplates(Nightbringer_Holy_Candle_61d8e957-6f38-4bdc-8748-78db62947336);
+
+NOT DB_GLO_Holy_Candle((ITEM)NULL_00000000-0000-0000-0000-000000000000);
+KBSECTION
+IF
+DestroyedBy(_HolyCandle,_,_,_)
+AND
+DB_GLO_Holy_Candle(_HolyCandle)
+THEN
+NOT DB_GLO_Holy_Candle(_HolyCandle);
+
+
+//REGION Status
+IF
+StatusApplied(_HolyCandle,"BURNING",_,_)
+AND
+Exists(_HolyCandle,1)
+AND
+GetTemplate(_HolyCandle, _Template)
+AND
+DB_GLO_HolyCandle_RootTemplates(_Template)
+AND
+HasActiveStatus(_HolyCandle,"HOLY_CANDLE_AURA",0)
+THEN
+ApplyStatus(_HolyCandle,"HOLY_CANDLE_AURA",-1.0,1);
+
+IF
+StatusRemoved(_HolyCandle,"BURNING",_,_)
+AND
+Exists(_HolyCandle,1)
+AND
+GetTemplate(_HolyCandle, _Template)
+AND
+DB_GLO_HolyCandle_RootTemplates(_Template)
+AND
+HasActiveStatus(_HolyCandle,"HOLY_CANDLE_AURA",1)
+THEN
+RemoveStatus(_HolyCandle,"HOLY_CANDLE_AURA");
+//END_REGION Status
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "ModWrapper_Gustav"

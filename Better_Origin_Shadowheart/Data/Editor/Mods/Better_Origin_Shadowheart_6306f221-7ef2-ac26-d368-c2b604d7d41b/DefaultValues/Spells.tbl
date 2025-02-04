@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="b4f18c50-e2c0-4be6-9609-5367fef946db">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9ccebc65-77a5-43cc-b281-0341050f313c" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="2a69e6ee-e807-4b80-8c57-132e375153dd" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Add" type="StringTableFieldDefinition" value="Target_SharsGuidance;Shout_Thaumaturgy;Shout_ProduceFlame;Projectile_PoisonSpray" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Nightbringer" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

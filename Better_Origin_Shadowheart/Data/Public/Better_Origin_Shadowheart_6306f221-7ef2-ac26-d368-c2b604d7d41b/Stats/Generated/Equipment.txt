@@ -1,0 +1,68 @@
+new equipment "EQP_CC_Nightbringer"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Spear"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "ARM_ChainShirt_Body_Shar"
+add equipmentgroup
+add equipment entry "UNI_ShadowheartCirclet"
+add equipmentgroup
+add equipment entry "OBJ_Camp_Pack"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+
+new equipment "EQ_Shadowheart"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Spear"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "ARM_ChainShirt_Body_Shar"
+add equipmentgroup
+add equipment entry "UNI_ShadowheartCirclet"
+add equipmentgroup
+add equipment entry "OBJ_Camp_Pack"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Shadowheart"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Shadowheart"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Shadowheart"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+

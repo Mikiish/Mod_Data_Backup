@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="Gods">
+        <node id="root">
+            <children>
+                <node id="God">
+                    <attribute id="Description" type="TranslatedString" handle="h8b0d31cag7313g6704g03e5g97df9f3fa9d2" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5b3b5a79g96cfgea91g9726g2b6d8ab14908" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Bhaal"/>
+                    <attribute id="UUID" type="guid" value="66493902-3c92-4145-bacc-65cf7034665d"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="f5e62c47-fb93-449f-9057-cb1a3c003aff"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="God">
+                    <attribute id="Description" type="TranslatedString" handle="he62d026dgacd2g3b67ge686ga7320714aaff" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h499d2897g2daeg5035g92bbg62521eb110f0" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Myrkul"/>
+                    <attribute id="UUID" type="guid" value="12fe9597-d6d3-49ca-bda4-9b601b49dfea"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="God">
+                    <attribute id="Description" type="TranslatedString" handle="h7cfb0243g000eg9808g3290gcd0d10f77658" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h70b326ceg5e86gb7fcg125eg4f3d0611e51f" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Auril"/>
+                    <attribute id="UUID" type="guid" value="bdaa1ccc-b23d-42ff-82de-1f091c71f0a4"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="2b1171a9-0715-4c25-848e-2cfabc19fad4"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="God">
+                    <attribute id="Description" type="TranslatedString" handle="hb3524943gdb39g63eagf1d4g53bdb78bcfef" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h72e07bd7ga5c1g9f44g4d6dg0f797c189bdf" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Zehir"/>
+                    <attribute id="UUID" type="guid" value="13911e0b-176b-4d73-bedf-1ae1b5d2bd36"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="f7323715-cb5b-41f2-b171-9227e2dad4e2"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="God">
+                    <attribute id="Description" type="TranslatedString" handle="hb9be9971g3ba7g4711g5aaag59ccef801f7a" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6ae83004g1c79gf0fbgeaa7g4b58dd5f8876" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Cyric"/>
+                    <attribute id="UUID" type="guid" value="aba11fdc-d34b-45cd-8361-6c9c0486386a"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="d58459aa-5353-4ef7-8667-35590935d969"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="2d6"/>
+                    <attribute id="Level14" type="LSString" value="2d8"/>
+                    <attribute id="Level17" type="LSString" value="2d10"/>
+                    <attribute id="Level2" type="LSString" value="1d8"/>
+                    <attribute id="Level20" type="LSString" value="4d6"/>
+                    <attribute id="Level5" type="LSString" value="1d10"/>
+                    <attribute id="Level8" type="LSString" value="1d12"/>
+                    <attribute id="Name" type="FixedString" value="DeathCoil"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="UUID" type="guid" value="5592f54f-d053-4100-a9e5-0decd2529746"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="4d6"/>
+                    <attribute id="Level14" type="LSString" value="4d8"/>
+                    <attribute id="Level17" type="LSString" value="4d10"/>
+                    <attribute id="Level2" type="LSString" value="2d8"/>
+                    <attribute id="Level20" type="LSString" value="8d6"/>
+                    <attribute id="Level5" type="LSString" value="2d10"/>
+                    <attribute id="Level8" type="LSString" value="2d12"/>
+                    <attribute id="Name" type="FixedString" value="DeathCoil_Tooltip_2"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="UUID" type="guid" value="b82b41f2-00cb-45e5-9418-7f8e7008dc0e"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="6d6"/>
+                    <attribute id="Level14" type="LSString" value="6d8"/>
+                    <attribute id="Level17" type="LSString" value="6d10"/>
+                    <attribute id="Level2" type="LSString" value="3d8"/>
+                    <attribute id="Level20" type="LSString" value="12d6"/>
+                    <attribute id="Level5" type="LSString" value="3d10"/>
+                    <attribute id="Level8" type="LSString" value="3d12"/>
+                    <attribute id="Name" type="FixedString" value="DeathCoil_Tooltip_3"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="UUID" type="guid" value="785cfbcb-8bd5-4249-a11e-70d25e2e0dc9"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="8d6"/>
+                    <attribute id="Level14" type="LSString" value="8d8"/>
+                    <attribute id="Level17" type="LSString" value="8d10"/>
+                    <attribute id="Level2" type="LSString" value="4d8"/>
+                    <attribute id="Level20" type="LSString" value="16d6"/>
+                    <attribute id="Level5" type="LSString" value="4d10"/>
+                    <attribute id="Level8" type="LSString" value="4d12"/>
+                    <attribute id="Name" type="FixedString" value="DeathCoil_Tooltip_4"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="UUID" type="guid" value="dc39dcea-af8b-4c59-a2bb-824ff56345ed"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="10d6"/>
+                    <attribute id="Level14" type="LSString" value="10d8"/>
+                    <attribute id="Level17" type="LSString" value="10d10"/>
+                    <attribute id="Level2" type="LSString" value="5d8"/>
+                    <attribute id="Level20" type="LSString" value="20d6"/>
+                    <attribute id="Level5" type="LSString" value="5d10"/>
+                    <attribute id="Level8" type="LSString" value="5d12"/>
+                    <attribute id="Name" type="FixedString" value="DeathCoil_Tooltip_5"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="7830cfef-4782-4deb-9b04-f6230aed63b2"/>
+                    <attribute id="UUID" type="guid" value="1342982f-cdba-478a-a941-4a3652170425"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

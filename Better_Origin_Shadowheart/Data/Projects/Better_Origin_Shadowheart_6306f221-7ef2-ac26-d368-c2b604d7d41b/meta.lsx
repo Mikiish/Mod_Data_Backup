@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="6306f221-7ef2-ac26-d368-c2b604d7d41b"/>
+            <attribute id="Name" type="LSString" value="Better_Origin_Shadowheart"/>
+            <attribute id="UUID" type="LSString" value="e16060f9-ad0a-d287-13bf-e0c2fa1c675a"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

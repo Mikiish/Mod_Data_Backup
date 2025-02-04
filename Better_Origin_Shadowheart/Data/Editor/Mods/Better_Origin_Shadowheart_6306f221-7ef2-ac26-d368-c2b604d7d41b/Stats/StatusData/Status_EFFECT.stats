@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="afc508da-dd39-4821-b0af-9955e5e2f087">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d143bb51-0b5b-42c9-9e29-eec81eb533d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_SMITE_UNHOLY_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="CrSpell_Impact_Brewer_MixChangeExplosion_Necrotic" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="366b5ab6-8280-44fa-84b0-56ef89216d08" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="29f5e344-9636-4f92-89cf-3b133e04446e" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTBRINGER_SHAR_EFFECT" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="90d0a624-5278-43cf-9184-7e92880a722e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a4695a8-24d1-4287-a830-f25b4465b209" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER_EFFECT" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="4c40f7ab-8513-49da-ae71-b7faae9079ca" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="4c40f7ab-8513-49da-ae71-b7faae9079ca" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

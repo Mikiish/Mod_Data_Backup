@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a8098c1a-f86e-11da-bd1a-00112444be1e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1dfed84-99cd-452e-8056-bc038999cad5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shadow_Elemental" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5dbad2ff-36b5-4f92-9686-3d8e63d3b4de" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="20" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="8" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="8" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="91" />
+        <field name="Sight" type="IntegerTableFieldDefinition" value="1600" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Poisoned;EXHAUSTED;PARALYZED;HOLD_PERSON;PETRIFIED;PRONE;RESTRAINED;POISONED;KNOCKED_DOWN;ABJURE_ENEMY_FRIGHT;NET;BLEEDING;GAPING_WOUND;GRAPPLED;FEARED;SCL_SHADOW_CURSE_RISING_SHAR" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59e3c701-6de8-43ba-b8c7-e4ccaa189fee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer_Shar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9d4ad8a7-0616-474e-aec5-62fc3b90c53c" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="BlockRegainHP(Undead;Construct);ProficiencyBonus(Skill, Stealth)" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Incapacitated;SG_DifficultTerrain;SG_Dominated;SG_Frightened;SG_Poisoned;SG_Polymorph;SG_Stunned;SG_Sleeping;SG_Restrained;SG_Blinded" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeyAncestry;AttackOfOpportunity;DarknessRules;Darkvision;LOW_HouseOfGrief_Cultists_Sight;Nightbringer_Shar_TestAura;Nightbringer_Shar_Aura_Toggle_Test" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ForceResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="XPReward" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.01" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="Initiative" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30c61a4f-7cac-4bfe-abf8-b4f21524b5e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="POC_Player_Cleric" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e954774-f677-4542-b5ae-6ac008056acc" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="13" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="8" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="Class" type="StringTableFieldDefinition" value="Cleric" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Progressions" type="StringTableFieldDefinition" value="f59fb377-24c5-444a-861b-8a0260ff0e20" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ShortResting;NonLethal;WeaponThrow;Perform;AttackOfOpportunity;DarknessRules;CombatStartAttack;SharDarkvision;SharGift_Voidborn" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1c3ff11-f297-4163-a586-be3e6f10e59a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shadow_Mastiff_Shadowfiend" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ece55650-2304-4144-a241-2268672ce83b" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Shadowfiend_Effect;BrutalBite;Darkvision;AttackOfOpportunity;DarknessRules" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
