@@ -1,0 +1,69 @@
+INIT:
+DB_SBSharThrowDagger_Initialized(0);
+
+DB_SBSharThrowDagger_ArchetypeToGive("ranged");
+DB_SBSharThrowDagger_ArchetypeToGive("ranged_ignoresurfacedamage");
+DB_SBSharThrowDagger_ArchetypeToGive("ranged_SCL");
+DB_SBSharThrowDagger_ArchetypeToGive("goblin_ranged");
+DB_SBSharThrowDagger_ArchetypeToGive("ranged_smart");
+DB_SBSharThrowDagger_ArchetypeToGive("orthon_ranged");
+DB_SBSharThrowDagger_ArchetypeToGive("rogue");
+DB_SBSharThrowDagger_ArchetypeToGive("ranged_smart_SCL");
+
+
+KB:
+IF
+LevelLoaded(_)
+AND
+DB_SBSharThrowDagger_Initialized(0)
+THEN
+TimerLaunch("SBSharThrowDagger_InitDelay", 0);
+
+IF
+TimerFinished("SBSharThrowDagger_InitDelay")
+THEN
+NOT DB_SBSharThrowDagger_Initialized(0);
+DB_SBSharThrowDagger_Initialized(1);
+
+// Force INIT
+
+IF
+DB_Players(_Player)
+AND
+DB_SBSharThrowDagger_Initialized(1)
+AND
+HasPassive(_Player, "FightingStyle_Dagger", 0)
+THEN
+AddPassive(_Player, "FightingStyle_Dagger");
+
+IF
+DB_InRegion(_Character, _)
+AND
+DB_SBSharThrowDagger_Initialized(1)
+AND
+HasPassive(_Character, "FightingStyle_Dagger", 0)
+AND
+GetBaseArchetype(_Character, _Archetype)
+AND
+DB_SBSharThrowDagger_ArchetypeToGive(_Archetype)
+THEN
+AddPassive(_Character, "FightingStyle_Dagger");
+
+IF
+StatusRemoved(_ShadowBlade, "COL_RESONANCESTONE_AURA", _, _)
+AND
+IsTagged(_ShadowBlade, (TAG)SHAR_SHADOWBLADE_RING_4d38214c-272c-469d-bcc1-6dac9e500481, 1)
+THEN
+ApplyStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusRemoved(_ShadowBlade, "COL_RESONANCESTONE_AURA", _, _)
+AND
+IsTagged(_ShadowBlade, (TAG)SHAR_SHADOWBLADE_RING_4d38214c-272c-469d-bcc1-6dac9e500481, 1)
+AND
+HasActiveStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", 1)
+THEN
+RequestDelete((ITEM)_ShadowBlade);
+
+
+EXIT:
