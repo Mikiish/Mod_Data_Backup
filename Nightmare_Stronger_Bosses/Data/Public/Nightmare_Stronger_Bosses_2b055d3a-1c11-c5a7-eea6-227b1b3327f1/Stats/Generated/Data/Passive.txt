@@ -1,0 +1,42 @@
+new entry "NightmareMode_DeathWard"
+type "PassiveData"
+using "LOW_HoH_Hope_DeathWard"
+data "DisplayName" "h71ab5fffg12a1gff94gf75cg0b3f2b244b5c;1"
+data "Description" "ha158422bgbca8ge411g4ce1g406e1c319cbd;1"
+data "DescriptionParams" "0;1;1"
+data "StatsFunctorContext" "OnCombatStarted;OnStatusRemoved"
+data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCombatStarted) and not HasStatus('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD'))"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCombatStarted)):ApplyStatus(DEATH_WARD, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')):ApplyStatus(NIGHTMARE_DEATH_WARD_IMMUNE, 100, 1);"
+
+new entry "NightmareMode_CCImmunity"
+type "PassiveData"
+data "DisplayName" "h4453a7e4g08a9g9514g3e89g9a70713f44e1;1"
+data "StatsFunctorContext" "OnLongRest;OnCombatStarted;OnCreate"
+data "Conditions" "not HasStatus('NIGHTMARE_STATUESIMMUNITY', context.Source)"
+data "StatsFunctors" "ApplyStatus(SELF,NIGHTMARE_STATUESIMMUNITY,100,-1)"
+
+new entry "NightmareMode_StrongerBosses"
+type "PassiveData"
+data "DisplayName" "h7071d7c6ga133gc667g1a56gc469ce717971;1"
+data "Description" "h17f5164bg43e8g4868g865agc7945f1e511c;1"
+
+new entry "NightmareMode_Gods"
+type "PassiveData"
+data "DisplayName" "ha8009748g3386gbb13g15e0g678813cb34a1;1"
+data "Description" "h28a1be57gdaa5g96b2g5f9cg4d30437a1424;1"
+
+new entry "NightmareMode_LittleChief"
+type "PassiveData"
+data "DisplayName" "hf2819b4ag5495gfebdg6a7fga724379fa91e;1"
+data "Description" "h3f50641fga290ga66fg2720g45a9cdd01f3b;1"
+
+new entry "NightmareMode_StrongAlly"
+type "PassiveData"
+data "DisplayName" "h3d130466ge6e9g1e0dg373fgeb062e5b323e;1"
+data "Description" "h648eb8a2g3bc2g6a2bg2eecg185eec60c422;1"
+
+new entry "NightmareMode_TemporaryStunImmunity"
+type "PassiveData"
+data "DisplayName" "he7133fd1gc619g7f39g5aceg7a7d862115f9;1"
+data "Description" "h9006f4acgaec4gf490g4863g94e3b78845f2;1"
+

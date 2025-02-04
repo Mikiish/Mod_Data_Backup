@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e988a674-28fe-49d2-a6ce-c5c1e0141f4c">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="079bd1b9-de5a-4788-b391-f8aca90ee469" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathWard_Nightmare" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9c64f7-ba32-4c9e-bb19-f18c4de8e077" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3383015-cbcf-4e95-8e1c-ac8357ca8c23" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_OpenGate_Melee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="344f9005-6d0f-49cb-aba2-6b454b991fa3" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

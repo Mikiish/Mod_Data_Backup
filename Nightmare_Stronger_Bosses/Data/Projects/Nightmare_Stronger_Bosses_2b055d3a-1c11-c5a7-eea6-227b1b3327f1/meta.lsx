@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="2b055d3a-1c11-c5a7-eea6-227b1b3327f1"/>
+            <attribute id="Name" type="LSString" value="Nightmare_Stronger_Bosses"/>
+            <attribute id="UUID" type="LSString" value="c9e42859-9a74-6dec-7fe0-ef1b80de5da7"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

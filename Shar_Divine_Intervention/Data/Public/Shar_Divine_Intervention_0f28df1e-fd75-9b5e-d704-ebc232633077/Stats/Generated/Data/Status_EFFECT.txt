@@ -1,0 +1,6 @@
+new entry "NIGHTBRINGER_SHAR_EFFECT"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusEffect" "90d0a624-5278-43cf-9184-7e92880a722e"
+

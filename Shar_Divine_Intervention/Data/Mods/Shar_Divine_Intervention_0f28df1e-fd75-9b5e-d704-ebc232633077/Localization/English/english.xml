@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h653ccf29gb23bg02f9g032eg38fe16095fbd" version="1">Nightmare</content>
+  <content contentuid="he13d7588ge81egb8cegff15g3731bacd4c0c" version="1">Plagued by endless, horrifying nightmares. To remove this condition, open your &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;eyes&lt;/LSTag&gt;.</content>
+  <content contentuid="h8be7784cg6778ga890gdaa0g77695ccc7fe3" version="1">Affected entity can immediately use a bonus action to cast a powerful spell.</content>
+  <content contentuid="h9c136dedgb109g6956gc071g35d19fe3e2ce" version="1">Blessing of the Nightbringer</content>
+  <content contentuid="h70bc4b28g086dg43efgd603gfabd1b3bcac1" version="1">A highly important member of the &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Sharran&lt;/LSTag&gt; church have gifted you Shar's Blessing. You are immune to &lt;LSTag Type="Spell" Tooltip="Target_DivineIntervention_Shar_Target"&gt;Shar's Divine Intervention&lt;/LSTag&gt;.</content>
+  <content contentuid="h5990d8f0g6f49g76ecga77bg07186bb1a074" version="1">Umbral Influx</content>
+  <content contentuid="h9372c71bg0f39g681egb16cg74fc06a5fe0e" version="1">Tendrils of shadow engulf the corpse, until it becomes unclear where the body ends and the shadows begin.</content>
+  <content contentuid="h3e072e95gaaa9g6dd1g296fgb59041353f30" version="1">Vector of the Shadows</content>
+  <content contentuid="h81af0fc3g1023g8537gae54g9de5360e967c" version="1">This entity carries the essence of shadow, spreading its darkness wherever it treads. Its presence corrupts the light, leaving trails of gloom and despair in its wake.</content>
+  <content contentuid="h71b06df9gfb46g1c1cgdf3eg7210cf4f76bb" version="1">Fate of the Forsaken</content>
+  <content contentuid="h9a714a2fgfe6fg23c2gf5cfg16d60e56710b" version="1">This entity has ventured too close to the essence of shadow. Soon, it will become nothing more than an &lt;LSTag Type="Status" Tooltip="SCL_SHADOW_CURSE_UNDEAD_NEW"&gt;Undead&lt;/LSTag&gt; thrall, bound to the Dark Lady’s will.</content>
+  <content contentuid="hdbf8984egad00gc6e4g9d0ag422b0bd41542" version="1">%%% EMPTY</content>
+  <content contentuid="ha33947ffgeef5g0a8dg98ebg1924b1f3d2dc" version="1">Ø</content>
+  <content contentuid="h5294e047g714eg0cb8g473eg4f241ee62717" version="1">There is nothing here. Whatever you pointed at no longer exists.</content>
+  <content contentuid="h869653f7g9f9cgf992g8760g91612f40d7a1" version="1">Ø</content>
+  <content contentuid="h85dde00dga809g688ag1ca0g7b6d016f8935" version="1">There is nothing here. Whatever you pointed at no longer exists.</content>
+  <content contentuid="h5ee6c6a9ge7e9g97b3g9109g0ae0638faa47" version="1">Shadow Flame</content>
+  <content contentuid="h54120872gb92dg7235gb3c0gdc8f752d0497" version="3">This flame is odd...</content>
+  <content contentuid="h9344255bg519agcaa9gc304gd7da6f1d6023" version="1">Shadow Flame</content>
+  <content contentuid="h5703710cg9763g0b61g55bbg6b10d53805e4" version="1">This flame is odd...</content>
+  <content contentuid="h753e958aga67dgaa11gb3edg7627a201aae6" version="1">Divine Intervention: Shar</content>
+  <content contentuid="h9f06a2eeg2567gaf46ge2a2gd89497cbc59b" version="1">You can cast &lt;LSTag Type="Spell" Tooltip="Target_DivineIntervention_Shar_Target"&gt;Divine Intervention: Shar&lt;/LSTag&gt; to invoke &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Shar&lt;/LSTag&gt;'s aid. Once used, this can never be used again.</content>
+  <content contentuid="h878f5d67g5deege077ga32bg9a9f36a827dc" version="1">Blessing of the Nightbringer</content>
+  <content contentuid="h56af2089g6de3gd959g3041ge4ad70251f5c" version="1">A highly important member of the &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Sharran&lt;/LSTag&gt; church have gifted you Shar's Blessing. You are immune to &lt;LSTag Type="Spell" Tooltip="Target_DivineIntervention_Shar_Target"&gt;Shar's Divine Intervention&lt;/LSTag&gt;.</content>
+  <content contentuid="hd9cd217fgd78ag0dccg391fg1a96b4a06cb7" version="1">Vector of the Curse</content>
+  <content contentuid="h1655219ag470cg11acg9be9gf5c1c19da888" version="1">This unit spreads the shadow.</content>
+  <content contentuid="h668f10d9g2a25g23a5g5399gae07a31f84f7" version="1">%%% TEST</content>
+  <content contentuid="h367f89aagab95g2efcgc0ffg2c518a0f805f" version="1">%%% TEST</content>
+  <content contentuid="h15db3878g75dcg3383g0887g3123f4e90c40" version="1">Apparition of the Nightsinger</content>
+  <content contentuid="hca463ddag008egb869g7abeg346dd715fcbc" version="1">A shadowy manifestation of Lady &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Shar&lt;/LSTag&gt;, the Nightsinger, cloaked in eternal darkness.</content>
+  <content contentuid="had8f444fga3afg3bbbg10e0g45a3260a4875" version="1">Shadowlift</content>
+  <content contentuid="h7cd9db11g97c1g1f62g941bg7793e19e5085" version="1">Float effortlessly to a destination</content>
+  <content contentuid="he41888efg8f76g6af1g523agead905094fca" version="1">Nightmare</content>
+  <content contentuid="h9af4846fg0487gbcd2g00a3g12c097017977" version="1">The shadow unleashes a wave of terror through the darkness, trapping obscured creatures in a nightmare of despair. All obscured targets take [1] and become &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; for 3 turns.</content>
+  <content contentuid="hec4df4d9gc04cg9d34g1ad6g3ba93c1904d2" version="1">Unable to escape this torment, &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt; targets are afflicted by &lt;LSTag Type="Status" Tooltip="SHADOWFIEND_NIGHTMARE_STATUS"&gt;Endless Nightmare&lt;/LSTag&gt; until they can see the &lt;LSTag Type="Status" Tooltip="CCSTATUS_SELUNE"&gt;light&lt;/LSTag&gt; again.</content>
+  <content contentuid="h5f2a13c7g8945ga952ga21bgf4716195de6a" version="1">Cloak of Shadow</content>
+  <content contentuid="h433e3030gaec7g4c7dg2181g2f9941ce0297" version="1">Divine Intervention: Sunder the Heretical</content>
+  <content contentuid="ha907d9c7gac4bg0eddg71a1g771881b25541" version="1">Call upon the &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Nightbringer&lt;/LSTag&gt; to deliver a divine reckoning unto your foes. Only faithful Sharrans will be spared. </content>
+  <content contentuid="h20261963g7a80gbc24ge295g928c3925707b" version="1">Beware, &lt;LSTag Type="Spell" Tooltip="Shout_DivineIntervention"&gt;Shar's intervention&lt;/LSTag&gt; often brings widespread death and devastation. The consequences of invoking her power can be catastrophic.</content>
+  <content contentuid="h7bfc9a20g7514g07abgc293ga6f5a9006a6e" version="1">Blessing of the Nightbringer</content>
+  <content contentuid="h6e64057bg9dbbg90f4g0786g8e0f4a32a66b" version="1">Bestow the blessing of Lady &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Shar&lt;/LSTag&gt; upon your allies. Blessed creatures are shielded from Shar's destructive power.</content>
+  <content contentuid="h020aec88g6a3bg4418g9c36g383848deb60a" version="1">You can also use this to cure a &lt;LSTag Type="Status" Tooltip="SCL_SHADOW_CURSE_UNDEAD"&gt;Shadow-Cursed Undead&lt;/LSTag&gt; or to heal &lt;LSTag Type="Status" Tooltip="MADNESS_DEVOURDREAMS"&gt;Madness&lt;/LSTag&gt;.</content>
+  <content contentuid="hc29a9487ged7fg65ceg2678gcaa687f5e839" version="1">Oblivion</content>
+  <content contentuid="hf993444fg60d7g5128ge65eg863f1d201d43" version="1">Call upon Shar’s ultimate power to &lt;LSTag Type="Status" Tooltip="DEAD_SHAR"&gt;Erase&lt;/LSTag&gt; a creature from existence. The target is slain instantly, and from its remains rises a shadow infused with chaos, attacking all in its path without mercy.</content>
+  <content contentuid="h425bdeedgdd28gbea8g1800gcb461f5d95d5" version="4">Ordinary Candle</content>
+  <content contentuid="h9de4510bgdcdagfa39g6eb8g3d72799f2590" version="3">Shadow</content>
+  <content contentuid="h5d952f4eg64c2g86e2g0dfag60e703a8e0de" version="1">Decurse Land</content>
+  <content contentuid="h83d5178cgc8a5gabb8gcd68g3de90cdb8ded" version="1">Cause &lt;LSTag Type="Status" Tooltip="SHADOW_CURSED_VINES"&gt;Shadow-Cursed Vines&lt;/LSTag&gt; surfaces to vanish.</content>
+  <content contentuid="h0445f688g7fceg571dg5093gfa46c09f7ffc" version="3">Just an ordinary beeswax candle.</content>
+  <content contentuid="hea7c77c8g92bag8134g29a9g720666799942" version="2">Ordinary Candle</content>
+  <content contentuid="he01190f4g7289g4bfbgbd24g57ec5d48a1ed" version="2">Just an ordinary beeswax candle.</content>
+  <content contentuid="h24bf34f5ge1d7g72c4gcd38gd19cddd0f3da" version="2">Ordinary Candle</content>
+  <content contentuid="h885638ebgc105ge97fg52c8g825548a555eb" version="2">Just an ordinary beeswax candle.</content>
+  <content contentuid="h78c0e28bgfafegc6a1g3ca1ge8bdd88d6a69" version="2">Ordinary Candle</content>
+  <content contentuid="hf37f45ddg6c8bg0ff5gc5b4g163f4a52adec" version="2">Just an ordinary beeswax candle.</content>
+  <content contentuid="h75bb4cb1gfabbgc5a9gc713gae7198ca73d8" version="2">Ordinary Candle</content>
+  <content contentuid="hfe53e3ddg6712gaf03g4ec9gf909677ae18c" version="2">Just an ordinary beeswax candle.</content>
+  <content contentuid="h152e3d79g8c4fg914bg4dceg5610e077f697" version="2">Ordinary Candle</content>
+  <content contentuid="h08c5e564g2ceeg31d4g83ebg7a956c84f9b4" version="2">Just an ordinary beeswax candle.</content>
+  <content contentuid="h5168718fg543eg2858g3893g67389d584bcd" version="1">Ordinary Candle</content>
+  <content contentuid="ha70f6ba3gac38g1a2cg4bdbg6f6bbabf940b" version="1">Very ordinary candle.</content>
+  <content contentuid="h819c3e24g81b9gad8fg6648gcc593ac47e0a" version="1">Friend of Shar</content>
+  <content contentuid="hcee51e88g2adbg2c81ge184gffc31d6730d2" version="1">A high-ranking member of the Sharran church has granted you their blessing. You will not suffer harm should your ally decide to call upon the force of their god.</content>
+  <content contentuid="h9c0dd296gdac6g7cc3gc99bg1143a10356cc" version="1">Shar</content>
+  <content contentuid="hbe30cd88gfe02g81dfg986cg72758fe9cd3f" version="1">As the greater deity of darkness, Shar is feared for her power over the night, secrets, and loss. She is locked in eternal conflict with her twin sister &lt;LSTag Type="Status" Tooltip="CCSTATUS_SELUNE"&gt;Selûne&lt;/LSTag&gt;, goddess of the moon.</content>
+  <content contentuid="he36bf874g418cg2d8fg0897g9e0a3db875db" version="1">Selûne</content>
+  <content contentuid="h1c4cadffgb974gd1a8g5f2ag9e98f0de56ad" version="1">The Lady of Silver presides over the moon, stars, and navigation. Her power over the heavens is constantly challenged by her sister &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Shar&lt;/LSTag&gt;, who seeks to plunge the world into eternal shadow.</content>
+  <content contentuid="h2cb34df0gcc4bg413dga76ag421fe853aba1" version="2">Shadow</content>
+  <content contentuid="h04624e48ga62dgfeccg840cgd1dbb788faa8" version="2">Death</content>
+  <content contentuid="h6bc53ff6gb5degfd92g2987g9c683c637915" version="2">Deception</content>
+  <content contentuid="he665873ege136g0c72g8b4eg3bf48b4befff" version="2">Despair</content>
+  <content contentuid="h4af7e25bgb55bge356g9d0bg505a3a1bab1a" version="2">Oblivion</content>
+  <content contentuid="hd50e193bg8da6g3c47gbac3ga828552accc0" version="2">Shadow</content>
+  <content contentuid="h49de5852g72bfg17e1gcd6fg99cca1af0a86" version="2">Death</content>
+  <content contentuid="h69db6bf2g041dgeebfg87a8g35a7dfc3908e" version="2">Deception</content>
+  <content contentuid="h8b598f09g06d8g1843g4c5bg28e67f59143a" version="2">Despair</content>
+  <content contentuid="hf70cb775gf445gbf5ag5e97gb49c3d5b6176" version="2">Oblivion</content>
+  <content contentuid="he289830cg4cb5g74cag8903gcd3fc51f8cd7" version="2">%%% HIDDEN - Eraser</content>
+  <content contentuid="h0233c996g281fge2c2gab2dg64d4af887017" version="3">Ordinary Idol</content>
+  <content contentuid="h909932e7g7591g5953gf6ddg3e5f499b6125" version="3">Very ordinary idol.</content>
+  <content contentuid="h8d547753gc2f1gf4b4g46d4gb48068289bc7" version="1">This flame is odd...</content>
+  <content contentuid="hedcb278eg6efbg7967g8d1agdd0389d2972c" version="1">This flame is odd...</content>
+  <content contentuid="hf618db93gf2fcg00begabf1gdeeeaa1d7b81" version="1">Circle of Death: Shar</content>
+  <content contentuid="h8222ad9dg0e72g2910g3e6agde005e66a6b1" version="1">Circle of Death</content>
+  <content contentuid="hf44cb786g943bg044agedc3g630625d6d1a2" version="1">Sculpt a massive sphere of entropic energy around a creature. Devastate the target and all surrounding creatures.</content>
+  <content contentuid="hde48020ag906bg7039g9167g8f17963cd726" version="1">Corrupted Idol of Selûne</content>
+  <content contentuid="h24de6855g1a6fg91f5gf984g0409d2b5e66c" version="1">A statue of Selûne, Our Lady of Silver, the Moonmaiden, gazing quietly at the world.</content>
+  <content contentuid="h912d70a6geaa7g9f54g8bc9g483775f7e9b3" version="2">Idol Owner</content>
+  <content contentuid="hfd5f51e6ge160g701age454g1e24a7d1cebc" version="2">This character hold an item infused with Shar's unholy magic.</content>
+  <content contentuid="hac34e873g1df5gdbf8gc878g59f4a9e5b33c" version="1">%%% HIDDEN - Effect</content>
+  <content contentuid="hd7237e40gb657gf8fdgd68bgb86231d08cba" version="2">Badly Decayed Journal</content>
+  <content contentuid="hfc6ac3b8gd672gbbc0g94a3geadd7fd3d251" version="2">This journal is scorched around the edges, its cover marred by deep gashes and smeared with dried blood. Several pages are missing, and the remaining ones are brittle and stained, as if they had been submerged in shadows and suffering.</content>
+  <content contentuid="h889bc814g017cgefe0g4311g1363140cff83" version="3">&lt;b&gt;[Though most of the pages are illegible, you discern what appears to be an expedition journal. One paragraph catches your eye.]&lt;/b&gt;&lt;br&gt;&lt;br&gt;...suspects nothing. Mother V. was clear: the mission entrusted to me, and me alone, must remain absolutely secret. But the giths have taken us far off the route to Elturel, and reaching the Chiontar would take days — not to mention that I’d have to explain to the others why I’m leading them away from Baldur's Gate... Giths, ogres, a DRAGON, and what next? An owlbear??&lt;br&gt;&lt;br&gt;&lt;b&gt;[As you flip through the rest of the pages, most of them torn or charred, another paragraph catches your attention.]&lt;/b&gt;&lt;br&gt;&lt;br&gt;I have failed. We are two days from the Gate, and still no sign of that damned sanctuary. And honestly, what could she possibly want with a pile of ruins cursed by the traitor Selûne anyway? It doesn’t matter anymore. My mission is a failure, and I must now pay the price. All this for what? For &lt;i&gt;HER&lt;/i&gt;? I don’t understand why she matters so much to her. She’s not even a real Sharran, that much is obvious. She reeks of life and spends her time lighting up everything with her unholy magic. Sure, the healing is appreciated, but potions would work just as well. Mistress of the Night, forgive me for this affront...&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;[As you close the journal, a note slips into your hands. The fine and delicate handwriting contrasts sharply with that of the journal, and the paper seems far older. Though in very poor condition, you manage to decipher what seems to be a psalm.]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;From lies and despair, raise death.&lt;br&gt;Life is an illusion, but shadows can’t be deceived.&lt;br&gt;Through desperation and darkness, one may attain a holy state.&lt;br&gt;Oblivion.&lt;/i&gt;</content>
+  <content contentuid="h18d1ea76gf0c7g6313gd6b5ga90f90c307ad" version="1">Inevitable Doom</content>
+  <content contentuid="h2f4f0737g63a7g3ddeg1c0agf63285bc527c" version="1">None can outrun the fate of the forsaken.</content>
+  <content contentuid="hc69e8ef4g8683gaecag8a7dgfc0ebb5a10fd" version="1">Shar's Darkness</content>
+  <content contentuid="he1e0ace5gf60bge6a4gb9beg744717fc820e" version="1">Control Undead</content>
+  <content contentuid="h8cdead37ge0b0gd7aeg6d48g8cd9b242020c" version="1">Use the power of your Oath to gain control over an undead creature. The undead will follow you around and attack your enemies.</content>
+  <content contentuid="h509a9e29g4701g2b76g3fb3g72692b9390b2" version="1">Control Shadow</content>
+  <content contentuid="h044d4ff6gd201gab9aga2fega0ec107d6251" version="1">Force a shadow or undead creature to bend to your will. It will follow you and attack your enemies.</content>
+  <content contentuid="h4dba3303ga86ag723bg673dg5813bba2cc5a" version="2">Aged Idol of Selûne</content>
+  <content contentuid="hced1fb29g0691g8d09geefcg49b59a3f5c88" version="2">A statue of Selûne, Our Lady of Silver, the Moonmaiden, gazing quietly at the world.</content>
+  <content contentuid="h1babe0deg2d16g9d31gfc93gac762ef39dcb" version="1">Call down a beam of light at the targeted location. Target must be within [1].</content>
+  <content contentuid="ha33f8cd9gda60gd3f0g1b4bgca19c67a23f0" version="1">Moonbeam</content>
+  <content contentuid="hc4452884gde2cg2e12g0cf8gece1390a5799" version="1">Call down a beam of light that damages any creature that enters the beam or starts its turn in the light. You can use an action to move the beam [1].</content>
+  <content contentuid="h8b34cbceg5cc6g61c2g5161g5d2472be430b" version="1">Light Beam</content>
+  <content contentuid="ha603ccf8g3f05g843dge8fag9391934aa25b" version="1">A beam of Light radiate this object.</content>
+  <content contentuid="he63ee17egb98fg3638g4ff7gd31bc78352d6" version="1">Light</content>
+  <content contentuid="h32271795g01bag3cf2gda03g1030a0ecc7a7" version="1">This item is infused with holy Light.</content>
+  <content contentuid="hb5ef24d6gb36cg9ec4g5699g70c55cc53ed0" version="1">%%% HIDDEN</content>
+  <content contentuid="h3deff31fg5a9egf482geba0g533bfb25b977" version="1">%%% HIDDEN</content>
+  <content contentuid="h0b1475d1g74cbg4032ga645g308a3d643c3b" version="4">Invisible Helper</content>
+  <content contentuid="h6afcd27fg24b0g6161gcc61g556f51265491" version="3">Invisible Aura Helper</content>
+  <content contentuid="h9a28d21bg0d85g27a3g0c70g5bd008ff049c" version="1">Genius</content>
+  <content contentuid="h288ff492g7752g92e8ga0c9g8bd4bb778638" version="1">You feel... Brillant !</content>
+  <content contentuid="h42215335gaab6g3b4dg85dcgc4f099c7d13a" version="1">Infused</content>
+  <content contentuid="h84a885e2gc01egcce9gc41ag28698d475421" version="1">This item radiate a pleaseant light.</content>
+  <content contentuid="h218b52e8g876egff71g97e7g0e325216c695" version="1">Void Beam</content>
+  <content contentuid="h061e5a2cgf7b1gb3cdgd1b9g685307fdfa09" version="1">A beam of pure nothingness hurtles toward the object.</content>
+  <content contentuid="h185e46c1geb34g52a2g8f55gf584ba72de62" version="1">This item radiate an unpleaseant... &lt;i&gt;something.&lt;/i&gt;</content>
+  <content contentuid="h39f5009eg8855g94eeg7244gb5802d0138e8" version="1">Ordinary Candle</content>
+  <content contentuid="hbb42bac4gb860g823fgbd48gef8b3122bee5" version="1">Just an ordinary beeswax candle.</content>
+  <content contentuid="hc048eddcg29a1gff41g351fg03c78906df2b" version="1">Ordinary Candle</content>
+  <content contentuid="h36435ef2g0251g1bc1g9145gffb19a3b01e2" version="1">Just an ordinary beeswax candle.</content>
+  <content contentuid="hebff6733gc59dg5273g19aegcc6a7d8195b2" version="1">Ordinary Candle</content>
+  <content contentuid="hd60238c4gc22fg952fg10a9g071e44153b56" version="1">Just an ordinary beeswax candle.</content>
+  <content contentuid="hcaa411b1gf03cg3019g3d77gcc26bb3e39c1" version="1">Ordinary Candle</content>
+  <content contentuid="h6f61e22fga76fgd2fcg5ca3g202afc76d77e" version="1">Just an ordinary beeswax candle.</content>
+  <content contentuid="ha6508960gcb59g2b82g1a48g85d264fb4442" version="1">Ordinary Candle</content>
+  <content contentuid="h6b103a56gf4e8gf961gbc4ag3a126fe6cdf8" version="1">Just an ordinary beeswax candle.</content>
+  <content contentuid="h2df7157eg1b64g410egfc62g24bf8df2e7cc" version="1">%%% HIDDEN</content>
+  <content contentuid="h7f30b369g631fgcacbg5258g656ae966d001" version="1">%%% HIDDEN</content>
+  <content contentuid="h69fab697gafd9g41d9g65b8g0b14ef4cfcac" version="1">Gifted</content>
+  <content contentuid="h5b995285g5c87g849eg6203gc928a8cdb6ef" version="1">Chose a present to be gifted.</content>
+  <content contentuid="h4a171c6cg2743g1d1dgb9d1ge21e47cead61" version="1">Claim Shadow</content>
+  <content contentuid="h6d083854g9022gfdaeg2dfbgfcf9a8229f90" version="1">Voidbeam</content>
+  <content contentuid="h18d27078ga117gd057g3937g0e324005bbbd" version="1">Call down a beam of void at the targeted location. Target must be within [1].</content>
+  <content contentuid="hd019e4f9gbe43g6c6bg9244g2136e56508d5" version="1">Claim Death</content>
+  <content contentuid="h6dff9cb4g8e53g9685gc954g0702bc6eae48" version="1">Claim Deception</content>
+  <content contentuid="ha083581fg4380g22d1gdc92g6c6e752957a4" version="1">Claim Despair</content>
+  <content contentuid="h2db34c1dgc392g58e6gc8c8g2b2006e4e843" version="1">Claim Oblivion</content>
+  <content contentuid="h7b20f7d4g260dgef35g1920gc915507c4bf6" version="1">"∅"</content>
+  <content contentuid="hecc5b36bg5f15ge102g508cg876811895e76" version="1">You can't shake the feeling that darkness seeps out of this heavy, orb-like stone.</content>
+  <content contentuid="h95186ce5gc9e5g2699gfb00ga5e5dbf27615" version="1">Void</content>
+  <content contentuid="hf680a465g529dg0dddgd143g5b5fcda44250" version="1">This item is infused with holy Nothingness.</content>
+  <content contentuid="h63c3fdb2g354cg0f1egc9f2g92f766209daa" version="5">Ordinary Parchment</content>
+  <content contentuid="h2af9872cgf911gdaa5gf650g85a25e1163dd" version="5">This scroll is unread.</content>
+  <content contentuid="h5a470a76g6911g015eg4787gd3baf6eba636" version="5">A plain, unadorned note.</content>
+  <content contentuid="h729a5d68g8d2bg76d4g5fbege53ff921517e" version="1">&lt;i&gt;What is Darkness if Light doesn't exists ?&lt;br&gt;One can't be without even.&lt;br&gt;Find Ilyn Toth&lt;/i&gt;</content>
+  <content contentuid="h3509ea24g70b8gf640g4ec6gf3f20819a0a5" version="1">Ordinary Scroll</content>
+  <content contentuid="hcbd59f5bgf62fg2384gbb1ag937db0baa278" version="1">Very ordinary scroll.</content>
+  <content contentuid="h49528750g979fga97fg95e0g4f1c6547e442" version="1">Ordinary Gem</content>
+  <content contentuid="hba1c2637gb0d5g1d9dgb795ga9dad3fa2f0c" version="1">Very ordinary gem.</content>
+  <content contentuid="h43f9a9b9gf108g8eccg346eg86107ed63adc" version="1">Ordinary Buff</content>
+  <content contentuid="hfd38e720g4e1agca0bg4a59g44cf3a92f8a5" version="1">Very ordinary buff.</content>
+  <content contentuid="hd35683c4g1de2ge012gdbcfg18561b02c50b" version="1">∞</content>
+  <content contentuid="h7eba1faeg878bg3392g496dgfab2094c297a" version="1">You can't shake the feeling that darkness seeps out of this heavy, orb-like stone.</content>
+  <content contentuid="h359c6499g4226ga798g8ef4gaf3174ca2f57" version="1">Dark Currents</content>
+  <content contentuid="h2a679e10g710fg0d4dg514egd856660e88bc" version="1">Dissolve into the ground and emerge from the shadows at a different location.</content>
+</contentList>

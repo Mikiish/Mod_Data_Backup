@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="afc508da-dd39-4821-b0af-9955e5e2f087">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f241a90-7ae6-4383-974e-b90d968cdf49" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOW_BLADE_EFFECTONLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e113493-f9d4-4f4d-bebe-667c3643b57c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha418c804g991fg62e9gd35fgd8285dd12334" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb85b745g4980gb0d1g094fg6b9ae72fc60e" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADOW_BLADE_EFFECTONLY" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Control" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b33de017-bac5-4611-947f-9ce306527220" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHA_SHADOW_BLADE_EFFECTONLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7f241a90-7ae6-4383-974e-b90d968cdf49" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4, Cold)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

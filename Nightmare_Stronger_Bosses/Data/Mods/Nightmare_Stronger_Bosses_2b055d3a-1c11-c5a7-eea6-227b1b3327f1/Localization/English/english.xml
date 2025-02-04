@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="he5418706g8377gfb55g3c9ag8fe3206a9777" version="3">SB:DW</content>
+  <content contentuid="h680379b3g5a69g6532g23aeg27d89d4882ed" version="4">&lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Stronger Bosses&lt;/LSTag&gt;: When this entity fall down to 0 HP, it stays at 1 HP and is &lt;LSTag Type="Status" Tooltip="INVULNERABLE"&gt;invulnerable&lt;/LSTag&gt; for the rest of its turn.</content>
+  <content contentuid="h02500c9bga8e0g863eg3574g3da385d61a83" version="1">Death Ward</content>
+  <content contentuid="h75cc521agaaeagfa07g7ebage6e8778336b6" version="1">The next time damage would reduce the affected entity to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, it remains conscious with [2] hit point left.</content>
+  <content contentuid="he0367f09g108fg74b9g1986g3cd650dd62c6" version="1">Death Ward</content>
+  <content contentuid="h378c573agac8cgf68ag0077ga21d76b4aa25" version="3">SB:CC</content>
+  <content contentuid="h719562e5g55fagdf93g0ffcg311a4fc4dd7d" version="3">&lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Stronger Bosses&lt;/LSTag&gt;: This entity is immune to &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysing&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISON_CRAWLER_MUCUS_CONDITION"&gt;Incapacitate&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="DOMINATE_PERSON"&gt;Charm&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="POLYMORPH_SHEEP"&gt;Polymorph&lt;/LSTag&gt;.</content>
+  <content contentuid="hd361e6bag987fge78fg59f1gd3505558765b" version="1">Paralysed</content>
+  <content contentuid="ha87a732dgd887g8351gb1dbg2b3915859644" version="1">Affected entity can't move or take actions, bonus actions, or reactions.&lt;Br&gt;&lt;Br&gt;Attacks against the entity are always &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; if the attacker is within [1].</content>
+  <content contentuid="h6fcccc29g3935g6373g5612g6a5d5e78bba3" version="3">Your reflexes are enhanced by the light weight of your equipment. If you are not wearing Medium or Heavy Armour and have nothing equipped in your Off-Hand, you gain a +2 bonus to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+  <content contentuid="h71ab5fffg12a1gff94gf75cg0b3f2b244b5c" version="1">SB: Death Ward</content>
+  <content contentuid="ha158422bgbca8ge411g4ce1g406e1c319cbd" version="1">This entity is guarded against Death. If an attack would drop it below [1] HP, this entity stays invulnerable with [2] HP for [3] turns insteed.</content>
+  <content contentuid="h4453a7e4g08a9g9514g3e89g9a70713f44e1" version="1">SB: Control Immunity</content>
+  <content contentuid="h7071d7c6ga133gc667g1a56gc469ce717971" version="1">Stronger Bosses</content>
+  <content contentuid="h17f5164bg43e8g4868g865agc7945f1e511c" version="1">This entity is stronger, in a way or another.</content>
+  <content contentuid="he44a8c64g0d0cg9a2bg7361gde49338a7489" version="1">%%% HIDDEN</content>
+  <content contentuid="h330c216dgc077gf369g521dgd2fea7418bfe" version="1">Invulnerable</content>
+  <content contentuid="h72e4150bgb939g152dga220g74d68b43c90d" version="2">This entity is immune to all damage type, all kind of Crowd Control and cannot be moved against its will.</content>
+  <content contentuid="h82832448g4d89g3749g773fg2c4be3e0469a" version="1">%%% EMPTY</content>
+  <content contentuid="hee942c3dg2d34gc261g900fge14534c7a8a2" version="1">Death Ward</content>
+  <content contentuid="hfe9b874dgd5cdgdaecg4b14g362f0fc06b6c" version="1">Protect a creature from death. The next time damage would reduce it to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, it remains conscious with 1 hit point left.</content>
+  <content contentuid="hb8585d2agc9fcgf5c5gc3a0g23a56adc42ec" version="3">Gate Master Ao'ka</content>
+  <content contentuid="hd4edcfcag9840g4614g420bgb3d470664743" version="3">Gate Master Wra'ji</content>
+  <content contentuid="h28a5e9adg156bgb2aegb22cga5bfa108f898" version="3">Gishra Liz'rah</content>
+  <content contentuid="h3ddec22eg878ag7088g2574g9a4fdd51996e" version="2">Increase &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; of nerby Giths by [1], and give theim &lt;LSTag Type="Status" Tooltip="SEE_INVISIBILITY"&gt;True Sight&lt;/LSTag&gt;.</content>
+  <content contentuid="h9a4e37f3g1a29g3066gc99dg824e1acc17af" version="1">Astral Elk Aspect</content>
+  <content contentuid="hce16d29cgd1c3gdfcdg4cf5gc7766b1d5e6b" version="1">Astral Elk</content>
+  <content contentuid="hc03ee339g2e76gb241g3363g9838cb60688d" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; increased by [1], as long as the affected entity stays within [2] of the Gishra.</content>
+  <content contentuid="ha8009748g3386gbb13g15e0g678813cb34a1" version="1">SB: God</content>
+  <content contentuid="h28a1be57gdaa5g96b2g5f9cg4d30437a1424" version="1">This entity is a God or an avatar of a God. Better not mess-up with these.</content>
+  <content contentuid="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="1">SB: Strong Ally</content>
+  <content contentuid="h648eb8a2g3bc2g6a2bg2eecg185eec60c422" version="1">This entity has additionnal bonuses.</content>
+  <content contentuid="hf2819b4ag5495gfebdg6a7fga724379fa91e" version="1">SB: Little Chief</content>
+  <content contentuid="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="1">This entity is leading the pack and gets additionnal bonuses.</content>
+  <content contentuid="he7133fd1gc619g7f39g5aceg7a7d862115f9" version="1">SB: Stuns</content>
+  <content contentuid="h9006f4acgaec4gf490g4863g94e3b78845f2" version="1">This entity has additionnal bonuses.</content>
+</contentList>

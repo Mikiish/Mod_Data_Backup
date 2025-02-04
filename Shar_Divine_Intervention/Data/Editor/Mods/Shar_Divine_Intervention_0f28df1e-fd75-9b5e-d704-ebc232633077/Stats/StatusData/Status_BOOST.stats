@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f7199af-e908-44bd-a958-195c27dd6f2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOWFIEND_NIGHTMARE_STATUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h653ccf29gb23bg02f9g032eg38fe16095fbd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he13d7588ge81egb8cegff15g3731bacd4c0c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_AbsorbIntellect" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADOWFIEND_NIGHTMARE_STATUS" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('BLINDED')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="372f12fd-d95c-43ca-9cc6-096ecf421704" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d93852de-5e00-407d-93d3-9780e805dd96" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOWFIEND_COMMAND_DEVOREDREAMS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="481af2a9-8780-4d66-a1b3-64c8a69df692" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8be7784cg6778ga890gdaa0g77695ccc7fe3" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADOWFIEND_COMMAND_DEVOREDREAMS" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Command_DevourDream_Summon);UnlockSpellVariant(SpellId('Target_Command_DevourDream_Summon'),ModifyIconGlow())" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Command_DevourDream_Summon')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="143531b5-2f88-4425-80b1-ba36be34f6fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="MADNESS_DEVOURDREAMS_SUMMON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="389d7852-e044-4385-8a11-01ac02f01608" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="LoseControl;OverheadOnTurn;InitiateCombat;BringIntoCombat;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73c1bd79-6f20-4ff8-b38c-257e643dc4e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="MADNESS_DEVOURDREAMS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="389d7852-e044-4385-8a11-01ac02f01608" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="LoseControl;OverheadOnTurn;BringIntoCombat;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Nightbringer_Shar_Madness" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AiArchetypeOverride(madness,99);IF(HasStatus('SCL_SHADOW_CURSE_UNDEAD_NEW')):StatusImmunity(DIVINE_INTERVENTION_SHAR)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59cf014c-49f0-4c45-8fc8-6d78cb99350c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSING_OF_THE_NIGHTBRINGER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c136dedgb109g6956gc071g35d19fe3e2ce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h70bc4b28g086dg43efgd603gfabd1b3bcac1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineIntervention_Attack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSING_OF_THE_NIGHTBRINGER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(SHAR_FRIENDS);StatusImmunity(SCL_SHADOW_CURSE_UNDEAD);StatusImmunity(SHADOW_CURSED_VINES);StatusImmunity(MADNESS_DEVOURDREAMS);StatusImmunity(DIFFICULT_TERRAIN_VINES);StatusImmunity(SG_Blinded)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead;IgnoreResting;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DivineIntervention_SharFriends;LOW_HouseOfGrief_Cultists_Sight" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0a9ffd3-41f3-4a16-bd97-c37e403c920f" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5990d8f0g6f49g76ecga77bg07186bb1a074" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9372c71bg0f39g681egb16cg74fc06a5fe0e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_NetherTentacle_Grapple" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead() and not Tagged('SHADOW')):DealDamage(Target.CurrentHP/2-3,Radiant);IF(not Dead() and Tagged('SHADOW')):DealDamage(Target.CurrentHP/4-6,Radiant);IF(not Dead()):DealDamage(1d4, Radiant);IF(Dead()):RemoveStatus(DIVINE_INTERVENTION_SHAR);IF(not Combat() and not Dead()):RemoveStatus(DIVINE_INTERVENTION_SHAR);IF(not Combat() and not Dead()):ApplyStatus(DIVINE_INTERVENTION_SHAR_COUNTDOWN,100,3)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SCL_SHADOW_CURSE_RISING_SHAR,100,2+1d4);ApplyStatus(SCL_SHADOW_CURSE_RISING_SHAR_PASSIF,100,3)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="372f12fd-d95c-43ca-9cc6-096ecf421704" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="BlockRegainHP(Living)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MADNESS_DEVOURDREAMS,100,-1)" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4243a93-602d-4e54-ade3-2dea494b7b59" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_COUNTDOWN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e0a9ffd3-41f3-4a16-bd97-c37e403c920f" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_COUNTDOWN" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead() and not Tagged('SHADOW')):DealDamage(Target.CurrentHP/2-3,Radiant);IF(not Dead() and Tagged('SHADOW')):DealDamage(Target.CurrentHP/4-6,Radiant);IF(not Dead()):DealDamage(1d4, Radiant)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="SetStatusDuration(SCL_SHADOW_CURSE_RISING_SHAR, 2, Add);SetStatusDuration(SCL_SHADOW_CURSE_RISING_SHAR_PASSIF, 2, Add)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not Dead() and RemoveCause(StatusRemoveCause.TimeOut)):SwitchDeathType(Explode);IF(not Dead() and RemoveCause(StatusRemoveCause.TimeOut)):DealDamage(999)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18d1ea76gf0c7g6313gd6b5ga90f90c307ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f4f0737g63a7g3ddeg1c0agf63285bc527c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Death" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79d17d0d-fef2-4005-a7f8-c226db4ce339" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_APPLIER_TEST" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e072e95gaaa9g6dd1g296fgb59041353f30" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81af0fc3g1023g8537gae54g9de5360e967c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_APPLIER_TEST" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(not HasStatus('BLESSING_OF_THE_NIGHTBRINGER')):ApplyStatus(BURNING);TARGET:IF(not HasStatus('SCL_SHADOW_CURSE_UNDEAD') and not HasStatus('SCL_SHADOW_CURSE_UNDEAD_NEW') and Character() and not HasStatus('LOW_HOUSEOFGRIEF_SHARSFAVOUR') and not Tagged('CLERIC_SHAR') and not Tagged('PALADIN_SHAR') and not Tagged('SHAR') and not Tagged('SHAR_FRIENDS') and not Tagged('SHADOW')):ApplyStatus(DIVINE_INTERVENTION_SHAR_FINAL, 100, -1)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="4e57c242-72bf-49ed-9f94-470568092bf1" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems;DangerousForPathfinding" enumeration_type_name="AuraFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="BringIntoCombat;InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0447aae6-ed17-436c-b916-8a931cae4397" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_FINAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_FINAL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71b06df9gfb46g1c1cgdf3eg7210cf4f76bb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a714a2fgfe6fg23c2gf5cfg16d60e56710b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Radiant)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="OnApplyConditions" type="StringTableFieldDefinition" value="not HasStatus('MADNESS_DEVOURDREAMS') and not HasStatus('DIVINE_INTERVENTION_SHAR') and not HasStatus('SCL_SHADOW_CURSE_UNDEAD_NEW')" />
+        <field name="ForceStackOverwrite" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceConsumeMultiplier(Movement, 2,0);MovementSpeedLimit(Walk)" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d4,Radiant)" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, 12)" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH')):ApplyStatus(DIVINE_INTERVENTION_SHAR,100,-1);IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH')):ApplyStatus(MADNESS_DEVOURDREAMS,100,-1);IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH')):ApplyStatus(DIVINE_INTERVENTION_SHAR_FINAL_TECH,100,1)" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH')):DealDamage(1d4,Radiant,Magical);IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH')):ApplyStatus(DIVINE_INTERVENTION_SHAR_FINAL_TECH,100,1)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, 12)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH') or StatusDurationLessThan(context.Source, 'DIVINE_INTERVENTION_SHAR_FINAL_TECH', 0.1)):ApplyStatus(DIVINE_INTERVENTION_SHAR,100,-1);IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH') or StatusDurationLessThan(context.Source, 'DIVINE_INTERVENTION_SHAR_FINAL_TECH', 0.1)):ApplyStatus(MADNESS_DEVOURDREAMS,100,-1);ApplyStatus(DIVINE_INTERVENTION_SHAR_FINAL_TECH,100,1)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DIVINE_INTERVENTION_SHAR_FINAL_TECH') or StatusDurationLessThan(context.Source, 'DIVINE_INTERVENTION_SHAR_FINAL_TECH', 0.1)):DealDamage(1d4,Radiant,Magical);ApplyStatus(DIVINE_INTERVENTION_SHAR_FINAL_TECH,100,1)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5f2da987-e24e-49d0-b80b-0a062b169d30" />
+        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="71aa86de-25b6-4e87-9ed8-a8fffb614661" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2910adb4-371b-4a39-95dc-3753df585bed" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_FINAL_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbf8984egad00gc6e4g9d0ag422b0bd41542" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIVINE_INTERVENTION_SHAR_FINAL_TECH" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef4c5f56-d168-4cc9-9454-d8f83f1cfbfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEAD_SHAR" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha33947ffgeef5g0a8dg98ebg1924b1f3d2dc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5294e047g714eg0cb8g473eg4f241ee62717" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DEAD_SHAR" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56230ed2-a325-4c33-9d51-80bdca07dd87" />
+        <field name="Name" type="NameTableFieldDefinition" value="SCL_SHADOW_CURSE_RISING_SHAR_PASSIF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h869653f7g9f9cgf992g8760g91612f40d7a1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85dde00dga809g688ag1ca0g7b6d016f8935" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SCL_SHADOW_CURSE_RISING_SHAR_PASSIF" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Nightbringer_Shar_Rise" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6dc38376-0103-4b1a-ad40-ac406045e0fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONTROL_UNDEAD_SHAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8d985bc-07bd-4af8-8d9f-3c3ec731d3ff" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONTROL_UNDEAD_SHAR" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef784bb9-c9b7-46bf-9f4a-f787b7b8ef6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5ee6c6a9ge7e9g97b3g9109g0ae0638faa47" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54120872gb92dg7235gb3c0gdc8f752d0497" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead() and Tagged('CORRUPTED_IDOL_OWNER')):ApplyStatus(HOLY_CANDLE_STATUS)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a9cf5cbf-4247-4b9a-b81b-e3af4982ff62" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="676ea18e-9287-4438-81c0-573affdf5944" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9344255bg519agcaa9gc304gd7da6f1d6023" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5703710cg9763g0b61g55bbg6b10d53805e4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DivineIntervention_Shar_Target);UnlockSpell(Target_BlessingOfTheNightbringer);UnlockSpell(Target_DivineIntervention_ClearVines)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a182637-3775-476a-b7bf-340877d99b75" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA_A" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cb34df0gcc4bg413dga76ag421fe853aba1" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA_A" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Tagged('NIGHTBRINGER_HOLY_CANDLE') or (HasStatus('HOLY_IDOL_TRIGGERSTATUS') and HasStatus('HOLY_CANDLE_STATUS_C', context.Source) and HasStatus('HOLY_CANDLE_STATUS_E', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_A', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_B', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_D', context.Source))):ApplyStatus(HOLY_CANDLE_STATUS_A)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d547753gc2f1gf4b4g46d4gb48068289bc7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0b42945-47c4-4c50-b54c-561addeeb7b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA_B" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a182637-3775-476a-b7bf-340877d99b75" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h04624e48ga62dgfeccg840cgd1dbb788faa8" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA_B" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Tagged('NIGHTBRINGER_HOLY_CANDLE') or (HasStatus('HOLY_IDOL_TRIGGERSTATUS') and HasStatus('HOLY_CANDLE_STATUS_C', context.Source) and HasStatus('HOLY_CANDLE_STATUS_D', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_A', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_B', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_E', context.Source))):ApplyStatus(HOLY_CANDLE_STATUS_B)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4475e4e-66ad-416b-957d-05dd1857aafb" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA_C" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a182637-3775-476a-b7bf-340877d99b75" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bc53ff6gb5degfd92g2987g9c683c637915" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA_C" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Tagged('NIGHTBRINGER_HOLY_CANDLE') or (HasStatus('HOLY_IDOL_TRIGGERSTATUS') and HasStatus('HOLY_CANDLE_STATUS_A', context.Source) and HasStatus('HOLY_CANDLE_STATUS_B', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_C', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_D', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_E', context.Source))):ApplyStatus(HOLY_CANDLE_STATUS_C)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a09db0f-820d-41f9-a22c-bb33ac281bfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA_D" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a182637-3775-476a-b7bf-340877d99b75" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he665873ege136g0c72g8b4eg3bf48b4befff" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA_D" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Tagged('NIGHTBRINGER_HOLY_CANDLE') or (HasStatus('HOLY_IDOL_TRIGGERSTATUS') and HasStatus('HOLY_CANDLE_STATUS_B', context.Source) and HasStatus('HOLY_CANDLE_STATUS_E', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_A', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_C', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_D', context.Source))):ApplyStatus(HOLY_CANDLE_STATUS_D)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f97ba2ab-7939-410a-b9ab-50f19fc646e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_AURA_E" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a182637-3775-476a-b7bf-340877d99b75" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4af7e25bgb55bge356g9d0bg505a3a1bab1a" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_AURA_E" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Tagged('NIGHTBRINGER_HOLY_CANDLE') or (HasStatus('HOLY_IDOL_TRIGGERSTATUS') and HasStatus('HOLY_CANDLE_STATUS_A', context.Source) and HasStatus('HOLY_CANDLE_STATUS_D', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_B', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_C', context.Source) and not HasStatus('HOLY_CANDLE_STATUS_E', context.Source))):ApplyStatus(HOLY_CANDLE_STATUS_E)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e6bb2b7-bf83-4b28-bbd7-8f78afbe0bbc" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS_A" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd50e193bg8da6g3c47gbac3ga828552accc0" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS_A" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hedcb278eg6efbg7967g8d1agdd0389d2972c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a25f611d-a0f9-4fc2-a3d8-f2486ec47773" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS_B" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e6bb2b7-bf83-4b28-bbd7-8f78afbe0bbc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h49de5852g72bfg17e1gcd6fg99cca1af0a86" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS_B" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3df56dd4-fd19-4b02-946f-df64ab3619e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS_C" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e6bb2b7-bf83-4b28-bbd7-8f78afbe0bbc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69db6bf2g041dgeebfg87a8g35a7dfc3908e" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS_C" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ef81ff9-1a3e-4dfb-ab9d-c28b521d8d95" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS_D" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e6bb2b7-bf83-4b28-bbd7-8f78afbe0bbc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b598f09g06d8g1843g4c5bg28e67f59143a" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS_D" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34a64fa9-dca4-4efa-85b3-dc07f2148f6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUS_E" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e6bb2b7-bf83-4b28-bbd7-8f78afbe0bbc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf70cb775gf445gbf5ag5e97gb49c3d5b6176" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUS_E" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02eda5a8-aec2-45a3-b6b9-9d26803e8d00" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_ERASER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he289830cg4cb5g74cag8903gcd3fc51f8cd7" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_ERASER" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="75951dd7-54d5-41d3-abdb-b44cb0e6aedb" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_STATUSEFFECT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac34e873g1df5gdbf8gc878g59f4a9e5b33c" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_STATUSEFFECT" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a9cf5cbf-4247-4b9a-b81b-e3af4982ff62" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79e32645-71f0-4238-9e8d-4ab75e5a3290" />
+        <field name="Name" type="NameTableFieldDefinition" value="CCSTATUS_SHAR" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c0dd296gdac6g7cc3gc99bg1143a10356cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbe30cd88gfe02g81dfg986cg72758fe9cd3f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fbf927d0-f3f9-4f2e-9ef3-78d5eedf674c" />
+        <field name="Name" type="NameTableFieldDefinition" value="CCSTATUS_SELUNE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he36bf874g418cg2d8fg0897g9e0a3db875db" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c4cadffgb974gd1a8g5f2ag9e98f0de56ad" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d51c106c-33a6-426e-9387-fa92c595a113" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_IDOL_TAGGER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b34cbceg5cc6g61c2g5161g5d2472be430b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha603ccf8g3f05g843dge8fag9391934aa25b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_IDOL_TAGGER" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9e863d8f-a1f5-4f68-88ca-ddb56828c8d8" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HOLY_IDOL_TRIGGERSTATUS,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c3874f5-607f-4145-a178-489959ebccf8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_IDOL_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef784bb9-c9b7-46bf-9f4a-f787b7b8ef6b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he63ee17egb98fg3638g4ff7gd31bc78352d6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32271795g01bag3cf2gda03g1030a0ecc7a7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_IDOL_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead()):ApplyStatus(HOLY_IDOL_AURA_PASSIVE)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9e863d8f-a1f5-4f68-88ca-ddb56828c8d8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1601adbd-65d7-4056-a8c0-04bf612a1a61" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_IDOL_AURA_PASSIVE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_IDOL_AURA_PASSIVE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Shar_Moonbeam)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9a28d21bg0d85g27a3g0c70g5bd008ff049c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h288ff492g7752g92e8ga0c9g8bd4bb778638" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6adac6e-0162-4045-bb86-f6255ea4e4be" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_IDOL_TRIGGERSTATUS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42215335gaab6g3b4dg85dcgc4f099c7d13a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84a885e2gc01egcce9gc41ag28698d475421" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_IDOL_TRIGGERSTATUS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9e863d8f-a1f5-4f68-88ca-ddb56828c8d8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1dc92722-00f1-486e-a158-96ead922361f" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_TAGGER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d51c106c-33a6-426e-9387-fa92c595a113" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h218b52e8g876egff71g97e7g0e325216c695" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h061e5a2cgf7b1gb3cdgd1b9g685307fdfa09" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_TAGGER" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HOLY_CANDLE_TRIGGERSTATUS,100,-1)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a9cf5cbf-4247-4b9a-b81b-e3af4982ff62" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3cfe17f9-bdb0-4551-8d78-886fa74493d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_TRIGGERSTATUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6adac6e-0162-4045-bb86-f6255ea4e4be" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h185e46c1geb34g52a2g8f55gf584ba72de62" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_TRIGGERSTATUS" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a9cf5cbf-4247-4b9a-b81b-e3af4982ff62" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1cf774d-0816-4b89-b244-a1ef95792404" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_CANDLE_GIFTFORU" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69fab697gafd9g41d9g65b8g0b14ef4cfcac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5b995285g5c87g849eg6203gc928a8cdb6ef" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_CANDLE_GIFTFORU" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Shar_GiftForU_A);UnlockSpell(Target_Shar_GiftForU_B);UnlockSpell(Target_Shar_GiftForU_C);UnlockSpell(Target_Shar_GiftForU_D);UnlockSpell(Target_Shar_GiftForU_E)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53fd8dbf-3d59-44eb-bbda-d89b06bc1ca8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_GEM_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1c3874f5-607f-4145-a178-489959ebccf8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95186ce5gc9e5g2699gfb00ga5e5dbf27615" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf680a465g529dg0dddgd143g5b5fcda44250" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_GEM_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead()):ApplyStatus(HOLY_GEM_AURA_PASSIVE)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a9cf5cbf-4247-4b9a-b81b-e3af4982ff62" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a2416be-a630-428b-9fef-d9c90c1aad0e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLY_GEM_AURA_PASSIVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1601adbd-65d7-4056-a8c0-04bf612a1a61" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLY_GEM_AURA_PASSIVE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Shar_Voidbeam)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="409e5864-bd8d-441c-b745-7bea0b719215" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVISIBLE_SCROLL_HELPER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVISIBLE_SCROLL_HELPER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Invisible)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

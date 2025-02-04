@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d99a1901-8843-47eb-9db4-e7d20d702146" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_DEATH_WARD_IMMUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed5ce216-bfcb-4d55-91b6-7fa3b451fa7f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h330c216dgc077gf369g521dgd2fea7418bfe" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72e4150bgb939g152dga220g74d68b43c90d" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_GlobeOfInvulnerability" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_DEATH_WARD_IMMUNE" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IsInvulnerable;IsInvulnerableVisible;ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fa4d3d2c-1784-44e7-974a-3cf813d92c9f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7aecb30d-308c-4159-a5c0-69ca62227763" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_STATUESIMMUNITY" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h378c573agac8cgf68ag0077ga21d76b4aa25" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h719562e5g55fagdf93g0ffcg311a4fc4dd7d" version="3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_PARALYZEDIMMUNE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Incapacitated);StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Stunned);StatusImmunity(SG_Polymorph);StatusImmunity(SG_Charmed);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4115619d-92e6-4046-8b81-3cafc7dd6646" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_GITHELKASPECT_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57dd5566-8377-4316-a8a1-5ab5b63785f0" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ddec22eg878ag7088g2574g9a4fdd51996e" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(3)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_GITHELKASPECT_AURA" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Tagged('INANIMATE')):ApplyStatus(NIGHTMARE_GITHELKASPECT_STATUS);IF(Ally() and not Tagged('INANIMATE')):ApplyStatus(SEE_INVISIBILITY)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9a4e37f3g1a29g3066gc99dg824e1acc17af" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96e7cc39-b163-4487-a9f6-a65ef7d5b689" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_GITHELKASPECT_STATUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9b7dfd5-4109-49d0-921a-12e48bd3b206" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_GITHELKASPECT_STATUS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce16d29cgd1c3gdfcdg4cf5gc7766b1d5e6b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc03ee339g2e76gb241g3363g9838cb60688d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(5)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

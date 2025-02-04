@@ -1,0 +1,7 @@
+new entry "NIGHTMARE_PARALYZED"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "PARALYZED"
+data "StackId" "NIGHTMARE_PARALYZED"
+data "StatusGroups" "SG_Incapacitated;SG_Condition"
+

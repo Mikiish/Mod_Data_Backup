@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b33327cb-c4eb-40bc-9028-cb8b9b2e1d2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FIGHTING_STYLE_DAGGER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h91bce5afg4af5g3248g0da1ge14964c86c43" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb687e8begd09cgd74egbe81g12e8fd5fbe43" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FIGHTING_STYLE_DAGGER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Poison_Simple_Dagger;Poison_Drow_Dagger;Poison_CrawlerMucus_Dagger;Poison_Malice_Dagger;UNI_Poison_Brewer_Dagger;Toxin_SerpentVenom_Dagger;Toxin_Wyvern_Dagger;Toxin_PurpleWorm_Dagger;Oil_Bane_Dagger;Oil_Frost_Dagger;Oil_Reduce_Dagger;Oil_RemoveResistanceFire_Dagger;Oil_Combustion_Dagger" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0f6c592-180c-461d-b8f4-cd7d4d0bc406" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_SHAR_AURA_OF_MURDER_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e783764-5b70-4548-ba2c-f6def529929c" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy(context.Target,context.Source) and not Self() and Character()):ApplyStatus(MAG_BHAALIST_AURA_OF_MURDER)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1929cb09-197f-4870-abac-e544ff6c81bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="COL_RESONANCESTONE_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he76b6618gd176g32c6ga528gc82e9929a8c1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3acc4a8fg26d4gbfaeg98fbga1f1f760b369" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Character() or Tagged('CANBECALMED')) and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT')):ApplyStatus(COL_RESONANCESTONE_BUFF)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="0e2c15d8-61cf-45c8-bf87-e486bd5293e3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex_Wisdom" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d01da67-f5be-4ad0-8d68-3a3f98ef6df3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOWBLADE_DELETE_TRIGGER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdea3b27cg891fg6828g2c39g15bbed0bd0aa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff03bf31g9b3eg2f56gaaf8gf655db832b9d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Disintegrate" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHADOWBLADE_DELETE_TRIGGER" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="36676426-67da-44d0-921e-a7e78089cd3d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d6, Force)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

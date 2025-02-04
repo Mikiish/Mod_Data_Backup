@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="012fa9ca-257f-4f4a-887d-fbc94723a3fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_ShadowBlade_Shar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3c99e096-8dc9-4a7a-bb4d-34e884f45975" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="2d4" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="ShadowBlade_Passive" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ad5e02dd-665f-439b-81d7-38b6de66cdad" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);CannotBeDisarmed()" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WEAPON_COATED_WITH_POISON;POISON_BASIC;POISON_SERPENT_VENOM;POISON_WYVERN;POISON_WYVERN_DIPPED;POISON_PURPLE_WORM;DIPPED_FIRE;DIPPED_POISON;DIPPED_WATER" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Finesse;Light;Melee;Dippable;Thrown" enumeration_type_name="WeaponFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fd462cf-e0f0-4ea4-aa06-940f656d1106" />
+        <field name="Name" type="NameTableFieldDefinition" value="TWN_SharDagger_Rare" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d670277-0047-4176-be5f-c7439d3845be" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="81764c3c-c7a9-49a7-b145-d31ffd5aebe1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_ShadowStrike_Instant_Shar)" />
+        <field name="BoostsOnEquipOffHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShadowStrike_Instant_SharOff)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="LOW_HouseOfGrief_Cultists_Sight" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89f0f2ca-27a4-491d-ba4a-55e99dc79c9e" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_SHA_SharBlessing_Spear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2922cf49-9afa-4eb5-8397-519aecb72464" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="61f31bf6-47ec-41e1-9385-2f6c26facc87" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SHA_SharsBlessing_Darkness)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Rush_SpringAttack);UnlockSpell(Target_CripplingStrike);UnlockSpell(Target_SHA_Apprentice_DaggerOfShar_Spell)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_SHA_SharBlessing_Spear_Passive;LOW_HouseOfGrief_Cultists_Sight" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="MAG_SHA_SHAR_BLESSING_SAVING_THROW_ADVANTAGE_TECHNICAL" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical)" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98ccf770-7c89-4266-b2e0-b1f8f0587840" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_SHA_SharBlessing_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="63bae374-a00f-4712-9749-d73aed58fb1e" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.05" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DEN_Apprentice_DaggerOfShar_Spell);UnlockSpell(Target_SHA_SharsBlessing_Darkness)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="DEN_Apprentice_DaggerOfShar_Passive;LOW_HouseOfGrief_Cultists_Sight" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b7c0324-936e-4502-8940-39d3077df86c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_WYR_Orin_Bhaalist_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3c99e096-8dc9-4a7a-bb4d-34e884f45975" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d90abf24-3c4e-4bbf-84aa-def05ca9962a" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_WYR_Orin_Bhaalist_Dagger_ImprovedCritical_Passive" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value=" UnlockSpell(Target_MAG_TrueStrike)" />
+        <field name="BoostsOnEquipOffHand" type="StringTableFieldDefinition" value=" AC(1)" />
+        <field name="PassivesMainHand" type="StringTableFieldDefinition" value=" MAG_TheClover_Mainhand_Passive" />
+        <field name="PassivesOffHand" type="StringTableFieldDefinition" value=" MAG_TheClover_OffHand_Passive" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

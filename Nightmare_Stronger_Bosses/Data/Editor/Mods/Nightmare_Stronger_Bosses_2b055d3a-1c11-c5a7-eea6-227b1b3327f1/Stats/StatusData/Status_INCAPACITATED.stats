@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ef8f982-4eac-4b3c-a27e-2bccb7dd0384" />
+        <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_PARALYZED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bfab9815-2261-4720-8da4-8b98dc6b3a22" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_PARALYZED" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

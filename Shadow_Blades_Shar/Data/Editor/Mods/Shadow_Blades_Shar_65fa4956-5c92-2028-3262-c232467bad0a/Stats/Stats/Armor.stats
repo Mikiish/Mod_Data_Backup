@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e92f9ac-6e16-42ec-9fd9-4fab411ee86a" />
+        <field name="Name" type="NameTableFieldDefinition" value="_TWN_a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04665e90-1fbe-43ba-86db-cc6a62e1cfb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Shadow_ShadowBlade_Ring" />
+        <field name="MinLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="360b5789-c9c8-45de-8242-e71de4375e36" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8cc165d7-0372-4f4b-b4ac-f424f4069af1" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ShadowBlade)" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="MAG_SHADOW_BLADE_RING_TECHNICAL_SHAR" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="3e8b9d6e-7e83-4fd7-bc99-bb4956d67a2a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0469ecea-6209-4577-a261-5809cecb5e6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_JusticiarArmor_Gloves" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0c54019-a8fc-49f3-9e1f-d6b8a1fb1844" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="518a925b-eb77-44e7-999d-e8c195b2261d" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_DarkJusticiarGloves_Passive;LOW_HouseOfGrief_Cultists_Sight" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

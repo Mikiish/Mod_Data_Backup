@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="65fa4956-5c92-2028-3262-c232467bad0a"/>
+            <attribute id="Name" type="LSString" value="Shadow_Blades_Shar"/>
+            <attribute id="UUID" type="LSString" value="25b4f46f-9478-d485-4dda-a6e000b727a4"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

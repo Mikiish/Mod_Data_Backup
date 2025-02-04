@@ -1,0 +1,10 @@
+new entry "SCL_SHADOW_CURSE_RISING_SHAR"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "SCL_SHADOW_CURSE_RISING"
+data "StackId" "SCL_SHADOW_CURSE_RISING_SHAR"
+data "TickFunctors" "GROUND:CreateSurface(3,10,DarknessCloud);GROUND:CreateSurface(3,-1,ShadowCursedVines)"
+data "StatusPropertyFlags" "ApplyToDead"
+data "OnApplyFunctors" "RemoveStatus(RAGE);BreakConcentration();GROUND:CreateSurface(3,10,DarknessCloud);GROUND:CreateSurface(3,-1,ShadowCursedVines)"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.TimeOut)):Resurrect(100,100);IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(SCL_SHADOW_CURSE_UNDEAD_NEW, 100, -1);IF(RemoveCause(StatusRemoveCause.TimeOut)):ResetCombatTurn();IF(RemoveCause(StatusRemoveCause.TimeOut)):RestoreResource(Movement, 100%, 0);IF(RemoveCause(StatusRemoveCause.TimeOut)):RestoreResource(BonusActionPoint, 100%, 0)"
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="9bc5fdb5-ac15-e1ba-4329-b416b82d1e91"/>
+            <attribute id="Name" type="LSString" value="SB_Shar_ThrowDagger"/>
+            <attribute id="UUID" type="LSString" value="c6b41e00-a249-7564-4bde-08fc802da010"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

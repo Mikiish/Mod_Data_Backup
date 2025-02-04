@@ -1,0 +1,16 @@
+new entry "SHADOW_BLADE_EFFECTONLY"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "SHADOW_BLADE"
+data "DisplayName" "ha418c804g991fg62e9gd35fgd8285dd12334;1"
+data "Description" "hbb85b745g4980gb0d1g094fg6b9ae72fc60e;1"
+data "Icon" "GenericIcon_Intent_Control"
+data "StackId" "SHADOW_BLADE_EFFECTONLY"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+new entry "SHA_SHADOW_BLADE_EFFECTONLY"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "SHADOW_BLADE_EFFECTONLY"
+data "Boosts" "WeaponDamage(1d4, Cold)"
+

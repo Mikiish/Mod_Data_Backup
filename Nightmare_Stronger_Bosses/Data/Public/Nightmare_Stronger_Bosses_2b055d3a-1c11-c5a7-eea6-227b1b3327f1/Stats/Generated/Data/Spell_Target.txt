@@ -1,0 +1,14 @@
+new entry "Target_DeathWard_Nightmare"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_DeathWard"
+data "TargetConditions" "Character()"
+data "CycleConditions" "not Dead()"
+data "UseCosts" "ActionPoint:1"
+
+new entry "Target_LOW_OpenGate_Melee"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_LOW_OpenGate"
+data "TargetRadius" "3"
+
