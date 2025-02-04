@@ -1,0 +1,124 @@
+INIT:
+DB_ThrownBlade_Initialized(0);
+DB_ThrownBlade_ThrownObjects((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+
+DB_ThrownBlade_ArchetypeToApply("ranged");
+DB_ThrownBlade_ArchetypeToApply("ranged_ignoresurfacedamage");
+DB_ThrownBlade_ArchetypeToApply("ranged_SCL");
+DB_ThrownBlade_ArchetypeToApply("goblin_ranged");
+DB_ThrownBlade_ArchetypeToApply("ranged_smart");
+DB_ThrownBlade_ArchetypeToApply("orthon_ranged");
+DB_ThrownBlade_ArchetypeToApply("rogue");
+
+
+KB:
+IF
+LevelLoaded(_)
+AND
+DB_ThrownBlade_Initialized(0)
+THEN
+TimerLaunch("ThrownBlade_InitDelay", 0);
+
+IF
+TimerFinished("ThrownBlade_InitDelay")
+THEN
+NOT DB_ThrownBlade_Initialized(0);
+DB_ThrownBlade_Initialized(1);
+//INIT
+
+
+IF
+OnThrown(_ThrownObject, (ITEMROOT)UNI_HUM_ShadowBlade_Nightcloak_13af37d7-307c-49f1-bd7d-a3c7f030faa8, _Thrower, _, _, _, _)
+AND
+DB_Players((CHARACTER)_Thrower)
+AND
+HasActiveStatus(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER", 0)
+THEN
+ApplyStatus(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER", 1.0, 1, _ThrownObject);
+DB_ThrownBlade_ThrownObjects(_ThrownObject);
+NOT DB_ThrownBlade_ThrownObjects((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+OnThrown(_ThrownObject, (ITEMROOT)UNI_HUM_ShadowBlade_Nightcloak_13af37d7-307c-49f1-bd7d-a3c7f030faa8, _Thrower, _, _, _, _)
+AND
+DB_Players((CHARACTER)_Thrower)
+AND
+HasActiveStatus(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER", 1)
+THEN
+DB_ThrownBlade_ThrownObjects(_ThrownObject);
+NOT DB_ThrownBlade_ThrownObjects((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusApplied(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER", _Thrower, _)
+AND
+DB_Players((CHARACTER)_Thrower)
+AND
+DB_ThrownBlade_ThrownObjects(_ThrownObject)
+THEN
+ApplyStatus(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_ERASING", 3.0, 1, _Thrower);
+
+IF
+StatusApplied(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_ERASING", _, _)
+THEN
+DebugText(_ThrownObject, "Imminent Doom...");
+RealtimeObjectTimerLaunch(_ThrownObject, "CMB_ShadowBladeThrown_ExplodeDelay", 800);
+
+IF
+ObjectTimerFinished(_ThrownObject, "CMB_ShadowBladeThrown_ExplodeDelay")
+AND
+GetClosestAlivePlayer(_ThrownObject, (CHARACTER)_Player, _)
+THEN
+DebugText(_ThrownObject, "Boom!");
+ApplyStatus(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_KAURA", -1.0);
+CreateExplosion(_ThrownObject,"Projectile_WYR_DivineBeckoning_Explosion_Gortash",-1,(CHARACTER)_Player);
+
+
+IF
+StatusRemoved(_ThrownObject, "NIGHTCLOAK_SHADOWBLADE_ERASING", _, _)
+AND
+DB_ThrownBlade_ThrownObjects(_ThrownObject)
+THEN
+RequestDelete((ITEM)_ThrownObject);
+NOT DB_ThrownBlade_ThrownObjects(_ThrownObject);
+
+
+IF
+DB_Players(_Player)
+AND
+DB_ThrownBlade_Initialized(1)
+AND
+HasPassive(_Player, "FightingStyle_Dagger", 0)
+THEN
+AddPassive(_Player, "FightingStyle_Dagger");
+
+IF
+DB_InRegion(_Character, _)
+AND
+DB_ThrownBlade_Initialized(1)
+AND
+HasPassive(_Character, "FightingStyle_Dagger", 0)
+AND
+GetBaseArchetype(_Character, _Archetype)
+AND
+DB_ThrownBlade_ArchetypeToApply(_Archetype)
+THEN
+AddPassive(_Character, "FightingStyle_Dagger");
+
+IF
+StatusRemoved(_ShadowBlade, "COL_RESONANCESTONE_AURA", _, _)
+AND
+IsTagged(_ShadowBlade, (TAG)SHAR_SHADOWBLADE_RING_4d38214c-272c-469d-bcc1-6dac9e500481, 1)
+THEN
+ApplyStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusRemoved(_ShadowBlade, "COL_RESONANCESTONE_AURA", _, _)
+AND
+IsTagged(_ShadowBlade, (TAG)SHAR_SHADOWBLADE_RING_4d38214c-272c-469d-bcc1-6dac9e500481, 1)
+AND
+HasActiveStatus(_ShadowBlade, "SHADOWBLADE_DELETE_TRIGGER", 1)
+THEN
+RequestDelete((ITEM)_ShadowBlade);
+
+
+EXIT:
