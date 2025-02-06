@@ -1,5 +1,4 @@
 INIT:
-
 DB_NightmareMode_StrongerBosses_Initialized(0);
 NOT DB_NightmareMode_StrongerBosses_GlobalCharacters((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
 NOT DB_NightmareMode_StrongerBosses_GlobalCharactersVect((CHARACTER)NULL_00000000-0000-0000-0000-000000000000,"");
@@ -118,87 +117,6 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_LOW_Elfsong_GithyankiShield_G
 //END_REGION Act3_StrongerBosses
 
 
-//REGION Act2b_StrongerBosses
-// Act2b All Characters
-DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_HarperScout_002_a0fecf82-7dde-4dd7-af67-eb0ef5aa67e0);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab);
-DB_NightmareMode_StrongerBosses_LocalObjects(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7);
-//DB_NightmareMode_StrongerBosses_LocalObjects();
-
-//REGION Vect
-// Bosses - Act2b Local-Global Characters / Legendary Characters
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"StrongerBoss");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"StrongerBoss");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f,"StrongerBoss");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d,"StrongerBoss");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab,"StrongerBoss");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"StrongerBoss");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
-
-// LittleChief - Act2b Local Characters
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"LittleChief");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"LittleChief");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
-
-// DeathWarded - Act2b Local Characters
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"DeathWarded");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65,"DeathWarded");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"DeathWarded");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"DeathWarded");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
-
-// StrongAlly - Act2b Local Characters
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"StrongAlly");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
-
-// TemporaryStunImmunity - Act2b Local Characters who gets weaker version of SG_Immunity
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"TemporaryStunImmunity");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
-
-// StrongerChief - Act2b Local Characters - Stronger LittleChief
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
-
-// RitualCaster - Act2b Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
-//END_REGION
-//END_REGION Act2b_StrongerBosses
-
-
-//REGION Act2a_StrongerBosses
-// Act2a All Characters
-//DB_NightmareMode_StrongerBosses_LocalObjects();
-
-//REGION Vect
-// Bosses - Act2a Local-Global Characters / Legendary Characters
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
-
-// LittleChief - Act2a Local Characters
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
-
-// DeathWarded - Act2a Local Characters
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
-
-// StrongAlly - Act2a Local Characters
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
-
-// TemporaryStunImmunity - Act2a Local Characters who gets weaker version of SG_Immunity
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
-
-// StrongerChief - Act2a Local Characters - Stronger LittleChief
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
-
-// RitualCaster - Act2a Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
-//END_REGION
-//END_REGION Act2a_StrongerBosses
-
-
 //REGION Act1_StrongerBosses
 // Act1 All Characters
 //REGION Crash Site
@@ -253,6 +171,17 @@ DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AttackOnDen_Sapper_004_1b6dba
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AttackOnDen_BarrelGoblin_001_b27869ef-88e2-4f99-93f9-c1e8773dcf4a);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AttackOnDen_BarrelGoblin_002_7687218e-90a7-4694-bf69-e9f516ed030e);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AttackOnDen_BarrelGoblin_003_23e26dde-3e25-4f94-a50d-0cd8c6bf4b64);
+// Druid Groove / Gate
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Bugbear_01_cde6e700-9c2a-4dec-9081-689881198639);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Melee_003_0d9a9811-27b3-48ae-84a6-8a85c65a092e);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Melee_01_6a03d0ff-a930-4347-bba2-9f3fd6bc317a);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Melee_02_f1a7c5a6-27e7-4164-a31d-d18b4064df85);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Ranger_004_dfcc8342-4357-4b3f-9fb4-0d3eb2542830);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Ranger_01_7fbfb1b0-184b-4889-935b-f916a7ad1177);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Ranger_02_c3fb3a30-a1a7-4d8a-8b3c-b101657a0a3d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Ranger_03_442fddf8-875a-4099-8725-12042f9e3ebd);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_GoblinRaider_Worg_01_51e9e140-04c2-4598-83c0-787dac74ce61);
 // Druid Groove / Goblin Raid
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderMurderous_04428629-2857-4795-b9b6-b41a06d9a889);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AttackOnDen_Ogre_001_04695229-6f1d-433c-8e74-88e21e720e9a);
@@ -274,17 +203,154 @@ DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_RitualDruid_004_32bef45a-47ca
 DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_RitualDruid_005_641fc4b5-3c42-4c4d-a759-541ad437f9df);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_DruidGuard_001_d1de6b4d-02d1-47f9-8e9e-55a593e3dc71);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_DruidGuard_002_8e2433db-55e9-4d03-a8fc-f8d02711907c);
+// Druid Groove / Shar Druids
 DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_Snake_001_af2ff867-467e-4765-a66c-fed091af4a09);
-DB_NightmareMode_StrongerBosses_LocalObjects();
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_ShadowDruid_001_0cb92c37-fb4d-4547-8702-1fb1dd52d0b6);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_ShadowDruid_002_0820c093-f400-4efc-95b9-a6d08a58cac9);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_ShadowDruid_003_53b08334-9f79-4bb5-b580-2662355d54ad);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_DruidLeader_95eb2b0b-a522-4ea5-8167-c5f4d1418156);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_DEN_PrisonGuard_3ff71f38-28e9-4e72-ba17-9f6d3bb2a995);
+//END_REGION
+//REGION Forest
+// Blighted Village
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ApothecaryGoblin_000_a8c54070-5b72-4911-afd9-28be53296fd7);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ApothecaryGoblin_001_da57be42-f01a-459d-96b0-93cea8a95489);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ApothecaryGoblin_002_301accc9-d618-43ba-819a-834216a12e4e);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_CheckpointGuard_000_36d897c8-bd94-4a3d-97fd-5f48fb45f952);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_CheckpointGuard_001_ebbed723-7ed1-40e0-979a-289918a25c68);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_Goblins_Caster_01_826000b8-c6cd-4018-af55-31ee7e6a4668);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_Goblins_Caster_02_1f3d846e-f26c-49d4-b917-d9f43fd137b4);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_Goblins_Ranger_01_8e553c24-5100-4939-9041-4dec8499d553);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_Goblins_Ranger_02_70a50383-e377-45c0-a793-b44d36d2df55);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_Goblins_Ranger_03_e3d96e92-39fa-4ec1-9503-bd00f40285aa);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Ambush_PatrollingGoblin_6db1f304-683a-4409-ab7a-b22f64f2c2e3);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_OgreMate_489c7f56-b461-41a6-b519-7ef5f1a1bbdc);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_BugBearMate_b6c6764f-ba9d-4109-8b4e-c0d1da72be7d);
+// Blighted Village / Unfortunate Gnome
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin2_51300d83-e9f1-4f01-a27e-27c73f9e6318);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin3_bff8ab5f-739d-422a-9ad3-92f4b897f1bc);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin4_20eba5fb-3e93-4887-9700-d7fd7f2c418f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin5_0e54fa5d-e2dd-4e15-acbb-82a4e0c63012);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin6_f0f4d3e2-8081-489a-b4ee-aee7b1ecee12);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeGoblin7_4b2be2ad-f9e3-4aa0-9a0a-aae7f7813fd3);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeWorg1_e595394b-fbc9-438a-be7a-5b6fb5c3261d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeWorg2_a5b311ad-5c73-4e88-9f77-106e8350f1d0);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf);
+// Blighted Village / Spider Queen Lair
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Spider_02_f52f8a06-5c9b-415d-b477-4f349414d91b);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Spider_03_7f502e83-49bb-4287-9acd-6822e6742214);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_SpiderQueen_e6b2f3ba-2d02-4507-8680-6047322e1a4b);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Ettercap_01_1c167d87-048b-40ac-9117-c87d5a2471fd);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Ettercap_02_5c57bfc0-cd82-4b9f-9b70-b5475fb121db);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Spider_01_306390e8-5a0a-47ca-b33c-1c4c92032bd2);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_Bottomless_Spider_04_22be8c46-f900-466d-adfe-d5f172dad45d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_OwlBear_e903a41f-8ef7-46dc-a847-7d0ec2804d08);
+// Blighted Village / Apothecary Cave
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_002_171eb53b-f6a4-465a-9bb1-585a74a0efcc);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_003_7be92b31-6fcd-4fef-8708-9bb927f89fd5);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_004_d1f7d900-0e2d-4706-a141-20a026c003ed);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_005_43a9bace-50c0-4313-bc3b-824adecf0aad);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_006_fe72d606-8d37-4dfc-bbe2-2afda9e91c88);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_007_595edf1e-af70-4dec-a1a6-735f4966c42f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_FOR_ThayG_Skeleton_008_532d1b22-b493-4282-b366-a55dbd6cf8a4);
+//END_REGION
+//REGION Goblin Camp
+// Goblin Camp
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_ChickenChase_Commentator_eb2c434d-1833-485e-bca2-f181eed6010b);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_ChickenBall_d17d3d8e-cf4a-48cd-a5ab-de0083110785);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_DrunkGoblin_0c3404d4-af6f-4c3c-8873-101a79cc4d86);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_PartyingGoblin_000_69ab2a7d-9035-4e4e-97e5-2d005c9662ee);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_PartyingGoblin_001_4aa22ae0-1f97-42e3-8fd7-474f2f3b7269);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_PartyingGoblin_002_bedb5fe5-2fa7-42f4-82c0-dda23883ff7c);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinKid_000_c8de613d-be02-42ab-ae91-3ed7ba5edafa);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinKid_001_73b27c74-5462-463d-ac82-67a40b87db2c);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinKid_002_f11d525d-e94d-4e96-a4ae-e43f34430518);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_NerdyGoblinSage_5f5c8416-8118-4619-8fc9-442304ff0a3d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Bugbear_Wanderer_c45936ea-2e38-4cf5-b5e1-1ff382888737);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_000_031e9fb7-136a-46c7-91d7-77ce3e20236a);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_001_774c78ed-1227-48f9-812e-aac0021c71bf);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_004_e63401de-04ea-40b6-a988-b2f90a90f748);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_005_a955aea9-9040-4d4c-9264-e46e385dea94);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_007_10a00987-1dbe-4540-aa34-e96976c7bac0);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_002_bb9c82a2-7ed9-45ed-99b6-58f84520fb8c);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_003_0296a9f6-b2bc-46a0-8632-ba72679a36d3);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Goblin_006_f3f416d1-b946-4019-95ba-7053f63dd776);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_SecludedSpot_Goblin_b811fc94-bcd7-4be3-a53a-0663cbc16c34);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Trader_3c9f9d17-835c-46bf-929d-240e3b4adb55); // Trader
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_Ogre_00_ffe2ab58-fddc-47ce-b369-bdb93b4a52dd);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RoastingDwarfOperator_000_1fe911f8-c9c9-4405-83fa-d343d59c7be9);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RoastingDwarfOperator_001_3837d519-dc92-459c-ab2d-1eac0b208fc7);
+// Goblin Camp / Sleepers
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da);
+// Goblin Camp / Outpost
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Backup_001_87bc228e-30d2-4f23-a96e-7e3569a4fb6c);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Backup_002_c7e85da4-2100-4d25-9a54-8feb5edbbb14);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Backup_003_436c4c80-76fe-4396-831d-0d279b394810);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Guard_001_6d69a347-9b3f-4b64-818e-013f849c6ae4);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Guard_002_022f8eb4-62ff-4770-b5b6-87eeed807f44);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Guard_003_bbeb9839-47c5-419d-9a44-9217b9e8892f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Guard_004_a70d559c-24e3-409d-b964-34811092ecac);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Guard_005_c82d1d05-0bf6-4dac-a484-e597644ed8cd);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Worg_001_e712ad95-2107-4def-a22d-0afb268b6a63);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Checkpoint_Worg_002_c546e62e-0a9d-4695-a5d4-19f2fb607f68);
+//END_REGION
+//REGION Goblin Throne
+// Goblin Throne
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Bravado_Goblin_001_0ee08ad4-329e-40c1-a40b-a74e74c39055);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Bravado_Goblin_002_02291a93-e5d6-40f2-8cd0-f5edad8f4b6d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Bravado_Goblin_003_6ca1d4f0-59fd-4c7f-9d07-bb158eef2246);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_WarchiefBrave_6601b8f7-1a92-46bb-b409-6fcef7406a39);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
+// Goblin Throne - Entrance
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GuardTense_97409af2-6e52-4e9d-83df-bd4827ca7992);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GuardUpset_87e77c4f-1776-4fd9-a70f-3a237388715c);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_InnerCheckpoint_Backup_01_901d33bf-f9bc-4417-a8fb-9765fa992940);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_InnerCheckpoint_Backup_02_82bd8b76-bb3a-4312-b67a-f4848c2d1f2b);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_InnerCheckpoint_Backup_03_919f607e-6595-4b00-a140-a4b5b6dfeda4);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_InnerCheckpoint_Backup_04_acf83de4-e91e-4d60-b959-17123886feba);
+// Goblin Throne - Goblin King Room
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AbsoluteCultistAble_70db5a59-c802-4367-9c60-e25e4a8e3381);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_AbsoluteCultistStiff_616dca90-5314-4910-b71b-7c76b7393851);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinFavorite_464986f1-67d8-4cb5-9aec-3db0a3924387);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderClumsy_89b0002d-46b8-478c-b1d6-47b689828f1a);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderCurious_f0d71499-b3dc-47f2-aa5c-efc2e74f6053);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderMaudlin_5d29ef38-4093-45a9-ace7-31f0c3ddc925);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76);
+// Goblin Throne - Priest / Main
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinGlib_f63f921c-ae35-4574-9a70-30aee55fdb26);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinJolly_59557329-d49b-448b-bdd0-fd66ae0d67f6);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinSulky_dd21e1d9-c426-4b12-b5a0-ef3445e9e967);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinWily_d8667091-dd64-499c-8bee-000cf42175fc);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderStout_8fb035b6-a67f-4b7d-a09e-126afafe48c1);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinPriest_b983c336-9a14-4e9b-adb9-4689e7e0afa9); // Priestess
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinPriestOgre_658c5f80-33ea-4f8d-bded-8ef6ac2ed511);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinBrash_35ffa172-7f23-4452-8f90-5dc24fd3bb6d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RatRacket_LocalRat_001_b96934e3-a229-4f58-8180-66b01b1c4692);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Torturers_Goblet_0f18201e-2836-4642-8a26-d0a6e1a8a8cc);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Torturers_Spike_3f1fa953-6a0d-4589-adfd-23c69603da2f);
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
 //DB_NightmareMode_StrongerBosses_LocalObjects();
 //END_REGION
+
+
 //REGION Vect
-
-
 // Bosses - Act1 Local-Global Characters / Legendary Characters
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinKing_11337af0-6a57-426b-a820-c4b00923dd54,"StrongerBoss");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Quartermaster_646936f3-8d8d-484e-9361-cd1ed484c615,"StrongerBoss");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_DruidLeader_95eb2b0b-a522-4ea5-8167-c5f4d1418156,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_GnomeGoblin1_b2c582af-bc69-48b3-a004-648562dab404,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_Bottomless_SpiderQueen_e6b2f3ba-2d02-4507-8680-6047322e1a4b,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_OwlBear_e903a41f-8ef7-46dc-a847-7d0ec2804d08,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
 
 // LittleChief - Act1 Local Characters
@@ -293,6 +359,17 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GurHunter_0e47fcb9-c0c4-4
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_BugbearNinja_4cb29070-a33c-4253-9f57-18d1c9a88523,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_DruidOpposed_322cf8d2-32ee-453f-987e-f12b32652b5d,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_GoblinScout_004_06a54b04-c141-4929-b21c-5f28737d88f7,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_ShadowDruid_001_0cb92c37-fb4d-4547-8702-1fb1dd52d0b6,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_ApothecaryGoblin_002_301accc9-d618-43ba-819a-834216a12e4e,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_ThayG_Skeleton_008_532d1b22-b493-4282-b366-a55dbd6cf8a4,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_DrunkGoblin_0c3404d4-af6f-4c3c-8873-101a79cc4d86,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_NerdyGoblinSage_5f5c8416-8118-4619-8fc9-442304ff0a3d,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Bugbear_Wanderer_c45936ea-2e38-4cf5-b5e1-1ff382888737,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Ogre_00_ffe2ab58-fddc-47ce-b369-bdb93b4a52dd,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Checkpoint_Guard_001_6d69a347-9b3f-4b64-818e-013f849c6ae4,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinFavorite_464986f1-67d8-4cb5-9aec-3db0a3924387,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinPriest_b983c336-9a14-4e9b-adb9-4689e7e0afa9,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
 
 // DeathWarded - Act1 Local Characters
@@ -307,8 +384,17 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Quartermaster_646936f3-8d
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_PetBird_72bd7f25-0644-4323-a428-85ba5630e6ea,"DeathWarded");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_SenderBird_bf90aa40-232b-40fd-a43e-699bb964e337,"DeathWarded");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_Snake_001_af2ff867-467e-4765-a66c-fed091af4a09,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_FOR_ThayG_Skeleton_008_532d1b22-b493-4282-b366-a55dbd6cf8a4,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_ChickenBall_d17d3d8e-cf4a-48cd-a5ab-de0083110785,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_GoblinKid_000_c8de613d-be02-42ab-ae91-3ed7ba5edafa,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_GoblinKid_001_73b27c74-5462-463d-ac82-67a40b87db2c,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_GoblinKid_002_f11d525d-e94d-4e96-a4ae-e43f34430518,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinPriest_b983c336-9a14-4e9b-adb9-4689e7e0afa9,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_RatRacket_LocalRat_001_b96934e3-a229-4f58-8180-66b01b1c4692,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"DeathWarded");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
-//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+
 
 // StrongAlly - Act1 Local Characters
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c,"StrongAlly");
@@ -316,11 +402,14 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_Bard_4a405fba-3000-4c63-9
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_CapturedGoblin_783d7572-a846-455f-b686-247a95263ebb,"StrongAlly");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a,"StrongAlly");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
 
 // TemporaryStunImmunity - Act1 Local Characters who gets weaker version of SG_Immunity
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
 
 // StrongerChief - Act1 Local Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
 
 // RitualCaster - Act1 Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
@@ -329,9 +418,34 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_RitualDruid_002_96e41e71-
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_RitualDruid_003_7cae8e24-d610-4229-859d-7b2da7c5d162,"RitualCaster");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_RitualDruid_004_32bef45a-47ca-4c3a-b907-13a857b316fd,"RitualCaster");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_DEN_RitualDruid_005_641fc4b5-3c42-4c4d-a759-541ad437f9df,"RitualCaster");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_NerdyGoblinSage_5f5c8416-8118-4619-8fc9-442304ff0a3d,"RitualCaster");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
-//END_REGION
+
+// DrunkAtFirewine - Act1 Local Characters - Firewine Drunks (these get a status that make theim explode when taking fire damage, as well as giving theim resistance to fire damage).
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Checkpoint_Backup_001_87bc228e-30d2-4f23-a96e-7e3569a4fb6c,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Checkpoint_Backup_002_c7e85da4-2100-4d25-9a54-8feb5edbbb14,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Checkpoint_Backup_003_436c4c80-76fe-4396-831d-0d279b394810,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_DrunkGoblin_0c3404d4-af6f-4c3c-8873-101a79cc4d86,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Bugbear_Wanderer_c45936ea-2e38-4cf5-b5e1-1ff382888737,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_000_031e9fb7-136a-46c7-91d7-77ce3e20236a,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_001_774c78ed-1227-48f9-812e-aac0021c71bf,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_004_e63401de-04ea-40b6-a988-b2f90a90f748,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_005_a955aea9-9040-4d4c-9264-e46e385dea94,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_007_10a00987-1dbe-4540-aa34-e96976c7bac0,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_002_bb9c82a2-7ed9-45ed-99b6-58f84520fb8c,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_003_0296a9f6-b2bc-46a0-8632-ba72679a36d3,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Goblin_006_f3f416d1-b946-4019-95ba-7053f63dd776,"DrunkAtFirewine");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+
+// NamedSeeInvis - Act1 Local Characters - See Invisibility
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinGlib_f63f921c-ae35-4574-9a70-30aee55fdb26,"NamedSeeInvis");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinWily_d8667091-dd64-499c-8bee-000cf42175fc,"NamedSeeInvis");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinBrash_35ffa172-7f23-4452-8f90-5dc24fd3bb6d,"NamedSeeInvis");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+//END_REGION Vect
 //END_REGION Act1_StrongerBosses
 
 
@@ -365,42 +479,69 @@ DB_NightmareMode_StrongerBosses_GlobalCharacters(S_HAG_Hag_c457d064-83fb-4ec6-b7
 DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GithCaptain_27fa0802-fa38-4eea-9c03-496f2e022259);
 DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GithKnight_2adce2df-0799-49dc-b867-ba7ca21e9aea); // Fake Voss
 DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GurHunter_0e47fcb9-c0c4-4b0c-902b-2d13d209e760);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_FOR_GnomeGoblin1_b2c582af-bc69-48b3-a004-648562dab404); // Fezzerk
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81); // Abdirak
+//DB_NightmareMode_StrongerBosses_GlobalCharacters();
 //DB_NightmareMode_StrongerBosses_GlobalCharacters();
 
 //REGION Vect
 
 // Bosses - Global Characters / Legendary Characters
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
 
 // LittleChief - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
 
 // DeathWarded - Global Characters
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
 
 // StrongAlly - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
 
 
 // TemporaryStunImmunity - Global Characters who gets weaker version of SG_Immunity
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
 
 // StrongerChief - Global Characters - Stronger LittleChief
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
 
 // RitualCaster - Global Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+DB_NightmareMode_StrongerBosses_GlobalCharactersVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
 //END_REGION
 //END_REGION Global Characters
 
 
-//REGION God Avatars
+//REGION Divine Avatars and VIPs.
 DB_NightmareMode_StrongerBosses_Gods(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805);
+DB_NightmareMode_StrongerBosses_Gods(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
+DB_NightmareMode_StrongerBosses_Gods(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81);
+//DB_NightmareMode_StrongerBosses_Gods();
 //DB_NightmareMode_StrongerBosses_Gods();
 
+//REGION Vect
 DB_NightmareMode_StrongerBosses_GodsVect(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,"Jergal");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"Maglubiyet");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"Loviatar");
 //DB_NightmareMode_StrongerBosses_GodsVect(,"");
-//END_REGION God Avatars
+//DB_NightmareMode_StrongerBosses_GodsVect(,"");
+//END_REGION
+//END_REGION Divine Avatars and VIPs.
+
+
+//REGION Procedures
+//END_REGION Procedures
+
+
+
 ENDI
 
 
@@ -468,14 +609,15 @@ THEN
 AddPassive(_Character,"NightmareMode_Gods");
 
 IF
-DB_NightmareMode_StrongerBosses_GodsVect(_Character, _String)
+DB_NightmareMode_StrongerBosses_GodsVect(_Character, _God)
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
 THEN
-DB_NOOP(1);
+AddPassive(_Character, _God);
 //END_REGION InitDev
 
-//REGION Death Ward on Long Rest
+
+//REGION Death Ward on Long Rest.
 IF
 LongRestFinished()
 AND
@@ -491,9 +633,24 @@ QRY_OnlyOnce_Reset(_OnlyOnceQry)
 THEN
 DB_NOOP(1);
 
+IF
+LevelLoaded(_)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
 
 // Applying Death Ward once per long rest.
-IF
+PROC
+PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest()
+AND
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "DeathWarded")
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
@@ -505,7 +662,7 @@ AND
 QRY_OnlyOnce(_OnlyOnceQry)
 THEN
 ApplyStatus(_Character, "DEATH_WARD", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
-//END_REGION Death Ward on Long Rest
+//END_REGION Death Ward on Long Rest.
 
 
 //REGION Applying Passive for each type of foe.
@@ -532,11 +689,10 @@ IF
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "LittleChief")
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
-//AND
-//HasPassive(_Character, "NightmareMode_LittleChief", 0)
+AND
+HasPassive(_Character, "NightmareMode_LittleChief", 0)
 THEN
-//AddPassive(_Character, "NightmareMode_LittleChief");
-DB_NOOP(1);
+AddPassive(_Character, "NightmareMode_LittleChief");
 
 IF
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "StrongAlly")
@@ -559,6 +715,145 @@ THEN
 DB_NOOP(1);
 
 //END_REGION Applying Passive for each type of foe.
+
+
+//REGION Applying Status for each type of foe.
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"NamedSeeInvis")
+AND
+HasActiveStatus(_Character, "SEE_INVISIBILITY", 0)
+THEN
+ApplyStatus(_Character, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LevelLoaded(_)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"NamedSeeInvis")
+AND
+HasActiveStatus(_Character, "SEE_INVISIBILITY", 0)
+THEN
+ApplyStatus(_Character, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION Applying Status for each type of foe.
+
+
+// Handling teleport into Act2 and Act3 or some newly defined Global characters related to Deities
+//REGION Applying Deity Tags for Divine Avatars and VIPs
+PROC
+PROC_NightmareMode_StrongerBosses_DeityTagApplier((CHARACTER)_Character, (STRING)_God)
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_Character, _God)
+THEN
+AddPassive(_Character, _God);
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_Character, _God)
+THEN
+PROC_NightmareMode_StrongerBosses_DeityTagApplier((CHARACTER)_Character, (STRING)_God);
+
+// Special Procedure to teleport Global Character from act to act.
+//REGION PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter
+PROC
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos)
+AND
+IsGlobal(_Character, 1)
+THEN
+Resurrect((CHARACTER)_Character,NULL_00000000-0000-0000-0000-000000000000,1);
+TeleportTo(_Character, _TriggerPos,"",0,0,0,0,1);
+
+PROC
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos, (INTEGER)_OnStageBool)
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos);
+SetOnStage(_Character, _OnStageBool);
+
+PROC
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos, (INTEGER)_OnStageBool, (STRING)_Passive)
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos, (INTEGER)_OnStageBool);
+AddPassive(_Character, _Passive);
+//END_REGION PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
+AND
+DB_PermaDefeated(_GoblinPriest)
+AND
+QRY_OnlyOnce("NightmareMode_StrongerBosses_GobPriestDefeatedAct1")
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_GoblinPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 0, "Maglubiyet");
+NOT DB_PermaDefeated(_GoblinPriest);
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
+AND
+NOT DB_PermaDefeated(_GoblinPriest)
+AND
+QRY_OnlyOnce_Reset("NightmareMode_StrongerBosses_GobPriestDefeatedAct1")
+THEN
+DB_NOOP(1);
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
+AND
+NOT DB_PermaDefeated(_GoblinPriest)
+AND
+IsGameLevel("SCL_Main_A",1)
+AND
+QRY_OnlyOnce("NightmareMode_StrongerBosses_GobPriestTeleport")
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_GoblinPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 1, "Maglubiyet");
+
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
+AND
+DB_PermaDefeated(_PainPriest)
+AND
+QRY_OnlyOnce("NightmareMode_StrongerBosses_PainPriestDefeatedAct1")
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_PainPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 0, "Loviatar");
+NOT DB_PermaDefeated(_PainPriest);
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
+AND
+NOT DB_PermaDefeated(_PainPriest)
+AND
+QRY_OnlyOnce_Reset("NightmareMode_StrongerBosses_PainPriestDefeatedAct1")
+THEN
+DB_NOOP(1);
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
+AND
+NOT DB_PermaDefeated(_PainPriest)
+AND
+IsGameLevel("SCL_Main_A",1)
+AND
+QRY_OnlyOnce("NightmareMode_StrongerBosses_PainPriestTeleport")
+THEN
+PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_PainPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 1, "Loviatar");
+//END_REGION Applying Deity Tags for Divine Avatars and VIPs
 
 
 // Making sure Gith Portal Master in act3 cast their spell whenever Death Ward is triggered.
@@ -629,6 +924,107 @@ ApplyStatus((CHARACTER)S_LOW_Elfsong_GithyankiShield_Gishra_001_312f63b5-4b05-42
 ApplyStatus((CHARACTER)S_LOW_Elfsong_GithyankiShield_Gishra_001_312f63b5-4b05-4208-b205-bed410aacc84, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
 
 //END_REGION Gith Portal Summoner Extra Check
+
+
+//REGION Sheep Aura
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+ApplyStatus(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, "NM_FOR_SHEEPAURA_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LevelLoaded("WLD_Main_A")
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+ApplyStatus(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, "NM_FOR_SHEEPAURA_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LongRestFinished()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+IsGameLevel("WLD_Main_A", 1)
+THEN
+ApplyStatus(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, "NM_FOR_SHEEPAURA_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+CombatEnded(_CombatID)
+AND
+IsDead(S_FOR_GnomeWorg1_e595394b-fbc9-438a-be7a-5b6fb5c3261d,1)
+AND
+IsDead(S_FOR_GnomeWorg2_a5b311ad-5c73-4e88-9f77-106e8350f1d0,1)
+THEN
+RemoveStatus(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, "NM_FOR_SHEEPAURA_AURA", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LeftTrigger(_Player, (TRIGGER)S_FOR_GnomeGoblin1_SceneTrigger_dfbc0e4f-c112-4ee7-939c-a95bc5bf5092)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_PeacefullyResolved(S_FOR_GnomeWorg1_e595394b-fbc9-438a-be7a-5b6fb5c3261d)
+AND
+DB_PeacefullyResolved(S_FOR_GnomeWorg2_a5b311ad-5c73-4e88-9f77-106e8350f1d0)
+AND
+GetClosestAlivePlayer(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, _ClosestPlayer, _)
+AND
+(GUIDSTRING)_Player == (GUIDSTRING)_ClosestPlayer
+THEN
+RemoveStatus(S_FOR_GnomeSheep_cb6095ed-2795-4ffc-b89b-d1c1b13dcdbf, "NM_FOR_SHEEPAURA_AURA", NULL_00000000-0000-0000-0000-000000000000);
+
+//END_REGION Sheep Aura
+
+
+//REGION Drunk Backup
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"DrunkAtFirewine")
+AND
+HasAppliedStatus(_Character, "CRE_BREWERYKOBOLDS_FIREWINEBELLY_FIRERESIST", 0)
+THEN
+ApplyStatus(_Character, "CRE_BREWERYKOBOLDS_FIREWINEBELLY_FIRERESIST", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LevelLoaded("WLD_Main_A")
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"DrunkAtFirewine")
+AND
+HasAppliedStatus(_Character, "CRE_BREWERYKOBOLDS_FIREWINEBELLY_FIRERESIST", 0)
+THEN
+ApplyStatus(_Character, "CRE_BREWERYKOBOLDS_FIREWINEBELLY_FIRERESIST", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+// Recopying this as it might not have been loaded
+IF
+StatusApplied(_Drunk, "CRE_BREWERYKOBOLDS_FIREWINEBELLY_TECHNICAL", _, _)
+THEN
+CreateExplosion(_Drunk,"Projectile_CRE_BreweryKobolds_FirewineBelly_Explosion",-1,_Drunk);
+//END_REGION Drunk Backup
+
+
+//REGION Goblin Throne additions
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+ApplyStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+LevelLoaded("WLD_Main_A")
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+THEN
+ApplyStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+//END_REGION Goblin Throne additions
+
 KBI
 
 EXIT:
