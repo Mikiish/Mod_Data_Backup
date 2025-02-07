@@ -6,6 +6,9 @@ NOT DB_NightmareMode_StrongerBosses_LocalObjects((CHARACTER)NULL_00000000-0000-0
 NOT DB_NightmareMode_StrongerBosses_LocalObjectsVect((CHARACTER)NULL_00000000-0000-0000-0000-000000000000,"");
 NOT DB_NightmareMode_StrongerBosses_Gods((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
 NOT DB_NightmareMode_StrongerBosses_GodsVect((CHARACTER)NULL_00000000-0000-0000-0000-000000000000,"");
+NOT DB_NightmareMode_StrongerBosses_RankStatusFlags("", "");
+
+DB_NightmareMode_StrongerBosses_RankStatusFlags("StrongerChief", "_Status");
 
 //DB_NightmareMode_StrongerBosses_GlobalCharacters();
 //DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"");
@@ -31,15 +34,33 @@ NOT DB_NightmareMode_StrongerBosses_GodsVect((CHARACTER)NULL_00000000-0000-0000-
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
 
 // Testing Purpose
-DB_NightmareMode_StrongerBosses_GlobalCharacters(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6);
-DB_NightmareMode_StrongerBosses_LocalObjects(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6);
-DB_NightmareMode_StrongerBosses_Gods(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6);
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"StrongerBoss");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"LittleChief");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"DeathWarded");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"StrongAlly");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"TemporaryStunImmunity");
-DB_NightmareMode_StrongerBosses_GodsVect(Humans_Male_Cultist_Bane_Fist_000_bfe3316d-0524-469c-a890-fc42311481e6,"Bane");
+
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37);
+DB_NightmareMode_StrongerBosses_Gods(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37);
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"StrongerChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"StrongAlly");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"TemporaryStunImmunity");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"NamedSeeInvis");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"RitualCaster");
+DB_NightmareMode_StrongerBosses_GodsVect(S_PLA_TheGuy_15ef800f-8575-4be3-b942-697f45d54c37,"Bane");
+
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f);
+DB_NightmareMode_StrongerBosses_Gods(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f);
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"StrongerChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"StrongAlly");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"TemporaryStunImmunity");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"DrunkAtFirewine");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"NamedSeeInvis");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"RitualCaster");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GLO_GodTester_TheGuy_5b5f8fc2-17b5-4a27-937a-2b93d40ba99f,"Bane");
 
 //REGION Elfsong Tavern
 DB_GLO_DefeatCounter((CHARACTER)S_LOW_Elfsong_GithyankiShield_GateMaster_003_eb21e79f-eadb-4fb6-a2db-1242e47da1f0, "LOW_Elfsong_KotS_GithyankiCombat");
@@ -332,6 +353,9 @@ DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_GoblinBrash_35ffa172-7f23-445
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RatRacket_LocalRat_001_b96934e3-a229-4f58-8180-66b01b1c4692);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Torturers_Goblet_0f18201e-2836-4642-8a26-d0a6e1a8a8cc);
 DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_Torturers_Spike_3f1fa953-6a0d-4589-adfd-23c69603da2f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderBold_1c9fd1dd-12bc-4b81-acb8-9eef54174c55);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_GOB_RaiderHardy_6687f78f-5d6a-40d4-8cfd-2b972dacde3c);
+//DB_NightmareMode_StrongerBosses_LocalObjects();
 //DB_NightmareMode_StrongerBosses_LocalObjects();
 //DB_NightmareMode_StrongerBosses_LocalObjects();
 //DB_NightmareMode_StrongerBosses_LocalObjects();
@@ -369,6 +393,7 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Festivities_Ogre_00_ffe2a
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_Checkpoint_Guard_001_6d69a347-9b3f-4b64-818e-013f849c6ae4,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinFavorite_464986f1-67d8-4cb5-9aec-3db0a3924387,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinPriest_b983c336-9a14-4e9b-adb9-4689e7e0afa9,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GOB_GoblinFavorite_464986f1-67d8-4cb5-9aec-3db0a3924387,"LittleChief");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
 
@@ -524,6 +549,7 @@ DB_NightmareMode_StrongerBosses_GlobalCharactersVect(S_GOB_GoblinHeretic_3af8a55
 DB_NightmareMode_StrongerBosses_Gods(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805);
 DB_NightmareMode_StrongerBosses_Gods(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
 DB_NightmareMode_StrongerBosses_Gods(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81);
+DB_NightmareMode_StrongerBosses_Gods(S_GOB_GoblinKing_11337af0-6a57-426b-a820-c4b00923dd54);
 //DB_NightmareMode_StrongerBosses_Gods();
 //DB_NightmareMode_StrongerBosses_Gods();
 
@@ -531,6 +557,7 @@ DB_NightmareMode_StrongerBosses_Gods(S_GOB_PainPriest_cad1854b-8f41-4038-b640-15
 DB_NightmareMode_StrongerBosses_GodsVect(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,"Jergal");
 DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"Maglubiyet");
 DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"Loviatar");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_GoblinKing_11337af0-6a57-426b-a820-c4b00923dd54,"TheAbsolute");
 //DB_NightmareMode_StrongerBosses_GodsVect(,"");
 //DB_NightmareMode_StrongerBosses_GodsVect(,"");
 //END_REGION
@@ -539,9 +566,6 @@ DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b64
 
 //REGION Procedures
 //END_REGION Procedures
-
-
-
 ENDI
 
 
@@ -585,7 +609,7 @@ DB_NightmareMode_StrongerBosses_GlobalCharactersVect(_Character, _String)
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
 THEN
-DB_NOOP(1);
+AddPassive(_Character,_String);
 
 IF
 DB_NightmareMode_StrongerBosses_LocalObjects(_Character)
@@ -593,13 +617,6 @@ AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
 THEN
 AddPassive(_Character,"NightmareMode_StrongerBosses");
-
-IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _String)
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-THEN
-DB_NOOP(1);
 
 IF
 DB_NightmareMode_StrongerBosses_Gods(_Character)
@@ -633,20 +650,6 @@ QRY_OnlyOnce_Reset(_OnlyOnceQry)
 THEN
 DB_NOOP(1);
 
-IF
-LevelLoaded(_)
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-THEN
-PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
-
-IF
-SavegameLoaded()
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-THEN
-PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
-
 // Applying Death Ward once per long rest.
 PROC
 PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest()
@@ -662,83 +665,88 @@ AND
 QRY_OnlyOnce(_OnlyOnceQry)
 THEN
 ApplyStatus(_Character, "DEATH_WARD", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
-//END_REGION Death Ward on Long Rest.
-
-
-//REGION Applying Passive for each type of foe.
-IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "DeathWarded")
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-AND
-HasPassive(_Character, "NightmareMode_DeathWard", 0)
-THEN
-AddPassive(_Character, "NightmareMode_DeathWard");
-
 
 IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "StrongerBoss")
+LevelLoaded(_)
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
-AND
-HasPassive(_Character, "NightmareMode_CCImmunity", 0)
 THEN
-AddPassive(_Character, "NightmareMode_CCImmunity");
+PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
 
-IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "LittleChief")
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-AND
-HasPassive(_Character, "NightmareMode_LittleChief", 0)
-THEN
-AddPassive(_Character, "NightmareMode_LittleChief");
-
-IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "StrongAlly")
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-//AND
-//HasPassive(_Character, "NightmareMode_StrongAlly", 0)
-THEN
-//AddPassive(_Character, "NightmareMode_StrongAlly");
-DB_NOOP(1);
-
-IF
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "TemporaryStunImmunity")
-AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
-//AND
-//HasPassive(_Character, "NightmareMode_TemporaryStunImmunity", 0)
-THEN
-//AddPassive(_Character, "NightmareMode_TemporaryStunImmunity");
-DB_NOOP(1);
-
-//END_REGION Applying Passive for each type of foe.
-
-
-//REGION Applying Status for each type of foe.
 IF
 SavegameLoaded()
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
-AND
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"NamedSeeInvis")
-AND
-HasActiveStatus(_Character, "SEE_INVISIBILITY", 0)
 THEN
-ApplyStatus(_Character, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+PROC_GLO_NightmareMode_StrongerBosses_DeathWardOnLongRest();
+
+
+//END_REGION Death Ward on Long Rest.
+
+
+//REGION Applying Passive for each type of foe.
+PROC
+PROC_NightmareMode_StrongerBosses_StringToPassiveVect((CHARACTER)_Character, (STRING)_String)
+AND
+Concatenate("NightmareMode_", _String, _Passive)
+AND
+HasPassive(_Character, _Passive, 0)
+THEN
+AddPassive(_Character, _Passive);
 
 IF
 LevelLoaded(_)
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
 AND
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character,"NamedSeeInvis")
-AND
-HasActiveStatus(_Character, "SEE_INVISIBILITY", 0)
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _String)
 THEN
-ApplyStatus(_Character, "SEE_INVISIBILITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+PROC_NightmareMode_StrongerBosses_StringToPassiveVect((CHARACTER)_Character, (STRING)_String);
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _String)
+THEN
+PROC_NightmareMode_StrongerBosses_StringToPassiveVect((CHARACTER)_Character, (STRING)_String);
+//END_REGION Applying Passive for each type of foe.
+
+
+//REGION Applying Status for each type of foe.
+PROC
+PROC_NightmareMode_StrongerBosses_StringToStatusVect((CHARACTER)_Character, (STRING)_Rank, (STRING)_StatusFlag)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _Rank) // We keep it there to ensure we're not generating errors trying to apply passives that does not exists. Just in Case.
+AND
+Concatenate("NightmareMode_", _Rank, _Result)
+AND
+Concatenate(_Result, _StatusFlag, _Passive)
+THEN
+AddPassive(_Character, _Passive);
+
+IF
+LevelLoaded(_)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _Rank)
+AND
+DB_NightmareMode_StrongerBosses_RankStatusFlags(_Rank, _StatusFlag)
+THEN
+PROC_NightmareMode_StrongerBosses_StringToStatusVect((CHARACTER)_Character, (STRING)_Rank, (STRING)_StatusFlag);
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, _Rank)
+AND
+DB_NightmareMode_StrongerBosses_RankStatusFlags(_Rank, _StatusFlag)
+THEN
+PROC_NightmareMode_StrongerBosses_StringToStatusVect((CHARACTER)_Character, (STRING)_Rank, (STRING)_StatusFlag);
 //END_REGION Applying Status for each type of foe.
 
 
@@ -1025,6 +1033,43 @@ ApplyStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76,
 
 //END_REGION Goblin Throne additions
 
+//REGION Don't Mess up with Gods
+PROC
+PROC_NightmareMode_StrongerBosses_BadThing((CHARACTER)_Character)
+AND
+DB_NightmareMode_StrongerBosses_GodsVect(_Character,_String)
+AND
+HasPassive(_Character, _String, 1)
+AND
+GUIDToString(_Character, _CharacterString)
+AND
+Concatenate("BadThingHappenedTo", _CharacterString, _ResultString)
+AND
+QRY_OnlyOnce(_ResultString)
+AND
+CreateAtObject(LOOT_GEN_Runepowder_Time_Bomb_A_9a711e91-04d0-4300-8ca8-b4cc07529a56, _Character, 0, 1, "DEBUG_SpawnedBomb", 0, _BoomObject)
+THEN
+CreateSurface(_Character, "SurfaceOil", 9.0, -1.0, _BoomObject);
+CreateSurface(_Character, "SurfaceFire", 3.0, 10.0, _BoomObject);
+ObjectTimerLaunch(_Character, "StrongerBosses_BadThingTimer", 12000, 1);
+
+IF
+Died(_Character)
+AND
+DB_NightmareMode_StrongerBosses_Gods(_Character)
+THEN
+PROC_NightmareMode_StrongerBosses_BadThing((CHARACTER)_Character);
+
+IF
+ObjectTimerFinished((CHARACTER)_Character, "StrongerBosses_BadThingTimer")
+AND
+DB_NightmareMode_StrongerBosses_Gods(_Character)
+AND
+IsDead(_Character, 1)
+THEN
+CreateExplosion(_Character, "Projectile_UND_Runepowder_Barrel_Explosion", -1, _Character);
+
+//END_REGION Don't Mess up with Gods
 KBI
 
 EXIT:

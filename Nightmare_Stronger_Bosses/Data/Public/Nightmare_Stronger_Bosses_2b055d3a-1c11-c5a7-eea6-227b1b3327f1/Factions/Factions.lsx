@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="FactionContainer">
+        <node id="root">
+            <children>
+                <node id="Faction">
+                    <attribute id="Faction" type="FixedString" value="GLO_GodTest_TheGuy"/>
+                    <attribute id="ParentGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="UUID" type="guid" value="379a4898-d122-4ef9-967f-0e7934b748be"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

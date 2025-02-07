@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="30cb9bac-4d82-11ea-b77f-2e728ce88125">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Loviatar" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5519e296-1728-423a-83ef-0293b604d4c0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ac38d33gf470gd5beg3817g42d4586a6d35" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f201d6fg45f9g1515g346eg3d90a735b52c" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="bace75f7-afaf-424c-918c-27ffad111e9c;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Maglubiyet" />
+        <field name="UUID" type="IdTableFieldDefinition" value="88721fa7-46e5-46bd-a051-7eb08d33e85d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f8026degeec4g4474gf4b1ge6a1c66b852c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1614744dgb1d6g222fg56e5g82c62ab76dde" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="cd04e555-dc34-4f66-8659-304066709501;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Bhaal" />
+        <field name="UUID" type="IdTableFieldDefinition" value="66493902-3c92-4145-bacc-65cf7034665d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h09279087g7902g90d3g80e6gc6323de0668d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff3bebaag5635gd191g4cabg221759ac2951" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="f5e62c47-fb93-449f-9057-cb1a3c003aff;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Myrkul" />
+        <field name="UUID" type="IdTableFieldDefinition" value="12fe9597-d6d3-49ca-bda4-9b601b49dfea" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75ff5672ga3bfg7909gd20ag6ffcf6b75080" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54db8bf2g29b4gef9bgfaecg906ad5fac297" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Auril" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bdaa1ccc-b23d-42ff-82de-1f091c71f0a4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc768f10agb296gfd7agaffcga1604ed7c26f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0adaf428g5053g7091g0f0bg4b7c436095cb" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="2b1171a9-0715-4c25-848e-2cfabc19fad4;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Zehir" />
+        <field name="UUID" type="IdTableFieldDefinition" value="13911e0b-176b-4d73-bedf-1ae1b5d2bd36" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9014fc38g3132g67dfg3441gc67f02282048" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he03af3efgddf0gcf70ga2d5g9e1803781978" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="f7323715-cb5b-41f2-b171-9227e2dad4e2;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Cyric" />
+        <field name="UUID" type="IdTableFieldDefinition" value="aba11fdc-d34b-45cd-8361-6c9c0486386a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfad64a1eg9948gfbd1g6485g76cd8e6235c6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03e91fd7g7391g1aaagb166g3a41c396e864" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="d58459aa-5353-4ef7-8667-35590935d969;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Jergal" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6192638f-ff4a-4fb5-9048-1ccaeffb9405" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57af42b3geab2g3dc7g184eg75da50d50ac6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7cf31ed1g3546gf3feg95efgb7059f361c12" version="2" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="f20dd2f0-3eb3-4fea-96e7-97e1e4044dc2;c1ff8a7f-c430-4671-bc4e-098f874ae302" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="TheAbsolute" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2735bd70-a1fd-488a-9b1f-e7546f79e83d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97be0bfbgb669gc1cdgc5a1ga8715551f41f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h330e7936g0324gb9cbg5531gc109ade81f43" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="5aac4905-f9a7-43fb-b2b9-eb517050e959;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

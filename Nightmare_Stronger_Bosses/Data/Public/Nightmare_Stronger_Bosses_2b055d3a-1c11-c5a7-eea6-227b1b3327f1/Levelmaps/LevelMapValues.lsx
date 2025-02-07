@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d4"/>
+                    <attribute id="Level10" type="LSString" value="3d4"/>
+                    <attribute id="Level2" type="LSString" value="1d4"/>
+                    <attribute id="Level3" type="LSString" value="1d4"/>
+                    <attribute id="Level4" type="LSString" value="1d4"/>
+                    <attribute id="Level5" type="LSString" value="2d4"/>
+                    <attribute id="Level6" type="LSString" value="2d4"/>
+                    <attribute id="Level7" type="LSString" value="2d4"/>
+                    <attribute id="Level8" type="LSString" value="2d4"/>
+                    <attribute id="Level9" type="LSString" value="2d4"/>
+                    <attribute id="Name" type="FixedString" value="D4Cantrip"/>
+                    <attribute id="UUID" type="guid" value="b183a804-e9c6-4990-8984-c76d3ed67a9f"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="2"/>
+                    <attribute id="Level1" type="LSString" value="2"/>
+                    <attribute id="Level10" type="LSString" value="5"/>
+                    <attribute id="Level11" type="LSString" value="5"/>
+                    <attribute id="Level12" type="LSString" value="6"/>
+                    <attribute id="Level13" type="LSString" value="6"/>
+                    <attribute id="Level14" type="LSString" value="6"/>
+                    <attribute id="Level15" type="LSString" value="7"/>
+                    <attribute id="Level16" type="LSString" value="7"/>
+                    <attribute id="Level17" type="LSString" value="7"/>
+                    <attribute id="Level18" type="LSString" value="8"/>
+                    <attribute id="Level19" type="LSString" value="8"/>
+                    <attribute id="Level2" type="LSString" value="2"/>
+                    <attribute id="Level20" type="LSString" value="9"/>
+                    <attribute id="Level3" type="LSString" value="3"/>
+                    <attribute id="Level4" type="LSString" value="3"/>
+                    <attribute id="Level5" type="LSString" value="3"/>
+                    <attribute id="Level6" type="LSString" value="4"/>
+                    <attribute id="Level7" type="LSString" value="4"/>
+                    <attribute id="Level8" type="LSString" value="4"/>
+                    <attribute id="Level9" type="LSString" value="5"/>
+                    <attribute id="Name" type="FixedString" value="LittleChiefMapValue"/>
+                    <attribute id="UUID" type="guid" value="9e36c4c3-cd5b-4150-83bd-a0e97336254b"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="3"/>
+                    <attribute id="Level1" type="LSString" value="3"/>
+                    <attribute id="Level10" type="LSString" value="6"/>
+                    <attribute id="Level11" type="LSString" value="6"/>
+                    <attribute id="Level12" type="LSString" value="8"/>
+                    <attribute id="Level13" type="LSString" value="8"/>
+                    <attribute id="Level14" type="LSString" value="8"/>
+                    <attribute id="Level15" type="LSString" value="8"/>
+                    <attribute id="Level16" type="LSString" value="8"/>
+                    <attribute id="Level17" type="LSString" value="8"/>
+                    <attribute id="Level18" type="LSString" value="10"/>
+                    <attribute id="Level19" type="LSString" value="10"/>
+                    <attribute id="Level2" type="LSString" value="3"/>
+                    <attribute id="Level20" type="LSString" value="12"/>
+                    <attribute id="Level3" type="LSString" value="3"/>
+                    <attribute id="Level4" type="LSString" value="3"/>
+                    <attribute id="Level5" type="LSString" value="3"/>
+                    <attribute id="Level6" type="LSString" value="5"/>
+                    <attribute id="Level7" type="LSString" value="5"/>
+                    <attribute id="Level8" type="LSString" value="5"/>
+                    <attribute id="Level9" type="LSString" value="6"/>
+                    <attribute id="Name" type="FixedString" value="StrongerChiefMapValue"/>
+                    <attribute id="UUID" type="guid" value="badb581a-60f5-44b1-8def-9898e1f4b069"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

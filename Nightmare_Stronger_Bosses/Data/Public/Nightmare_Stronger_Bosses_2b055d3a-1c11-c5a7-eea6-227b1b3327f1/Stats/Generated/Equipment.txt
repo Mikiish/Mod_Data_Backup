@@ -1,0 +1,11 @@
+new equipment "EQP_Spear_TheGuy"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "MAG_Infernal_Spear"
+add equipmentgroup
+add equipment entry "ARM_Plate_Body"
+add equipmentgroup
+add equipment entry "ARM_Helmet_Leather"
+add equipmentgroup
+add equipment entry "WPN_BlackHand_Crossbow"
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7ac0ef8-2b45-445e-b9f1-9a1ef0856f87" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_BlackHand_Crossbow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="040eb9c8-1178-4066-b2bc-9ca6240fee7b" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="fab5f00a-417b-46a3-a10c-0e63fb6e57c1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_PiercingShot);UnlockSpell(Projectile_MobileShooting);UnlockSpell(Target_NM_ConcentratedBlast)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

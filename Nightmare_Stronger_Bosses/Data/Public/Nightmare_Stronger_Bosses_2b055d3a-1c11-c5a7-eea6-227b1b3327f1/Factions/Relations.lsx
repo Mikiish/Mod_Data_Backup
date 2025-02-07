@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="FactionManager">
+        <node id="root">
+            <children>
+                <node id="Relations">
+                    <children>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="cde2b24f-6f30-5248-23e0-4efbc33ea06d"/>
+                            <attribute id="Target" type="guid" value="c5f4ad9e-0a09-b7bd-499c-baf58e10587c"/>
+                            <attribute id="Value" type="int32" value="100"/>
+                        </node>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="c5f4ad9e-0a09-b7bd-499c-baf58e10587c"/>
+                            <attribute id="Target" type="guid" value="cde2b24f-6f30-5248-23e0-4efbc33ea06d"/>
+                            <attribute id="Value" type="int32" value="100"/>
+                        </node>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="cde2b24f-6f30-5248-23e0-4efbc33ea06d"/>
+                            <attribute id="Target" type="guid" value="b5763ce7-a39d-4371-d14f-748b22c74971"/>
+                            <attribute id="Value" type="int32" value="100"/>
+                        </node>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="b5763ce7-a39d-4371-d14f-748b22c74971"/>
+                            <attribute id="Target" type="guid" value="cde2b24f-6f30-5248-23e0-4efbc33ea06d"/>
+                            <attribute id="Value" type="int32" value="100"/>
+                        </node>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="379a4898-d122-4ef9-967f-0e7934b748be"/>
+                            <attribute id="Target" type="guid" value="a1542c81-6895-929e-4522-10ce218bb360"/>
+                            <attribute id="Value" type="int32" value="0"/>
+                        </node>
+                        <node id="Relation">
+                            <attribute id="Source" type="guid" value="a1542c81-6895-929e-4522-10ce218bb360"/>
+                            <attribute id="Target" type="guid" value="379a4898-d122-4ef9-967f-0e7934b748be"/>
+                            <attribute id="Value" type="int32" value="0"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

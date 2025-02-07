@@ -1,0 +1,8 @@
+new entry "WPN_BlackHand_Crossbow"
+type "Weapon"
+using "WPN_HandCrossbow_1"
+data "RootTemplate" "fab5f00a-417b-46a3-a10c-0e63fb6e57c1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Projectile_PiercingShot);UnlockSpell(Projectile_MobileShooting);UnlockSpell(Target_NM_ConcentratedBlast)"
+

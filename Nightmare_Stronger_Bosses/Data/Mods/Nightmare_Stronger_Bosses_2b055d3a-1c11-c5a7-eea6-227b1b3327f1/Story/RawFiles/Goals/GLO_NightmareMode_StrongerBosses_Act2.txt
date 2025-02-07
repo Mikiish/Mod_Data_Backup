@@ -1,0 +1,201 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//REGION Act2a_StrongerBosses
+// Act2a All Characters
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+
+//REGION Vect
+// Bosses - Act2a Local-Global Characters / Legendary Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+
+// LittleChief - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+
+// DeathWarded - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+
+// StrongAlly - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+
+// TemporaryStunImmunity - Act2a Local Characters who gets weaker version of SG_Immunity
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Act2a Local Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+
+// RitualCaster - Act2a Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+//END_REGION
+//END_REGION Act2a_StrongerBosses
+
+//REGION Act2b_StrongerBosses
+// Act2b All Characters
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_HarperScout_002_a0fecf82-7dde-4dd7-af67-eb0ef5aa67e0);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7);
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+
+//REGION Vect
+// Bosses - Act2b Local-Global Characters / Legendary Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+
+// LittleChief - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+
+// DeathWarded - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+
+// StrongAlly - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+
+// TemporaryStunImmunity - Act2b Local Characters who gets weaker version of SG_Immunity
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Act2b Local Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+
+// RitualCaster - Act2b Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+//END_REGION
+//END_REGION Act2b_StrongerBosses
+
+
+//REGION Global Characters - Act2
+// All Characters
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Gale_Tressym_ada7ee81-829d-48c7-ba73-9c9ec191d236);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Gortash_b878a854-f790-4999-95c4-3f20f00f65ac);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Ravengard_f6620372-ebd0-4511-a39d-8c2d4ad03f03);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Monitor_f65becd6-5cd7-4c88-b85e-6dd06b60f7b8); // Raphael
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_DevilishOx_49eb5b4b-c6ed-4d37-8f68-97b1128b7d56);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Wyll_Cambion_491a7686-3081-405b-983c-289ec8781e0a); // Mizora
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Orin_bf24e0ec-a3a6-4905-bd2d-45dc8edf8101);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Cazador_2f1880e6-1297-4ca3-a79c-9fabc7f179d3);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805); // Withers
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c); //Aradin
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_Bard_4a405fba-3000-4c63-97e5-a8001ebb883c); // Alfira
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_Tiefling_010_23129d6c-8d39-4a4c-a4f6-cfc6637b597c); // Lakrissa
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_Weaponsmith_e2ad06ec-8034-479a-9f69-b86faea6dc79); // Dammon
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_CapturedGoblin_783d7572-a846-455f-b686-247a95263ebb); // Sazza
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_SnakeKid_02257c1c-bbec-4ae3-9bcb-31c75a0a982f); // Arabella
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_PickpocketTrader_e1fda08b-45d4-41db-84b5-20e9931ba5af); // Mattis
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a); // Zevlor
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_Volo_2af25a85-5b9a-4794-85d3-0bd4c4d262fa);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_FOR_OwlBear_Cub_001_c66b2865-6613-4372-b97a-e330c1d75d09);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_FOR_UnfortunateGnome_6e45a00b-bad2-40bb-9403-147b9e92d976); // Barcus
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_GoblinKing_11337af0-6a57-426b-a820-c4b00923dd54);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_Warlock_d432aafd-f728-4d9d-9707-732e1cdd8297); // Korilla
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_Quartermaster_646936f3-8d8d-484e-9361-cd1ed484c615);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GithCaptain_27fa0802-fa38-4eea-9c03-496f2e022259);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GithKnight_2adce2df-0799-49dc-b867-ba7ca21e9aea); // Fake Voss
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GLO_GurHunter_0e47fcb9-c0c4-4b0c-902b-2d13d209e760);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_FOR_GnomeGoblin1_b2c582af-bc69-48b3-a004-648562dab404); //Fezzerk
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
+DB_NightmareMode_StrongerBosses_GlobalCharacters(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81);
+//DB_NightmareMode_StrongerBosses_GlobalCharacters();
+//DB_NightmareMode_StrongerBosses_GlobalCharacters();
+
+//REGION Vect
+// Bosses - Global Characters / Legendary Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
+
+// LittleChief - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
+
+// DeathWarded - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
+
+// StrongAlly - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
+
+
+// TemporaryStunImmunity - Global Characters who gets weaker version of SG_Immunity
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Global Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
+
+// RitualCaster - Global Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+DB_NightmareMode_StrongerBosses_GlobalCharactersVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"RitualCaster");
+DB_NightmareMode_StrongerBosses_GlobalCharactersVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
+//END_REGION
+//END_REGION Global Characters - Act2
+
+//REGION Divine Avatars and VIPs.
+// All Characters
+DB_NightmareMode_StrongerBosses_Gods(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805);
+DB_NightmareMode_StrongerBosses_Gods(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de);
+DB_NightmareMode_StrongerBosses_Gods(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81);
+//DB_NightmareMode_StrongerBosses_Gods();
+//DB_NightmareMode_StrongerBosses_Gods();
+
+//REGION Vect
+DB_NightmareMode_StrongerBosses_GodsVect(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,"Jergal");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,"Maglubiyet");
+DB_NightmareMode_StrongerBosses_GodsVect(S_GOB_PainPriest_cad1854b-8f41-4038-b640-156ee0272f81,"Loviatar");
+//DB_NightmareMode_StrongerBosses_GodsVect(,"");
+//DB_NightmareMode_StrongerBosses_GodsVect(,"");
+//END_REGION
+//END_REGION Divine Avatars and VIPs.
+
+KBSECTION
+IF
+LevelLoaded(_)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(0)
+THEN
+TimerLaunch("NightmareMode_StrongerBosses_InitDelay", 0);
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(0)
+THEN
+TimerLaunch("NightmareMode_StrongerBosses_InitDelay", 0);
+
+IF
+TimerFinished("NightmareMode_StrongerBosses_InitDelay")
+THEN
+NOT DB_NightmareMode_StrongerBosses_Initialized(0);
+DB_NightmareMode_StrongerBosses_Initialized(1);
+
+
+// This script initialize whenever you teleport to any way point, click a Wheel Door (one that teleports you somewhere) or load a save game.
+// Loading a save game doesn't automatically triggers LevelLoaded(_) event.
+
+// Below simply add passives and statues to all character stored in the INIT manually edited DB.
+
+EXITSECTION
+
+ENDEXITSECTION

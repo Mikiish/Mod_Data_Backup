@@ -1,12 +1,30 @@
 INIT:
 DB_Initialisation(0);
+DB_MySuperGeniusData((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
+DB_MySuperGeniusDataVect((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, "");
+
+DB_MySuperGeniusData(S_GLO_CharacterAwesomeGuy);
+DB_MySuperGeniusDataVect(S_GLO_CharacterAwesomeGuy, "AwesomePassive");
 ENDI
 KB:
 IF
-SavegameLoaded()
+LevelLoaded(_)
 AND
 DB_Initialisation(0)
 THEN
 DB_Initialisation(1);
+
+PROC
+PROC_MyGeniusProc_ApplyingPassives((CHARACTER)_Character, (STRING)_PassiveFlag)
+AND
+
 KBI
 EXIT:
+
+
+----------------------------------------------------
+
+Name: MySuperMod_MySuperGenius_AwesomePassive_ThatGivesYouInvis
+StatFunctorContext: 
+
+NightmareMode_StrongerChief_

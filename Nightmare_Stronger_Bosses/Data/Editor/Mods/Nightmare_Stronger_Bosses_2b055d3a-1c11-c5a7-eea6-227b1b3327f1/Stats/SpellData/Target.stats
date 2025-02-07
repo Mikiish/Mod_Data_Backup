@@ -19,5 +19,25 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="faab1bcf-c7ba-4bbd-a0b5-9188559a2338" />
+        <field name="Name" type="NameTableFieldDefinition" value="CommandersStrike_StrongerChief" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8e6fc7e-f4e1-4762-bb84-015dfdca4026" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COMMANDERS_STRIKE_D8,100,3)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffd74337-fcb3-4d59-ae71-10adf1a3040b" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_ConcentratedBlast" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f53d7862-772c-4eb3-9e15-4de5124fc608" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic,Magical)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

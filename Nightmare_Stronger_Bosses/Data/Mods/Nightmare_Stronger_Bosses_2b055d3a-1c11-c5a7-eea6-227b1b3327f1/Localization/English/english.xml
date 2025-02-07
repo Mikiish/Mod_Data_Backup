@@ -6,7 +6,7 @@
   <content contentuid="h75cc521agaaeagfa07g7ebage6e8778336b6" version="1">The next time damage would reduce the affected entity to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, it remains conscious with [2] hit point left.</content>
   <content contentuid="he0367f09g108fg74b9g1986g3cd650dd62c6" version="1">Death Ward</content>
   <content contentuid="h378c573agac8cgf68ag0077ga21d76b4aa25" version="3">SB:CC</content>
-  <content contentuid="h719562e5g55fagdf93g0ffcg311a4fc4dd7d" version="3">&lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Stronger Bosses&lt;/LSTag&gt;: This entity is immune to &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysing&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISON_CRAWLER_MUCUS_CONDITION"&gt;Incapacitate&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="DOMINATE_PERSON"&gt;Charm&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="POLYMORPH_SHEEP"&gt;Polymorph&lt;/LSTag&gt;.</content>
+  <content contentuid="h719562e5g55fagdf93g0ffcg311a4fc4dd7d" version="6">This entity is immune to &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysing&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISON_CRAWLER_MUCUS_CONDITION"&gt;Incapacitate&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="DOMINATE_PERSON"&gt;Charm&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="POLYMORPH_SHEEP"&gt;Polymorph&lt;/LSTag&gt;.</content>
   <content contentuid="hd361e6bag987fge78fg59f1gd3505558765b" version="1">Paralysed</content>
   <content contentuid="ha87a732dgd887g8351gb1dbg2b3915859644" version="1">Affected entity can't move or take actions, bonus actions, or reactions.&lt;Br&gt;&lt;Br&gt;Attacks against the entity are always &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; if the attacker is within [1].</content>
   <content contentuid="h6fcccc29g3935g6373g5612g6a5d5e78bba3" version="3">Your reflexes are enhanced by the light weight of your equipment. If you are not wearing Medium or Heavy Armour and have nothing equipped in your Off-Hand, you gain a +2 bonus to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
@@ -24,16 +24,164 @@
   <content contentuid="hb8585d2agc9fcgf5c5gc3a0g23a56adc42ec" version="3">Gate Master Ao'ka</content>
   <content contentuid="hd4edcfcag9840g4614g420bgb3d470664743" version="3">Gate Master Wra'ji</content>
   <content contentuid="h28a5e9adg156bgb2aegb22cga5bfa108f898" version="3">Gishra Liz'rah</content>
-  <content contentuid="h3ddec22eg878ag7088g2574g9a4fdd51996e" version="2">Increase &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; of nerby Giths by [1], and give theim &lt;LSTag Type="Status" Tooltip="SEE_INVISIBILITY"&gt;True Sight&lt;/LSTag&gt;.</content>
+  <content contentuid="h3ddec22eg878ag7088g2574g9a4fdd51996e" version="3">Increase &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; of nerby Giths by [1], and give theim &lt;LSTag Type="Status" Tooltip="SEE_INVISIBILITY"&gt;True Sight&lt;/LSTag&gt;.</content>
   <content contentuid="h9a4e37f3g1a29g3066gc99dg824e1acc17af" version="1">Astral Elk Aspect</content>
   <content contentuid="hce16d29cgd1c3gdfcdg4cf5gc7766b1d5e6b" version="1">Astral Elk</content>
-  <content contentuid="hc03ee339g2e76gb241g3363g9838cb60688d" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; increased by [1], as long as the affected entity stays within [2] of the Gishra.</content>
+  <content contentuid="hc03ee339g2e76gb241g3363g9838cb60688d" version="2">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; increased by [1], as long as the affected entity stays within [2] of the Gishra.</content>
   <content contentuid="ha8009748g3386gbb13g15e0g678813cb34a1" version="1">SB: God</content>
-  <content contentuid="h28a1be57gdaa5g96b2g5f9cg4d30437a1424" version="1">This entity is a God or an avatar of a God. Better not mess-up with these.</content>
-  <content contentuid="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="1">SB: Strong Ally</content>
+  <content contentuid="h28a1be57gdaa5g96b2g5f9cg4d30437a1424" version="2">This entity is either under divine protection or is an avatar of a deity. Interfering with such a being would be unwise.</content>
+  <content contentuid="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="2">%%%SB: Strong Ally</content>
   <content contentuid="h648eb8a2g3bc2g6a2bg2eecg185eec60c422" version="1">This entity has additionnal bonuses.</content>
   <content contentuid="hf2819b4ag5495gfebdg6a7fga724379fa91e" version="1">SB: Little Chief</content>
-  <content contentuid="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="1">This entity is leading the pack and gets additionnal bonuses.</content>
-  <content contentuid="he7133fd1gc619g7f39g5aceg7a7d862115f9" version="1">SB: Stuns</content>
+  <content contentuid="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="3">This entity is leading the pack and gets +[1] increased &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. It also &lt;LSTag Type="Status" Tooltip="BLESS"&gt;reinvigorates&lt;/LSTag&gt; nearby allies.</content>
+  <content contentuid="he7133fd1gc619g7f39g5aceg7a7d862115f9" version="2">%%%SB: Stuns</content>
   <content contentuid="h9006f4acgaec4gf490g4863g94e3b78845f2" version="1">This entity has additionnal bonuses.</content>
+  <content contentuid="h82b6e394gd9fdg8c56g022cg80f4ac0442b6" version="1">Stinky Smell</content>
+  <content contentuid="h3cc81c3eg3c58geb6dg296eg7e5873b53d4d" version="2">The fetid stench of the mauled sheep enrages the nearby worgs, granting theim increased ferocity and an insatiable bloodlust. Worgs within [1] of the sheep are empowered.</content>
+  <content contentuid="h0b16d1baga47fgb59dgdd99g02462c5347c9" version="1">Bloodlust</content>
+  <content contentuid="ha74e1f37ga5c6g86d4g8cdfg7ba77682a401" version="1">Enraged. Gain double movement speed and deal an additionnal [1] when attacking.</content>
+  <content contentuid="hdb418377g40a5g2bd6g3f5bg5983bc155f11" version="1">Bloodlust</content>
+  <content contentuid="h677f00b1gc4ebg1c3eg96c4gdb13cd903d82" version="1">Enraged. Gain double movement speed and deal an additionnal [1] when attacking.</content>
+  <content contentuid="h10a9ce1egb1a7g75b6gf6deg0d4bf2c55064" version="1">SB:LC</content>
+  <content contentuid="he0b487a7g5a94g7abdg7b29g70bd501c1c14" version="4">This entity has increased &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="BLESS"&gt;Reinvigorates&lt;/LSTag&gt; nearby allies.</content>
+  <content contentuid="h1af14241g3a98gdf93g9a91gd1b3ddae1302" version="2">SB: Subject</content>
+  <content contentuid="hc2ef898dg5472g7f94gc93cg0639ca0e7059" version="2">SB: Subject</content>
+  <content contentuid="h9062402fg9bd4g4dcdg9bc0g694bc3cd231d" version="3">Brakkal</content>
+  <content contentuid="h7a5c6e87gb4a7g4298gb3f2g1bbdc909ce01" version="3">Faithful of Maglubiyet</content>
+  <content contentuid="h68815118g11f2g6c4agcf48ge1962d43627d" version="2">Auril</content>
+  <content contentuid="h938b2c8fg7895g5b65g69d6gce787ef187ca" version="2">Auril, the Queen of Frozen Tears, personifies the merciless chill of winter and its most lethal aspects. Her icy beauty, as cold as her heart, is eternally preserved beneath a veil of frost, embodying the cruel and unrelenting force of the frozen season.</content>
+  <content contentuid="h127d53bbgdbe2gf3e1g147ag8214fca0ee64" version="2">Myrkul</content>
+  <content contentuid="h1fde80e7g4e6fg3c5bg5acbgacdbf963a683" version="2">Myrkul, also known as the Lord of Bones, is the God of Death and a member of the Dead Three. He is associated with the domain of Death.</content>
+  <content contentuid="hbefedbc4g937eg592dgd5fcgaedec774c1f9" version="2">Shar</content>
+  <content contentuid="h0f258d30g5070gecefg4405g044e387d8a4d" version="2">As the greater deity of darkness, Shar is feared for her power over the night, secrets, and loss. She is locked in eternal conflict with her twin sister Selûne, goddess of the moon.</content>
+  <content contentuid="h5d19d374gb67ag8029g48f0gbe5a682e1317" version="2">Selûne</content>
+  <content contentuid="he3224b05gb63fg9aa2gf551g8883518136e7" version="2">The Lady of Silver presides over the moon, stars, and navigation. Her power over the heavens is constantly challenged by her sister Shar, who seeks to plunge the world into eternal shadow.</content>
+  <content contentuid="h0bc19eb3g934ageb88g7214gad2b48f55ef8" version="2">Zehir</content>
+  <content contentuid="hb20ff583g23e6g6b8agc3ddgf2239fb05898" version="2">Zehir, the god of poison and shadows, is a cunning interloper who carved his domain in a realm of toxic mists and perpetual night. His venomous will seeps into Toril, spreading corruption and death.</content>
+  <content contentuid="h2b838bd9g220fgd3b0g5d58g5adbd4491f90" version="2">Cyric</content>
+  <content contentuid="hddbfcaa5g9c8ag28dcg27f6g54bead9b87d8" version="2">Cyric, the Prince of Lies, is the god of strife, trickery, and illusion. Once a tyrant who sought to unravel the divine order, his murder of Mystra and alliance with Shar plunged the cosmos into chaos during the Spellplague. His shadow lingers still, drawing mortals into discord and deceit, promising power but delivering only ruin.</content>
+  <content contentuid="h69d63ac1g4995ga417gdf51g0cc1c00bdb83" version="1">Maglubiyet</content>
+  <content contentuid="ha22023ecgde78g30f2gb13bgf7f261612504" version="1">Maglubiyet, known as The Mighty One, is the chief deity of goblins and hobgoblins. In the myths of the Forgotten Realms, he is considered an exarch of Bane, the god of tyranny.</content>
+  <content contentuid="h4997b8bdgeb7ag9357g74c5g705e9e3da9ae" version="2">Maglubiyet</content>
+  <content contentuid="h0ae41d05g8d21ga1f9g116bg71f374b957de" version="2">Maglubiyet, known as The Mighty One, is the chief deity of goblins and hobgoblins.</content>
+  <content contentuid="h1ada5111gc918g2517g08cag808e4a448ea8" version="3">Cleric of Maglubiyet</content>
+  <content contentuid="h65fa1fa5g183dge276gc491gd1866387a52d" version="3">Maglubiyet, known as The Mighty One, is the chief deity of goblins and hobgoblins.</content>
+  <content contentuid="hf9fc0256g5c9dgfb9dgd7c0g6aca854878b5" version="1">Psionic Aura</content>
+  <content contentuid="hfc426869gf6d9ga550g6bc0g5113fd0db409" version="1">This mind flayer has recently died; it still radiates dangerous psionic energies.</content>
+  <content contentuid="h3564afc4gcd28gbd81ge300gdd2be6f8b56e" version="1">Oppressive Presence</content>
+  <content contentuid="h2e22b189gf6bbg5177gff83g5ffbd26b3e2c" version="1">You feel exceptionally good, yet something feels amiss...</content>
+  <content contentuid="hb89e02eagdcd2g5204g9b1dg3d9d6b66eeb6" version="1">Loviatar</content>
+  <content contentuid="h3e612022g9b76g7f18ga321g1ad005d0a55a" version="1">Loviatar, known as the Maiden of Pain, is the goddess of agony, embodying the mastery of both physical and psychological suffering; her domain encompasses hurt and torture.</content>
+  <content contentuid="h26e719ccg8fb9gac0ag4548g819f7c136d08" version="4">Loviatar</content>
+  <content contentuid="hc2d41cc0g6aa9gd37ag8b0cg1c2df9d5b1ef" version="4">Loviatar, known as the Maiden of Pain, is the goddess of agony, embodying the mastery of both physical and psychological suffering; her domain encompasses hurt and torture.</content>
+  <content contentuid="hfe5a422bgee9egcfd9gc724g44c97403b6c0" version="2">Cleric of Loviatar</content>
+  <content contentuid="h04cae39eg6064g269eg62d3g5c0deb8811cf" version="2">Loviatar, known as the Maiden of Pain, is the goddess of agony, embodying the mastery of both physical and psychological suffering; her domain encompasses hurt and torture.</content>
+  <content contentuid="h5fff5630gdfabgfd3ag69e3g355971f3fdaa" version="4">Cleric of Auril</content>
+  <content contentuid="h763eddd9g29e2gadd9g0147g46d32fb91a37" version="3">Auril is the goddess of cold and winter, a Neutral Evil deity who urges her clerics to raise ice and freeze all in their path. She grants spells that unleash devastating storms of frost and ice.</content>
+  <content contentuid="hca3eecddgdfc0g42d3g2dabgeb0cc817b9bf" version="3">Cleric of Cyric</content>
+  <content contentuid="hc948c33bgfda8ga5c5g2f7bgc76002918475" version="2">Cyric is the god of lies and strife, a Chaotic Evil deity who urges his clerics to sow discord and manipulate the weak. He grants spells that deceive, confound, and twist the minds of those who oppose them.</content>
+  <content contentuid="hc48aafeagb7f2gc835g86b0g3233078eec9a" version="4">Cleric of Zehir</content>
+  <content contentuid="hd06eb1a9g1b8eg82caga507g1529d5735763" version="4">Zehir is the god of poison and shadows, a Chaotic Evil deity who commands his clerics to spread venom and sow chaos. He grants spells that envenom weapons and summon deadly serpents to strike from the dark.</content>
+  <content contentuid="h194af393gdc34g47f1ga56egbf679ca1825f" version="3">Abdirak</content>
+  <content contentuid="h6ac38d33gf470gd5beg3817g42d4586a6d35" version="1">Loviatar</content>
+  <content contentuid="h8f201d6fg45f9g1515g346eg3d90a735b52c" version="1">Maglubiyet, known as The Mighty One, is the chief deity of goblins and hobgoblins. In the myths of the Forgotten Realms, he is considered an exarch of Bane, the god of tyranny.</content>
+  <content contentuid="h8f8026degeec4g4474gf4b1ge6a1c66b852c" version="1">Maglubiyet</content>
+  <content contentuid="h1614744dgb1d6g222fg56e5g82c62ab76dde" version="1">Loviatar, known as the Maiden of Pain, is the goddess of agony, embodying the mastery of both physical and psychological suffering; her domain encompasses hurt and torture.</content>
+  <content contentuid="h09279087g7902g90d3g80e6gc6323de0668d" version="1">Bhaal</content>
+  <content contentuid="hff3bebaag5635gd191g4cabg221759ac2951" version="1">Bhaal is the notorious god of murder, reborn after each of his descendants were viciously slain. He has a tenuous alliance with Myrkul and Bane, the three having attained divinity in a bargain with Jergal.</content>
+  <content contentuid="h75ff5672ga3bfg7909gd20ag6ffcf6b75080" version="1">Myrkul</content>
+  <content contentuid="h54db8bf2g29b4gef9bgfaecg906ad5fac297" version="1">Myrkul, also known as the Lord of Bones, is the God of Death and a member of the Dead Three. He is associated with the domain of Death.</content>
+  <content contentuid="hc768f10agb296gfd7agaffcga1604ed7c26f" version="1">Auril</content>
+  <content contentuid="h0adaf428g5053g7091g0f0bg4b7c436095cb" version="1">Auril, the Queen of Frozen Tears, personifies the merciless chill of winter and its most lethal aspects. Her icy beauty, as cold as her heart, is eternally preserved beneath a veil of frost, embodying the cruel and unrelenting force of the frozen season.</content>
+  <content contentuid="h9014fc38g3132g67dfg3441gc67f02282048" version="1">Zehir</content>
+  <content contentuid="he03af3efgddf0gcf70ga2d5g9e1803781978" version="1">Zehir, the god of poison and shadows, is a cunning interloper who carved his domain in a realm of toxic mists and perpetual night. His venomous will seeps into Toril, spreading corruption and death.</content>
+  <content contentuid="hfad64a1eg9948gfbd1g6485g76cd8e6235c6" version="1">Cyric</content>
+  <content contentuid="h03e91fd7g7391g1aaagb166g3a41c396e864" version="1">Cyric, the Prince of Lies, is the god of strife, trickery, and illusion. Once a tyrant who sought to unravel the divine order, his murder of Mystra and alliance with Shar plunged the cosmos into chaos during the Spellplague. His shadow lingers still, drawing mortals into discord and deceit, promising power but delivering only ruin.</content>
+  <content contentuid="h210890cdg8c66gb816g43fag7442eb45c80a" version="5">Auril</content>
+  <content contentuid="h00ed78e1g6b85gc3f6gf8aag6088f7468841" version="2">Auril is the goddess of cold and winter, a Neutral Evil deity who urges her clerics to raise ice and freeze all in their path. She grants spells that unleash devastating storms of frost and ice.</content>
+  <content contentuid="hda96632cg67ecg484cg8eecgd2e762b87647" version="4">Myrkul</content>
+  <content contentuid="h3a50e41fgae7dg2d22g1fa0g42ff94a7c415" version="1">Myrkul is the god of death and decay. He has few clerics, but those who serve his faith inspire a fear of death in others, bringing doom wherever they tread.</content>
+  <content contentuid="h983166f0ga8aegaf25g8418g373109c7e3a8" version="1">Loviatar</content>
+  <content contentuid="h3347f262g9356ge9ffgd490gbda49e3f331a" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_LOVIATAR"&gt;Loviatar&lt;/LSTag&gt;.</content>
+  <content contentuid="hb65d49e9g02c3ga195gb183g5b405a6fdd2e" version="1">Maglubiyet</content>
+  <content contentuid="h6f87fb3cgc790gf11fgdb83g33d651972e16" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_MAGLUBIYET"&gt;Maglubiyet&lt;/LSTag&gt;.</content>
+  <content contentuid="h5d06314cg1d7cg4291g8cefg4703f54d2bc0" version="1">Shar</content>
+  <content contentuid="h4b340db1g71a9gec4bg21d8g7e4a4678a5fb" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_SHAR"&gt;Shar&lt;/LSTag&gt;.</content>
+  <content contentuid="h95c6f302gabbbg0ea0g989fg860e4ca65273" version="1">Auril</content>
+  <content contentuid="hf117f116g8a35g8b33gf96ag54f61232b066" version="1">Myrkul</content>
+  <content contentuid="he255412dg59e4gbdfbgaf5dg9558e2ca602c" version="2">Selûne</content>
+  <content contentuid="hfee0fb8bg2a1bg9701gb054g1070ff87b5e8" version="1">Zehir</content>
+  <content contentuid="h5768e65agd78cga6e4g84a6g322d109a7fad" version="1">Cyric</content>
+  <content contentuid="h1fb9906ag3c99g6252gd0b3g9caeac96c912" version="1">Tempus</content>
+  <content contentuid="hc99d5264g6af5g896bg6ab0g973bb95e1bd0" version="1">Tyr</content>
+  <content contentuid="h18a208cag8d6cge231g7188gd60e2d32b3cc" version="1">Helm</content>
+  <content contentuid="hd81794e6gbb5cg91b7g7f16g6bc7fee2ba92" version="1">Ilmater</content>
+  <content contentuid="h5aee7874g79dbgd271g78acg1607f24cc9f1" version="1">Mystra</content>
+  <content contentuid="h38ce3a88g8278g14c2g5480gfddea1086efe" version="1">Oghma</content>
+  <content contentuid="h6c3ce089g66e7gd8b3g6573gb25afa7f9800" version="1">Kelemvor</content>
+  <content contentuid="h982608dega1a4gf661g9304gd26dcc584f91" version="1">Moradin</content>
+  <content contentuid="hf7cbc149g6d7eg7453g2df3g9dc6b05a1b6a" version="1">Corellon_Larethian</content>
+  <content contentuid="h24b0f4b8gc209g0247g1fb4g54fa0896ac0f" version="1">Garl_Glittergold</content>
+  <content contentuid="h91e1be9eg1bb7ga06cg914cgd4d1333a91e3" version="1">Yondalla</content>
+  <content contentuid="h293e6ce2gdaaeg26cfgf336g6c5d672a7072" version="1">Lolth</content>
+  <content contentuid="h79d25e2agb975g6a91gf834g25df291d1234" version="1">Laduguer</content>
+  <content contentuid="h1e23d864g6b3fg5c79g6211g1a4d0076c8dc" version="1">Vlaakith</content>
+  <content contentuid="h20823696g890fg4abeg442fg8ab503a01e2f" version="1">Eilistraee</content>
+  <content contentuid="h7f5155b6g559bg23a6g6857g0d4fd6606958" version="1">Lathander</content>
+  <content contentuid="hadfb7b3cg558agd407g37b2gb67435053748" version="1">Talos</content>
+  <content contentuid="h685d17eeg5a63gaf85gfcd5g8243b1a53ced" version="1">Tymora</content>
+  <content contentuid="h17db2910g2371gb7f1gc319ge151d0a61b5a" version="1">Mielikki</content>
+  <content contentuid="h6bb268c4g0915gc823g4ccfge5507fe67c7b" version="1">Bahamut</content>
+  <content contentuid="h8e356d9cg4eefg621eg68e5g6a03288cf381" version="1">Gruumsh</content>
+  <content contentuid="h46ba0a3ag7894gf0d1g628cgd0b93cfadc9c" version="1">Tiamat</content>
+  <content contentuid="h34fc48a0gff18g99a5g78fbg125085ae7749" version="1">Bhaal</content>
+  <content contentuid="h394e5a0dg7361g94acg57a1ge749bdf45e63" version="1">Bane</content>
+  <content contentuid="h3fd236e1g34d1gaf6ag6a69g8c435943e64e" version="1">Bane</content>
+  <content contentuid="h8b50d1f5gb2dbg498ag7ca2g1390917554e0" version="1">Bane, The Black Hand, is the god of tyrannical oppression, terror, and hate, known across Faerûn as the face of pure evil through malevolent despotism.</content>
+  <content contentuid="h832a1c7dg0d52g21c8g65f1gb6dd182f5c85" version="1">Jergal</content>
+  <content contentuid="he4f02e34g02f8g0938ga24fg4d0ecb120bb2" version="1">Jergal was the Lord of the End of Everything, Faerûn's original god of death before he eventually ceded his position.</content>
+  <content contentuid="he6d1e29ag5b10g8aa8gf969gcf81264c6e02" version="1">Cleric of Jergal</content>
+  <content contentuid="hc29f1526g934dg66f5gc881g24cc5acd3913" version="1">Jergal was the Lord of the End of Everything, Faerûn's original god of death before he eventually ceded his position.</content>
+  <content contentuid="he3b51991g2185g9760g4096gfa627f04ee60" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_AURIL"&gt;Auril&lt;/LSTag&gt;.</content>
+  <content contentuid="h075e18b2gece0g9b20gaa09g095209be9b10" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_MYRKUL"&gt;Myrkul&lt;/LSTag&gt;.</content>
+  <content contentuid="h921690a5gcee8gf64fg26bcg46dbe775201d" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_SELUNE"&gt;Selûne&lt;/LSTag&gt;.</content>
+  <content contentuid="hcbb5ae0eg214agee1dg4701g69ac578299c0" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_ZEHIR"&gt;Zehir&lt;/LSTag&gt;.</content>
+  <content contentuid="hfa0452a2g9d6cgfd1dg7123g20c8c8cd7c26" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_CYRIC"&gt;Cyric&lt;/LSTag&gt;.</content>
+  <content contentuid="h43f597cfg6274g9fedg63fbgcef43d35bfa4" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_BANE"&gt;Bane&lt;/LSTag&gt;.</content>
+  <content contentuid="hea407038gfe51gb6b1g890egc664ad81ea72" version="1">Jergal</content>
+  <content contentuid="h549bc27bg67b2gae36g0054gdffa802a0fd8" version="1">This entity is under the protection of &lt;LSTag Type="Status" Tooltip="CCSTATUS_JERGAL"&gt;Jergal&lt;/LSTag&gt;.</content>
+  <content contentuid="h2e367b27gee03g1855g1246g5c3fd7e7031d" version="1">Jergal</content>
+  <content contentuid="h53c1b7a6g6143g51cega6adga701bd167bbf" version="2">Jergal, the Lord of the End of Everything, was Faerûn's original god of death before he eventually ceded his position.</content>
+  <content contentuid="h57af42b3geab2g3dc7g184eg75da50d50ac6" version="1">Jergal</content>
+  <content contentuid="h7cf31ed1g3546gf3feg95efgb7059f361c12" version="2">Jergal, the Lord of the End of Everything, was Faerûn's original god of death before he eventually ceded his position.</content>
+  <content contentuid="hc74a7a9bgf5a2g9c17g3dc8gc1ddea55be1a" version="1">&lt;LSTag Type="Passive" Tooltip="NightmareMode_StrongerBosses"&gt;Stronger Bosses&lt;/LSTag&gt;: This entity is immune to &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysing&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISON_CRAWLER_MUCUS_CONDITION"&gt;Incapacitate&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="DOMINATE_PERSON"&gt;Charm&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="POLYMORPH_SHEEP"&gt;Polymorph&lt;/LSTag&gt;.</content>
+  <content contentuid="h48a44630gbcf1gd80fg956egdad2111e2bc6" version="1">%%%SB: Ritual</content>
+  <content contentuid="h68abee43g705cg8054g6944g988342212d3c" version="1">This entity has additionnal bonuses.</content>
+  <content contentuid="h245d1663gc664g7403g96d4g0331fc20b99d" version="1">%%%SB: Drunk</content>
+  <content contentuid="h24e1e648gc1edg61a0g1cbeg214e9ca6fed0" version="1">This entity has additionnal bonuses.</content>
+  <content contentuid="h40b16504g9a04g243fg9b5bg5439bb1fc049" version="2">SB: True Sight</content>
+  <content contentuid="hebb469adg62ccgef47g1779gbe3c825cab3a" version="2">This entity can see invisible units. &lt;LSTag Type="Spell" Tooltip="Shout_Hide"&gt;Sneaking&lt;/LSTag&gt; rules still applies.</content>
+  <content contentuid="h42a9bbacgcbe3g8355gb261g2006d5703590" version="1">SB: Chief</content>
+  <content contentuid="ha668f3dcg6f48gabd8gaee6gb6de270c557d" version="3">This entity is leading the pack and gets +[1] increased &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. He can also &lt;LSTag Type="Spell" Tooltip="Target_CommandersStrike_StrongerChief"&gt;Command&lt;/LSTag&gt; nearby subjects.</content>
+  <content contentuid="hd556a85fg772dg99afg6748gedbcd090e750" version="1">Martial Aura</content>
+  <content contentuid="h8243dab4gad59g63a2gbd0ag5b50d7d01bee" version="1">This character is issuing commands to nearby allies, directing their actions and influencing their behavior.</content>
+  <content contentuid="h89b4b6d7g6e6eg8680gb9degb9c174cb7dc0" version="1">Martial Aura</content>
+  <content contentuid="h21160618g4a8dgee87g71dfg242ae7e69fd4" version="1">A nearby commander is issuing orders to this entity, directing its actions and influencing its behavior.</content>
+  <content contentuid="h4a9d9dfeg1abcgc958g8372g0ecf711fe97e" version="1">%%% HIDDEN</content>
+  <content contentuid="hb0952061g9305g8f8eg00c7g6363f27d6f2f" version="1">This entity is galvanized by the presence of the of a nearby &lt;LSTag Type="Passive" Tooltip="NightmareMode_StrongerChief"&gt;Little Chief&lt;/LSTag&gt;.</content>
+  <content contentuid="h17885fa2g9240gf898g2deeg971413997ede" version="1">This entity is galvanized by the presence of the of a nearby &lt;LSTag Type="Passive" Tooltip="NightmareMode_StrongerChief"&gt;Little Chief&lt;/LSTag&gt;.</content>
+  <content contentuid="h79d2443eg8e43g9dc9g72c6g2ebe7d2c6fce" version="2">The Absolute</content>
+  <content contentuid="h3f901c0dg119bgf8bag2940gd24263ea9a59" version="2">« The Absolute is gold from the sky, She is. The blessin' in the storm an' the storm itself.»</content>
+  <content contentuid="h5eb79bd8g704dgd56ag51ebg30da66aefae7" version="1">Cleric of the Absolute</content>
+  <content contentuid="hd917cb72g337ag6671gcc7bg2f278cb14d7c" version="1">The Absolute is shrouded in mystery, but it generally assumed to be a deity, with many professing themselves acolytes and clerics of it.</content>
+  <content contentuid="h97be0bfbgb669gc1cdgc5a1ga8715551f41f" version="1">The Absolute</content>
+  <content contentuid="h330e7936g0324gb9cbg5531gc109ade81f43" version="1">The Absolute is shrouded in mystery, but it is generally assumed to be a deity, with many professing themselves as its acolytes and clerics.</content>
+  <content contentuid="he5dce9ecgd050ga6a1g54f9gcbfa2355573f" version="1">The Absolute</content>
+  <content contentuid="h3b214a1bg2f9dg56dege0f6g2646e416fcbc" version="1">The Absolute is shrouded in mystery, but it is generally assumed to be a deity, with many professing themselves as its acolytes and clerics.</content>
+  <content contentuid="hd6a20122g406cg8e8agae9fg9badb3c28705" version="1">The Absolute</content>
+  <content contentuid="h6b30ec5fg9ccdgbed9g7e5fg4c4c205e0357" version="1">This entity is under the protection of the &lt;LSTag Type="Status" Tooltip="CCSTATUS_THEABSOLUTE"&gt;Absolute&lt;/LSTag&gt;.</content>
+  <content contentuid="hd60e6b0egdb99g036cg7db6g539feddbeea0" version="1">Stronger Bosses also get +[1] to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+  <content contentuid="h109fbefegd326gfe2age842g171e4276cd27" version="1">%%% HIDDEN</content>
+  <content contentuid="h5783de92gba6ag4873g82d7gf6dda44b4ca5" version="2">Black Hand Crossbow</content>
+  <content contentuid="hf822a308g068bg5a55g5fabgb8a55f2b0292" version="3">Black Hand Crossbow</content>
 </contentList>

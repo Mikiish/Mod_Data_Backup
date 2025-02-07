@@ -4,24 +4,28 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a28e1465-a5be-444c-8dbe-8d52bf53c29c" />
-        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_DeathWard" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_DeathWarded" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71ab5fffg12a1gff94gf75cg0b3f2b244b5c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha158422bgbca8ge411g4ce1g406e1c319cbd" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="0;1;1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCombatStarted)):ApplyStatus(DEATH_WARD, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')):ApplyStatus(NIGHTMARE_DEATH_WARD_IMMUNE, 100, 1);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCombatStarted)):ApplyStatus(DEATH_WARD, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')):ApplyStatus(NIGHTMARE_DEATH_WARD_IMMUNE, 100, 1);IF(context.HasContextFlag(StatsFunctorContext.OnCreate)):ApplyStatus(DEATH_WARD, 100, -1)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6bbb641d-9733-4e7c-877c-d250f06139a3" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCombatStarted) and not HasStatus('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD'))" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCombatStarted) and not HasStatus('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnCreate) and not HasStatus('DEATH_WARD'))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a0179d8-4dda-4099-9488-97e4b8e673a6" />
-        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_CCImmunity" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerBoss" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4453a7e4g08a9g9514g3e89g9a70713f44e1" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnCombatStarted;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NIGHTMARE_STATUESIMMUNITY', context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NIGHTMARE_STATUESIMMUNITY,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Control" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc74a7a9bgf5a2g9c17g3dc8gc1ddea55be1a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StrongerChiefMapValue));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -30,6 +34,32 @@
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerBosses" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7071d7c6ga133gc667g1a56gc469ce717971" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h17f5164bg43e8g4868g865agc7945f1e511c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_TheThirdEye_SeeInvisibility" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="117453f3-643e-4411-93d6-9633f5adf8ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerChief" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42a9bbacgcbe3g8355gb261g2006d5703590" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha668f3dcg6f48gabd8gaee6gb6de270c557d" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CommandersStrike_StrongerChief);ProficiencyBonusOverride(Owner.LevelMapValue(StrongerChiefMapValue));" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and not IsMiss()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COMPELLED_DUEL,100,3)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41d71220-cb65-4870-ab0a-a83f1aaf394b" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerChief_Status" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a9d9dfeg1abcgc958g8372g0ecf711fe97e" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(NM_GLO_STRONGERCHIEF_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -37,7 +67,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f44e9172-288c-495b-b4e6-1fdb34d9be04" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_Gods" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha8009748g3386gbb13g15e0g678813cb34a1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h28a1be57gdaa5g96b2g5f9cg4d30437a1424" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h28a1be57gdaa5g96b2g5f9cg4d30437a1424" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -45,23 +77,413 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ff5f4bf9-4678-449a-9f5b-8b7edf9ea3fa" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_LittleChief" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2819b4ag5495gfebdg6a7fga724379fa91e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(LittleChiefMapValue));" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnCombatStarted;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NIGHTMARE_LITTLECHIEF_AURA', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NIGHTMARE_LITTLECHIEF_AURA,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bless" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5d0d2983-bd85-4b5d-9574-d5cd64ccef85" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongAlly" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h648eb8a2g3bc2g6a2bg2eecg185eec60c422" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Goaded" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b3b94aab-9ad1-4325-ae1a-5ade996c1f4c" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_TemporaryStunImmunity" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he7133fd1gc619g7f39g5aceg7a7d862115f9" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he7133fd1gc619g7f39g5aceg7a7d862115f9" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9006f4acgaec4gf490g4863g94e3b78845f2" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1b0b7a0d-74e2-4be7-8f2c-03a2091b3b09" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_RitualCaster" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h48a44630gbcf1gd80fg956egdad2111e2bc6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68abee43g705cg8054g6944g988342212d3c" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="013f7e4a-a2ff-434f-8fb5-291a4fd85fe1" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_DrunkAtFirewine" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h245d1663gc664g7403g96d4g0331fc20b99d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24e1e648gc1edg61a0g1cbeg214e9ca6fed0" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c89037a-3bd8-4c60-93c8-1a0543a42e07" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_NamedSeeInvis" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40b16504g9a04g243fg9b5bg5439bb1fc049" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebb469adg62ccgef47g1779gbe3c825cab3a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueSeeing" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SEE_INVISIBILITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shar" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d06314cg1d7cg4291g8cefg4703f54d2bc0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b340db1g71a9gec4bg21d8g7e4a4678a5fb" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(SHAR);Tag(CLERIC_SHAR)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_SHAR', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_SHAR,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4cb78730-47ce-40d7-a03d-1a84cf668dd6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Loviatar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h983166f0ga8aegaf25g8418g373109c7e3a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3347f262g9356ge9ffgd490gbda49e3f331a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LOVIATAR);Tag(CLERIC_LOVIATAR)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_LOVIATAR,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_GOB_CalmnessInPain_Active" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_LOVIATAR', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d799937-fa26-428f-a5b4-57a62bd5082a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Maglubiyet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb65d49e9g02c3ga195gb183g5b405a6fdd2e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f87fb3cgc790gf11fgdb83g33d651972e16" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(MAGLUBIYET);Tag(CLERIC_MAGLUBIYET)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_MAGLUBIYET,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Imp_Invisibility" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_MAGLUBIYET', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1332156c-ac8a-45e8-94be-a415bd8e1973" />
+        <field name="Name" type="NameTableFieldDefinition" value="Auril" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95c6f302gabbbg0ea0g989fg860e4ca65273" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3b51991g2185g9760g4096gfa627f04ee60" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(AURIL);Tag(CLERIC_AURIL)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_AURIL,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Frost" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_AURIL', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f3dea94-6437-4a60-aa95-77cab962c697" />
+        <field name="Name" type="NameTableFieldDefinition" value="Myrkul" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf117f116g8a35g8b33gf96ag54f61232b066" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h075e18b2gece0g9b20gaa09g095209be9b10" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(MYRKUL);Tag(CLERIC_MYRKUL)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_MYRKUL,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Acid" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_MYRKUL', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38642a86-6279-481a-be91-501cd1d85efc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Selune" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he255412dg59e4gbdfbgaf5dg9558e2ca602c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h921690a5gcee8gf64fg26bcg46dbe775201d" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(SELUNE);Tag(CLERIC_SELUNE)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_SELUNE,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_SELUNE', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0be36c53-04c2-4b91-8773-071cf82a1be9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Zehir" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfee0fb8bg2a1bg9701gb054g1070ff87b5e8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbb5ae0eg214agee1dg4701g69ac578299c0" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(ZEHIR);Tag(CLERIC_ZEHIR)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_ZEHIR,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Poison" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_ZEHIR', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6df031e5-6658-4da9-8570-25d8edfaa8de" />
+        <field name="Name" type="NameTableFieldDefinition" value="Cyric" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5768e65agd78cga6e4g84a6g322d109a7fad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa0452a2g9d6cgfd1dg7123g20c8c8cd7c26" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CYRIC);Tag(CLERIC_CYRIC)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_CYRIC,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Ethereal" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_CYRIC', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25049b71-ff66-40ce-b320-b6c441c6bd9c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tempus" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fb9906ag3c99g6252gd0b3g9caeac96c912" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(TEMPUS);Tag(CLERIC_TEMPUS)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cabd2ffb-9ded-4fed-a87b-f5358710b7a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tyr" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc99d5264g6af5g896bg6ab0g973bb95e1bd0" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(TYR);Tag(CLERIC_TYR)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f2c060f-2eb7-45ef-a593-54999709ebe5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Helm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18a208cag8d6cge231g7188gd60e2d32b3cc" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(HELM);Tag(CLERIC_HELM)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12f9a483-623b-4eb5-b014-aad8f14cff4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Ilmater" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd81794e6gbb5cg91b7g7f16g6bc7fee2ba92" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(ILMATER);Tag(CLERIC_ILMATER)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef4808d9-bf67-477c-bcb4-e880b0ecb843" />
+        <field name="Name" type="NameTableFieldDefinition" value="Mystra" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5aee7874g79dbgd271g78acg1607f24cc9f1" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(MYSTRA);Tag(CLERIC_MYSTRA)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c679a2c6-09d1-40dd-b370-0a6729adcc11" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oghma" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38ce3a88g8278g14c2g5480gfddea1086efe" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(OGHMA);Tag(CLERIC_OGHMA)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f3e9551-1804-4b6d-a70a-48a87f41f204" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kelemvor" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6c3ce089g66e7gd8b3g6573gb25afa7f9800" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(KELEMVOR);Tag(CLERIC_KELEMVOR)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c786b68-56cc-4a10-978a-b116dcd9e8d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Moradin" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h982608dega1a4gf661g9304gd26dcc584f91" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(MORADIN);Tag(CLERIC_MORADIN)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42d1f5e5-7437-43af-a87c-0d386fb99a6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="CorellonLarethian" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7cbc149g6d7eg7453g2df3g9dc6b05a1b6a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CORELLONLARETHIAN);Tag(CLERIC_CORELLONLARETHIAN)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a180b213-5b47-4d76-a2ce-3c5c1c013f31" />
+        <field name="Name" type="NameTableFieldDefinition" value="GarlGlittergold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24b0f4b8gc209g0247g1fb4g54fa0896ac0f" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(GARLGLITTERGOLD);Tag(CLERIC_GARLGLITTERGOLD)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d73979f0-081a-4335-9c61-b3c024294a62" />
+        <field name="Name" type="NameTableFieldDefinition" value="Yondalla" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h91e1be9eg1bb7ga06cg914cgd4d1333a91e3" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(YONDALLA);Tag(CLERIC_YONDALLA)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60398228-69e8-471f-bdf9-ed22a9889682" />
+        <field name="Name" type="NameTableFieldDefinition" value="Lolth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h293e6ce2gdaaeg26cfgf336g6c5d672a7072" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LOLTH);Tag(CLERIC_LOLTH)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf0550ba-1825-462d-b445-64b87b828fd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Laduguer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h79d25e2agb975g6a91gf834g25df291d1234" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LADUGUER);Tag(CLERIC_LADUGUER)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a4a2a5e-f202-4398-8568-9ea4b89b4820" />
+        <field name="Name" type="NameTableFieldDefinition" value="Vlaakith" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e23d864g6b3fg5c79g6211g1a4d0076c8dc" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VLAAKITH);Tag(CLERIC_VLAAKITH)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7590e55b-a016-48b4-9a75-33a4fed5309c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eilistraee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h20823696g890fg4abeg442fg8ab503a01e2f" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EILISTRAEE);Tag(CLERIC_EILISTRAEE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1205b6ad-e882-4e6b-94e8-17fa3a7b0cee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Lathander" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f5155b6g559bg23a6g6857g0d4fd6606958" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LATHANDER);Tag(CLERIC_LATHANDER)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89c1fbf1-57f0-4dee-85da-1f7c681abbac" />
+        <field name="Name" type="NameTableFieldDefinition" value="Talos" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hadfb7b3cg558agd407g37b2gb67435053748" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(TALOS);Tag(CLERIC_TALOS)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad704e45-9cbc-44b5-a522-f941297f6377" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tymora" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h685d17eeg5a63gaf85gfcd5g8243b1a53ced" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(TYMORA);Tag(CLERIC_TYMORA)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b575a2cb-4172-457c-8183-5ddbd20a6b2f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Mielikki" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17db2910g2371gb7f1gc319ge151d0a61b5a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(MIELIKKI);Tag(CLERIC_MIELIKKI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="052d3be2-20df-4cb8-9569-0e617c93f184" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bahamut" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bb268c4g0915gc823g4ccfge5507fe67c7b" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BAHAMUT);Tag(CLERIC_BAHAMUT)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf762b74-4ae1-4d90-8e78-9b9eaa863bc8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Gruumsh" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e356d9cg4eefg621eg68e5g6a03288cf381" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(GRUUMSH);Tag(CLERIC_GRUUMSH)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c5903c1-db9e-490b-b4d2-84d452f96974" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tiamat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46ba0a3ag7894gf0d1g628cgd0b93cfadc9c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(TIAMAT);Tag(CLERIC_TIAMAT)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea77c21d-203d-4740-8dd0-a628176e7a0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bhaal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34fc48a0gff18g99a5g78fbg125085ae7749" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BHAAL);Tag(CLERIC_BHAAL)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23f82e64-b7ba-4d0a-85e1-2601324b8187" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bane" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h394e5a0dg7361g94acg57a1ge749bdf45e63" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43f597cfg6274g9fedg63fbgcef43d35bfa4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandHalt" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BANE);Tag(CLERIC_BANE)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_BANE,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_BANE', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5c7ade7-88d4-4f72-98f2-8c96b6953b80" />
+        <field name="Name" type="NameTableFieldDefinition" value="Jergal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea407038gfe51gb6b1g890egc664ad81ea72" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h549bc27bg67b2gae36g0054gdffa802a0fd8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Death" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(JERGAL);Tag(CLERIC_JERGAL)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_JERGAL,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_JERGAL', context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c77f1b7-a463-40da-83fe-3582384f2de7" />
+        <field name="Name" type="NameTableFieldDefinition" value="TheAbsolute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd6a20122g406cg8e8agae9fg9badb3c28705" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b30ec5fg9ccdgbed9g7e5fg4c4c205e0357" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_INT_AbsolutePain_03" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(THEABSOLUTE);Tag(CLERIC_THEABSOLUTE)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_THEABSOLUTE', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_THEABSOLUTE,100,-1)" />
       </fields>
     </stat_object>
   </stat_objects>
