@@ -34,4 +34,8 @@ AND
 _ObjectGuidString == _ObjectRealGuidString
 THEN
 DB_NOOP(1);
+
+
+SetHostileAndEnterCombat((FACTION)Act3_LOW_Dolor_15f56a1e-42e3-458d-bf8d-140ed313b928, (FACTION)Hero_a1542c81-6895-929e-4522-10ce218bb360, S_LOW_Dolor_55837c0f-0171-4020-a4a3-dd6de7ffc134, _Player);
+SetHostileAndEnterCombat((FACTION)Act3_LOW_Dolor_OutsideDoppelgangers_f7fa73a1-1ea0-40e2-9897-30c4c3d647ee, (FACTION)Hero_a1542c81-6895-929e-4522-10ce218bb360, S_LOW_Dolor_55837c0f-0171-4020-a4a3-dd6de7ffc134, _Player);
 EXIT:
