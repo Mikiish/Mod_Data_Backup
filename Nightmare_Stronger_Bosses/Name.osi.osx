@@ -2,6 +2,36 @@ INIT:
 
 ENDI
 KB:
-
-KBI
+PROC
+PROC_NightmareMode_StrongerBosses_AppearAt_IterateDbWithAffCurve((INTEGER)_Iter, (INTEGER)_Mult, (INTEGER)_Param, (STRING)_Name, (STRING)_TriggerName, (GUIDSTRING)_Object, (INTEGER)_Max)
+AND
+IntegerProduct(_Mult, _Iter, _MultTimesIter)
+AND
+IntegerSum(_MultTimesIter, _Param, _MultTimesIterPlusParam)
+AND
+_TwoTimesRoundPlusOne <= _Max
+AND
+IntegerToString(_MultTimesIterPlusParam, _MultTimesIterPlusParamString)
+AND
+IntegerToString(_MultTimesIter, _MultTimesIterString)
+AND
+Concatenate(_Name, _MultTimesIterPlusParamString, _StringResultOdd)
+AND
+Concatenate(_Name, _MultTimesIterString, _StringResultEven)
+AND
+GetUUID(_Object, _ObjectUuidString)
+AND
+Concatenate(_StringResultOdd, "_", _StringResultOddU)
+AND
+Concatenate(_StringResultEven, "_", _StringResultEvenU)
+AND
+Concatenate(_StringResultOddU, _OddObjectUuidString, _OddObjectGuidString)
+AND
+Concatenate(_StringResultEvenU, _EvenObjectUuidString, _EvenObjectGuidString)
+AND
+GUIDToString(_Object, _ObjectRealGuidString)
+AND
+_ObjectGuidString == _ObjectRealGuidString
+THEN
+DB_NOOP(1);
 EXIT:
