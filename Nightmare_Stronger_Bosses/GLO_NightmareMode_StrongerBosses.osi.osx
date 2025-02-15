@@ -724,9 +724,6 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_GithRaider_001_6b265792-c
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_DuergarRebelGuard_03_baac0ae3-7b2e-47e6-85e4-579f70d4b4fa,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_FearfulRothe_Guard_001_90780cde-9241-478f-83a8-58a4a7d151fe,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_DuergarLoyalSergeant_0aeb5411-5f13-4263-acb0-87f0689de2e5,"LittleChief");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_001_ea7c2c48-da44-4d0b-99d8-c1e6574e9810,"LittleChief");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_002_d736d483-64ee-4166-92f3-d6f544126b8a,"LittleChief");
-DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_003_b568549c-7b9d-451f-b862-ff26d2085bbe,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_MephitAmbush_Mephit_001_af183ce5-9a9b-44eb-814e-42fa3350b2c1,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_PetrifiedDrow_Wizard_1f86d2de-db96-4662-a360-6ba5ad902fd7,"LittleChief");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_LoneDuergar_BoatGuard_8146788d-9d39-4cf2-99ca-03484deb0c55,"LittleChief");
@@ -755,6 +752,9 @@ DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_SharFort_Minotaur_Bait_b6
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_LoneDuergar_Squad_Ranged_9c792a46-8a05-43fb-8efa-63d234dbcc6a,"LittleChiefNoAura");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_DarkLake_Patrol_000_cb258cd3-3b7f-48b4-883e-a008ea6e9e38,"LittleChiefNoAura");
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_DarkLake_Patrol_001_a154f62e-771e-4bac-8af6-c28d62019d1a,"LittleChiefNoAura");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_001_ea7c2c48-da44-4d0b-99d8-c1e6574e9810,"LittleChiefNoAura");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_002_d736d483-64ee-4166-92f3-d6f544126b8a,"LittleChiefNoAura");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_UND_KethericCity_PanicRoomEnemy_003_b568549c-7b9d-451f-b862-ff26d2085bbe,"LittleChiefNoAura");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChiefNoAura");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChiefNoAura");
 //DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChiefNoAura");
@@ -1115,7 +1115,7 @@ DB_NightmareMode_StrongerBosses_LavaElementalMephitsThree(S_UND_LavaElemental_Fl
 //REGION Special DB for home-baked characters to be set Off Stage when the mod initialized.
 NOT DB_NightmareMode_StrongerBosses_SetOffStage((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
 // Underdark - Arcane Tower 
-DB_NightmareMode_StrongerBosses_SetOffStage(1a172ab2-e8dd-46a8-904c-4a5e8b65d22c);
+DB_NightmareMode_StrongerBosses_SetOffStage(S_UND_NM_Rainmaster_1a172ab2-e8dd-46a8-904c-4a5e8b65d22c);
 // Underdark - Lava Elemental
 DB_NightmareMode_StrongerBosses_SetOffStage(S_UND_LavaElemental_Mephit_001_5d2f6974-aa0f-4880-a5d4-75f4bffb58f0);
 DB_NightmareMode_StrongerBosses_SetOffStage(S_UND_LavaElemental_Mephit_002_b94d1575-3731-462c-8d57-a1b9f8d0fed8);
@@ -1246,6 +1246,8 @@ AND
 DB_NightmareMode_StrongerBosses_LocalObjectsVect(_Character, "DeathWarded")
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+HasActiveStatus(_Character, "DEATH_WARD", 0)
 AND
 GUIDToString((GUIDSTRING)_Character,_CharacterString)
 AND
@@ -1434,7 +1436,7 @@ THEN
 PROC_NightmareMode_StrongerBosses_DeityTagApplier((CHARACTER)_Character, (STRING)_God);
 
 // Special Procedure to teleport Global Character from act to act.
-//REGION PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter
+
 PROC
 PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos)
 AND
@@ -1454,80 +1456,6 @@ PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Characte
 THEN
 PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_Character, (TRIGGER)_TriggerPos, (INTEGER)_OnStageBool);
 AddPassive(_Character, _Passive);
-//END_REGION PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
-AND
-DB_PermaDefeated(_GoblinPriest)
-AND
-QRY_OnlyOnce("NightmareMode_StrongerBosses_GobPriestDefeatedAct1")
-THEN
-PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_GoblinPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 0, "Maglubiyet");
-NOT DB_PermaDefeated(_GoblinPriest);
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
-AND
-NOT DB_PermaDefeated(_GoblinPriest)
-AND
-QRY_OnlyOnce_Reset("NightmareMode_StrongerBosses_GobPriestDefeatedAct1")
-THEN
-DB_NOOP(1);
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_GoblinPriest,"Maglubiyet")
-AND
-NOT DB_PermaDefeated(_GoblinPriest)
-AND
-IsGameLevel("SCL_Main_A",1)
-AND
-QRY_OnlyOnce("NightmareMode_StrongerBosses_GobPriestTeleport")
-THEN
-PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_GoblinPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 1, "Maglubiyet");
-
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
-AND
-DB_PermaDefeated(_PainPriest)
-AND
-QRY_OnlyOnce("NightmareMode_StrongerBosses_PainPriestDefeatedAct1")
-THEN
-PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_PainPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 0, "Loviatar");
-NOT DB_PermaDefeated(_PainPriest);
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
-AND
-NOT DB_PermaDefeated(_PainPriest)
-AND
-QRY_OnlyOnce_Reset("NightmareMode_StrongerBosses_PainPriestDefeatedAct1")
-THEN
-DB_NOOP(1);
-
-IF
-LongRestFinished()
-AND
-DB_NightmareMode_StrongerBosses_GodsVect(_PainPriest,"Loviatar")
-AND
-NOT DB_PermaDefeated(_PainPriest)
-AND
-IsGameLevel("SCL_Main_A",1)
-AND
-QRY_OnlyOnce("NightmareMode_StrongerBosses_PainPriestTeleport")
-THEN
-PROC_NightmareMode_StrongerBosses_GlobalCharacterTeleporter((CHARACTER)_PainPriest, (TRIGGER)S_MOO_Dungeons_PainPriestTeleportPos_3f22adf3-3bc7-4aa9-99c3-94fe182d1c91, 1, "Loviatar");
 //END_REGION Applying Deity Tags for Divine Avatars and VIPs
 
 
@@ -1726,16 +1654,43 @@ IF
 SavegameLoaded()
 AND
 DB_NightmareMode_StrongerBosses_Initialized(1)
+AND
+IsGameLevel("WLD_Main_A", 1)
+AND
+IsDead(S_GOB_GoblinKing_11337af0-6a57-426b-a820-c4b00923dd54, 0)
+THEN
+TimerLaunch("NightmareMode_DeadMindflayer_AuraCheck", 1000);
+
+IF
+TimerFinished("NightmareMode_DeadMindflayer_AuraCheck")
+AND
+IsOnStage(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, 1)
+AND
+HasActiveStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", 0)
 THEN
 ApplyStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
 
 IF
-LevelLoaded("WLD_Main_A")
+EnteredTrigger(_Player,S_GOB_ThroneRoom_SUB_bb81678b-641c-43fc-bd41-53295d59be03)
 AND
-DB_NightmareMode_StrongerBosses_Initialized(1)
+DB_Players(_Player)
+AND
+DB_PermaDefeated(S_CRA_Escape_Mindflayer_d5385cd0-f371-43dc-a0a2-50381fc50ea4)
+AND
+HasActiveStatus(S_CRA_Escape_Mindflayer_d5385cd0-f371-43dc-a0a2-50381fc50ea4, "NM_GOB_DEADMINDFLAYER_AURA", 0)
+THEN
+ApplyStatus(S_CRA_Escape_Mindflayer_d5385cd0-f371-43dc-a0a2-50381fc50ea4, "NM_GOB_DEADMINDFLAYER_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+EnteredTrigger(_Player,S_GOB_ThroneRoom_SUB_bb81678b-641c-43fc-bd41-53295d59be03)
+AND
+DB_Players(_Player)
+AND
+NOT DB_PermaDefeated(S_CRA_Escape_Mindflayer_d5385cd0-f371-43dc-a0a2-50381fc50ea4)
+AND
+HasActiveStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", 0)
 THEN
 ApplyStatus(S_GOB_Scrying_BackupMindflayer_a043a111-4a15-4d4a-ac83-5dc93bc8ee76, "NM_GOB_DEADMINDFLAYER_AURA", -1.0, 1,NULL_00000000-0000-0000-0000-000000000000);
-
 //END_REGION Goblin Throne additions
 
 
@@ -2156,8 +2111,10 @@ PROC
 PROC_NightmareMode_StrongerBosses_GlobalCharactersVect()
 AND
 DB_NightmareMode_StrongerBosses_GlobalCharactersVect(_Character, _String)
+AND
+Concatenate("NightmareMode_", _String, _Passive)
 THEN
-AddPassive(_Character,_String);
+AddPassive(_Character,_Passive);
 
 PROC
 PROC_NightmareMode_StrongerBosses_LocalObjects()

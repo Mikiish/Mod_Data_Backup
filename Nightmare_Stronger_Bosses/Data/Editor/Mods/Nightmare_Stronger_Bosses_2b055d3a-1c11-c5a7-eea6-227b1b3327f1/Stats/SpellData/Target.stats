@@ -39,5 +39,13 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2739ce93-0805-46bd-b609-0c67ed435f4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_GLO_RainmasterRain" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b2f40bff-3324-4422-bef2-d9fd0bf36852" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Tagged('CONSTRUCT')):ApplyStatus(WET,100,2);GROUND:CreateSurface(14,0,Water);" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -1,0 +1,12 @@
+new entry "UNI_LOOT_AdamantineForge_DaggerMold"
+type "Object"
+using "OBJ_GenericImmutableObject"
+data "RootTemplate" "891502e7-3ce7-4bf0-b92d-28f95d0a6ce3"
+data "Flags" ""
+
+new entry "UNI_BLD_AdamantineForge_Dagger"
+type "Object"
+using "OBJ_GenericImmutableObjectHeavy"
+data "RootTemplate" "3b70183c-b63f-43a4-b20a-d69d423512b7"
+data "Flags" ""
+

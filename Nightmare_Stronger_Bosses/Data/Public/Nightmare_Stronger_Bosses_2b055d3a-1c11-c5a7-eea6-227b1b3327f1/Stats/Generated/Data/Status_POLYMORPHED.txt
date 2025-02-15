@@ -1,0 +1,9 @@
+new entry "NM_GLO_SCL_SHADOW_CURSE_UNDEAD_NEW"
+type "StatusData"
+data "StatusType" "POLYMORPHED"
+using "SCL_SHADOW_CURSE_UNDEAD_NEW"
+data "Description" "hb0f3f76agde2bg8b6eg8d95g5aa8136ffcff;2"
+data "Boosts" "DarkvisionRangeOverride(18);StatusImmunity(HEAL);StatusImmunity(FEARED);StatusImmunity(COMMAND_FLEE);StatusImmunity(SHADOW_CURSED_VINES);DamageBonus(2d4+2,Necrotic);AC(-5);Ability(Intelligence,-5);Ability(Wisdom,-5);Ability(Charisma,-5);Resistance(Necrotic,Resistant);FactionOverride(e2c5c1ae-1797-44af-bd68-4071820b7e89);StatusImmunity(SCL_MOONSHIELD)"
+data "StatusPropertyFlags" "ForceOverhead;ApplyToDead;IgnoreResting"
+data "OnApplyFunctors" "ApplyStatus(NM_GLO_SCL_SHADOW_CURSE_UNDEAD,100,-1)"
+

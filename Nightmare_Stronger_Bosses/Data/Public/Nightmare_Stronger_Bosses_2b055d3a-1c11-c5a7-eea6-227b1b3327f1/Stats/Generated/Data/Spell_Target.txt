@@ -28,3 +28,9 @@ data "RequirementConditions" ""
 data "TooltipDamageList" "DealDamage(3d6,Psychic)"
 data "UseCosts" "BonusActionPoint:1"
 
+new entry "Target_NM_GLO_RainmasterRain"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CreateWater_6"
+data "SpellProperties" "IF(not Tagged('CONSTRUCT')):ApplyStatus(WET,100,2);GROUND:CreateSurface(14,0,Water);"
+

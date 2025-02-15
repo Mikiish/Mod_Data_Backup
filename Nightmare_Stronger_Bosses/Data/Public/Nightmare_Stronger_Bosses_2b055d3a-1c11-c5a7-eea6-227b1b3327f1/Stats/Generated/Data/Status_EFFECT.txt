@@ -1,0 +1,7 @@
+new entry "NM_UND_RAINMAKER_RITUALEFFECT"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "DisplayName" "h1ca4f2e4g3f22g4628g1225g4cc26710f2da;1"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusEffect" "dd02e9e1-8ab7-4da0-9097-26fd886c06d4"
+

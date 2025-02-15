@@ -12,5 +12,22 @@
         <field name="4" type="StatReferenceTableFieldDefinition" value="WPN_BlackHand_Crossbow" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f75228f1-9bee-4496-a316-5e116e94cd08" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQP_Unarmed_Flute" />
+        <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="ARM_Instrument_Flute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6621fe4c-434f-4bf1-ae11-b54a5a74cd81" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQP_DrunkDwarf" />
+        <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="MAG_TWN_Brewery_Greatclub" />
+        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Leather_Body" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -9,6 +9,11 @@
                     <attribute id="ParentGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                     <attribute id="UUID" type="guid" value="379a4898-d122-4ef9-967f-0e7934b748be"/>
                 </node>
+                <node id="Faction">
+                    <attribute id="Faction" type="FixedString" value="Act1_UND_KethericCity_LavaElemental"/>
+                    <attribute id="ParentGuid" type="guid" value="4be9261a-e481-8d9d-3528-f36956a19b17"/>
+                    <attribute id="UUID" type="guid" value="9f2f0981-0228-4224-95c9-a67a3227a6bf"/>
+                </node>
             </children>
         </node>
     </region>

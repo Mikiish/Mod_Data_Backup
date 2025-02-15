@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a8098c1a-f86e-11da-bd1a-00112444be1e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95cf8552-7d1d-4782-a9a5-b07e485d1115" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_Rainmaster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70fe4b20-4bb5-4ed7-8c06-5e4291c143dd" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="WET;SG_Condition" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ExtraAttack;MagicResistance;MurderHungry;AttackOfOpportunity;Darkvision;DarknessRules;Umberlee" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="AcidResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ForceResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="NecroticResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="RadiantResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ThunderResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58e6c5db-e368-44e0-9ad8-37db1b1e017a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Minotaur_Door" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fec7e654-cdee-4d62-bd2b-6b5b25f9fada" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5c37b33-ff21-4517-ada7-6c895f673e1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_UND_Spiderling" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e066b18-c193-4187-9b78-c87723c0db67" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="15" />
+        <field name="XPReward" type="GuidObjectTableFieldDefinition" value="810b5510-6748-4c8e-bef0-d990880ed1dd" />
+        <field name="PathInfluence" type="StringTableFieldDefinition" value="BloodElectrified,100;BloodFrozen,30;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d9c8968-7b5c-4e99-ad9e-c2f22335f54d" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_UND_FlamingSphere" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0238a39d-2193-4ec2-90ce-288f3a1e4fad" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="13" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="7" />
+        <field name="XPReward" type="GuidObjectTableFieldDefinition" value="810b5510-6748-4c8e-bef0-d990880ed1dd" />
+        <field name="PathInfluence" type="StringTableFieldDefinition" value="BloodElectrified,100;BloodFrozen,30;HolyFire,40;PoisonCloud,70;WyvernPoison,70;DrowPoisonCloud,70;PurpleWormPoison,70;SerpentVenom,70;InvisibleGithAcid,70;CloudkillCloud,70;MaliceCloud,70;CrawlerMucusCloud,70;WaterElectrified,100;WaterFrozen,30;Grease,30;Web,30;Vines,40;SporeBlackCloud,100;WaterCloudElectrified,40;SporeGreenCloud,40;Acid,30;CausticBrine,40;DarknessCloud,30;FogCloud,30;Mud,30;Oil,30;Poison,30;SpikeGrowth,40;SporePinkCloud,40;StinkingCloud,40" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:12" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules" />
+        <field name="DarkvisionRange" type="StringTableFieldDefinition" value="18" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

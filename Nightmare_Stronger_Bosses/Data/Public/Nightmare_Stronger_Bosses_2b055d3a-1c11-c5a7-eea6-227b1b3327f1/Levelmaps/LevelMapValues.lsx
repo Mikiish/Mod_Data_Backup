@@ -68,6 +68,20 @@
                     <attribute id="Name" type="FixedString" value="StrongerChiefMapValue"/>
                     <attribute id="UUID" type="guid" value="badb581a-60f5-44b1-8def-9898e1f4b069"/>
                 </node>
+                <node id="LevelMapSeries">
+                    <attribute id="FallbackValue" type="LSString" value="4"/>
+                    <attribute id="Level1" type="LSString" value="4"/>
+                    <attribute id="Level2" type="LSString" value="4"/>
+                    <attribute id="Level3" type="LSString" value="4"/>
+                    <attribute id="Level4" type="LSString" value="4"/>
+                    <attribute id="Level5" type="LSString" value="3"/>
+                    <attribute id="Level6" type="LSString" value="3"/>
+                    <attribute id="Level7" type="LSString" value="3"/>
+                    <attribute id="Level8" type="LSString" value="3"/>
+                    <attribute id="Level9" type="LSString" value="2"/>
+                    <attribute id="Name" type="FixedString" value="BardicAuraMapValue"/>
+                    <attribute id="UUID" type="guid" value="ee3d02bd-b018-4b75-9833-54436f5c7a1a"/>
+                </node>
             </children>
         </node>
     </region>

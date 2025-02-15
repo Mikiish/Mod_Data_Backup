@@ -120,7 +120,7 @@
                     <attribute id="FileSize" type="uint64" value="0"/>
                     <attribute id="Folder" type="LSString" value="Nightmare_Stronger_Bosses_2b055d3a-1c11-c5a7-eea6-227b1b3327f1"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="73507a12121668bc9f292bf9115cce9b"/>
+                    <attribute id="MD5" type="LSString" value="a0a9cf809505dc2741d2bda082bac9c3"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="Nightmare_Stronger_Bosses"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -128,7 +128,7 @@
                     <attribute id="PublishHandle" type="uint64" value="4701203"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="2b055d3a-1c11-c5a7-eea6-227b1b3327f1"/>
-                    <attribute id="Version64" type="int64" value="36028797018963976"/>
+                    <attribute id="Version64" type="int64" value="36028797018963986"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717549775"/>

@@ -9,7 +9,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha158422bgbca8ge411g4ce1g406e1c319cbd" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="0;1;1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCombatStarted)):ApplyStatus(DEATH_WARD, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')):ApplyStatus(NIGHTMARE_DEATH_WARD_IMMUNE, 100, 1);IF(context.HasContextFlag(StatsFunctorContext.OnCreate)):ApplyStatus(DEATH_WARD, 100, -1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCombatStarted)):ApplyStatus(DEATH_WARD, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD') and not HasStatus('NIGHTMARE_DEATH_WARD_IMMUNE')):ApplyStatus(NIGHTMARE_DEATH_WARD_IMMUNE, 100, 1);IF(context.HasContextFlag(StatsFunctorContext.OnCreate)):ApplyStatus(DEATH_WARD, 100, -1)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6bbb641d-9733-4e7c-877c-d250f06139a3" />
         <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCombatStarted) and not HasStatus('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('DEATH_WARD')) or (context.HasContextFlag(StatsFunctorContext.OnCreate) and not HasStatus('DEATH_WARD'))" />
       </fields>
@@ -24,7 +24,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NIGHTMARE_STATUESIMMUNITY,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Control" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc74a7a9bgf5a2g9c17g3dc8gc1ddea55be1a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc74a7a9bgf5a2g9c17g3dc8gc1ddea55be1a" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StrongerChiefMapValue));" />
       </fields>
     </stat_object>
@@ -43,13 +43,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="117453f3-643e-4411-93d6-9633f5adf8ee" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerChief" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42a9bbacgcbe3g8355gb261g2006d5703590" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha668f3dcg6f48gabd8gaee6gb6de270c557d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha668f3dcg6f48gabd8gaee6gb6de270c557d" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CommandersStrike_StrongerChief);ProficiencyBonusOverride(Owner.LevelMapValue(StrongerChiefMapValue));" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and not IsMiss()" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COMPELLED_DUEL,100,3)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(StrongerChiefMapValue)-LevelMapValue(StandardProficiencyBonusScale)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -58,7 +59,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongerChief_Status" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a9d9dfeg1abcgc958g8372g0ecf711fe97e" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(NM_GLO_STRONGERCHIEF_AURA,100,-1)" />
       </fields>
     </stat_object>
@@ -77,23 +78,40 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ff5f4bf9-4678-449a-9f5b-8b7edf9ea3fa" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_LittleChief" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2819b4ag5495gfebdg6a7fga724379fa91e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f50641fga290ga66fg2720g45a9cdd01f3b" version="3" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(LittleChiefMapValue));" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnCombatStarted;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NIGHTMARE_LITTLECHIEF_AURA', context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NIGHTMARE_LITTLECHIEF_AURA,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bless" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(LittleChiefMapValue)-LevelMapValue(StandardProficiencyBonusScale)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae348ee4-9bde-4188-9e98-4a5ced89c920" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_LittleChiefNoAura" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0668cf0gc93bgc56agf019g0d7bcf6724c7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h414af285gbd73g6015g1c51g3aac2dfb26b1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(LittleChiefMapValue)-LevelMapValue(StandardProficiencyBonusScale)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Halfling_Brave" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(LittleChiefMapValue));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5d0d2983-bd85-4b5d-9574-d5cd64ccef85" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_StrongAlly" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h648eb8a2g3bc2g6a2bg2eecg185eec60c422" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Goaded" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d130466ge6e9g1e0dg373fgeb062e5b323e" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h648eb8a2g3bc2g6a2bg2eecg185eec60c422" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_AnimateDead_Zombie" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StrongerChiefMapValue));" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(StrongerChiefMapValue)-LevelMapValue(StandardProficiencyBonusScale)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,MAG_TEMPORARY_HP_15,100,-1);IF(not HasStatus('NIGHTMARE_STRONGALLY_AURA', context.Source)):ApplyStatus(SELF,NIGHTMARE_STRONGALLY_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -118,9 +136,10 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="013f7e4a-a2ff-434f-8fb5-291a4fd85fe1" />
         <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_DrunkAtFirewine" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h245d1663gc664g7403g96d4g0331fc20b99d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24e1e648gc1edg61a0g1cbeg214e9ca6fed0" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h245d1663gc664g7403g96d4g0331fc20b99d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24e1e648gc1edg61a0g1cbeg214e9ca6fed0" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_ViciousMockery" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -136,6 +155,43 @@
       </fields>
     </stat_object>
     <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12e29e0a-9e3f-4064-af7e-059b8a4ded5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_ScryingEyes" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50fd2939g4c56g8cf9ga1b4g323894ae8c49" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c3035a5g66cbg0f27gb7c8g24b4c164e723" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8, Psychic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Eyebite_Panicked" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bde84537-e316-4a69-a3e9-6e8d3daf12ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_Bard" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a458d6bg6d0dga572g98ccg7feff77629f8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1a76619g0c01g30dbg1274g0fd4b6f4c5d5" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6683d214g9ffcgd061gf01eg2d76cd0cec7a" version="2" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(BardicAuraMapValue)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_GrantBardicInspiration" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceOverride(BardicInspiration, 3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ff6460b-cdc2-4382-8d08-ef1012395a10" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_Destroyer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb62e206cgf582gc253gbe78g877306769897" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31954688g14d3gf467g6a41g2d3d417c8993" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('CONSTRUCT') or Item()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(context.HitDescription.GetDamageDoneForType(DamageType.Bludgeoning), Force)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
         <field name="Name" type="NameTableFieldDefinition" value="Shar" />
@@ -345,7 +401,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="Lolth" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h293e6ce2gdaaeg26cfgf336g6c5d672a7072" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LOLTH);Tag(CLERIC_LOLTH)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(LOLTH);Tag(CLERIC_LOLTH);DamageBonus(2, Poison)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_InsectPlague" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_LLOTH', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_LLOTH,100,-1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf181bc48g3fbag62eeg2e80gaf44c55e56c7" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -364,6 +424,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e23d864g6b3fg5c79g6211g1a4d0076c8dc" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VLAAKITH);Tag(CLERIC_VLAAKITH)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h61cc88d3g4e1agf09dg6820g944a07ab7b01" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Gith_MartialProdigy" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -445,6 +507,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34fc48a0gff18g99a5g78fbg125085ae7749" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BHAAL);Tag(CLERIC_BHAAL)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf976846bg029cgf4a8g0932g29677a145e5a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_PowerWordKill" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCreate) and not HasStatus('CCSTATUS_BHAAL', context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnLongRest) and not HasStatus('CCSTATUS_BHAAL', context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnDamage) and IsAttack() and not IsMiss())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(context.HasContextFlag(StatsFunctorContext.OnCreate) and not HasStatus('CCSTATUS_BHAAL', context.Source)):ApplyStatus(SELF,CCSTATUS_BHAAL,100,-1);IF(context.HasContextFlag(StatsFunctorContext.OnLongRest) and not HasStatus('CCSTATUS_BHAAL', context.Source)):ApplyStatus(SELF,CCSTATUS_BHAAL,100,-1);IF(context.HasContextFlag(StatsFunctorContext.OnDamage) and IsAttack() and not IsMiss()):ApplyStatus(BLEEDING,100,2)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -475,6 +542,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6282aa40-b6c8-41cc-a0a8-93b846cbc2d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Umberlee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f46f8c8g6b05g87b7gbd21g66aa46adb324" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1de17c8gce86g1ecegce7cg5f76ce7acd8f" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_CreateWater" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(UMBERLEE);Tag(CLERIC_UMBERLEE);Proficiency(MusicalInstrument);Initiative(15)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_UMBERLEE', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_UMBERLEE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF1493" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c77f1b7-a463-40da-83fe-3582384f2de7" />
         <field name="Name" type="NameTableFieldDefinition" value="TheAbsolute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5fc64474-d3bf-409d-8934-925d2073ac0c" />
@@ -484,6 +564,72 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(THEABSOLUTE);Tag(CLERIC_THEABSOLUTE)" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_THEABSOLUTE', context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_THEABSOLUTE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ddac6da-ab15-4362-a2b8-0efecd03097a" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_GLO_ChraiStatuses" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88376cfeg236dga32eg750fg7ea9a4499f24" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('CCSTATUS_THEABSOLUTE', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,CCSTATUS_THEABSOLUTE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f079e10-7cd7-45a1-aad9-d82b55fc910b" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_ReactOnAllyDeath_RageBoosts" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength); Advantage(SavingThrow, Strength); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant); IF(IsAttackType(AttackType.MeleeWeaponAttack)): CharacterWeaponDamage(LevelMapValue(StrongerChiefMapValue));EntityThrowDamage(3);IF(IsAttackType(AttackType.MeleeOffHandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(StrongerChiefMapValue));CharacterUnarmedDamage(LevelMapValue(StrongerChiefMapValue));FallDamageMultiplier(0.5);UnlockSpell(Throw_Throw)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ce8645f-2be2-4542-9f69-ab12687d64b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_ReactOnAllyDeath_Rage" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcdf9d38dg85fagb873g6b6bga0e6955dd1e6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h667d7b8ag3a0cg35d7gef4ag4aab90b571b1" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha6e5f370g7b88g8c23g3344g172c5f3c1f76" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(StrongerChiefMapValue)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Frenzy" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NM_GLO_ENRAGE_ONALLYDEATH', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NM_GLO_ENRAGE_ONALLYDEATH,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f54fd22c-36e8-4938-86ae-c0f6446282a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="NightmareMode_ReactOnAllyDeath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76af3665gf995g5b24gb279gef01010e6f8c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc696c92ga12fg55f3g8a4dgacecaee7d926" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Frenzy" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26bc96d6-6b08-44ce-a13d-da9b73ca3092" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_MAG_AdamantineDagger" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6c3f470ga76agf01bg0e6bga16ccfbdc006" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d15deafgf97dg6af4gd2b5gb59832464c97" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha1eeaf4cg238bg5028gf03cg4763ceed9804" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_AstralKnowledge" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(WPN_DAGGERSB_OWNER)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c06f267b-bf21-4e9b-a102-9c594a686ff9" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_GLO_DrunkAtFirewine" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a895e30-5295-4a2a-9962-2177067e1bbe" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasHPLessThan(1)" />
       </fields>
     </stat_object>
   </stat_objects>

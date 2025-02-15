@@ -91,5 +91,15 @@
         <field name="Tags" type="GuidObjectListTableFieldDefinition" value="5aac4905-f9a7-43fb-b2b9-eb517050e959;6d08632e-0300-4587-80b9-8e411b0efb3b" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Umberlee" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1d601e60-952d-4de0-8a15-67388269ab51" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c019802gb63dgc0dbgbf7fgf9cb4a4db381" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he13799bdg1ee0gb181g8563g3858e82cef88" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="5629ed41-0a15-4e1c-bb2f-3282c562e738;6d08632e-0300-4587-80b9-8e411b0efb3b" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

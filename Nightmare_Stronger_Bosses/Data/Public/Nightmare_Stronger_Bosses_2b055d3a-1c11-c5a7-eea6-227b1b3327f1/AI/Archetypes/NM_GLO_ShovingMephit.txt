@@ -1,0 +1,10 @@
+using beast
+
+// Mephits don't care about Lava
+MULTIPLIER_DAMAGE_SELF_POS						0.00
+
+// Mephits will try to put you in the Lava, because they don't care about Lava
++ MULTIPLIER_GROUNDED							0.02
++ MULTIPLIER_FALL_DAMAGE_ENEMY					0.50
+
+

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="21465eb6-ebaf-4455-9f29-369759e000a9">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e0f10d8-e32a-4e40-b236-b67213ec6730" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_BLD_AdamantineForge_Dagger" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="UNI_BLD_AdamantineForge" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="Transform" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="UNI_LOOT_AdamantineForge_DaggerMold" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Consume" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="UNI_BLD_AdamantineForge_Dagger" />
+        <field name="PreviewStatsID" type="StringTableFieldDefinition" value="UNI_BLD_AdamantineForge_Dagger" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

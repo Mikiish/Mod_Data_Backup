@@ -9,3 +9,15 @@ add equipment entry "ARM_Helmet_Leather"
 add equipmentgroup
 add equipment entry "WPN_BlackHand_Crossbow"
 
+new equipment "EQP_Unarmed_Flute"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Flute"
+
+new equipment "EQP_DrunkDwarf"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "MAG_TWN_Brewery_Greatclub"
+add equipmentgroup
+add equipment entry "ARM_Leather_Body"
+

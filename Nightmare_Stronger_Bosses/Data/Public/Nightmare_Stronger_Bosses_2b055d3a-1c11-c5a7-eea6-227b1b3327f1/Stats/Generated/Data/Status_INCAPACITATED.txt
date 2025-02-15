@@ -3,5 +3,12 @@ type "StatusData"
 data "StatusType" "INCAPACITATED"
 using "PARALYZED"
 data "StackId" "NIGHTMARE_PARALYZED"
-data "StatusGroups" "SG_Incapacitated;SG_Condition"
+data "StatusGroups" "SG_Condition"
+
+new entry "STUNNED_RAINMAKER"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "STUNNED"
+data "StackId" "STUNNED_RAINMAKER"
+data "StatusGroups" ""
 

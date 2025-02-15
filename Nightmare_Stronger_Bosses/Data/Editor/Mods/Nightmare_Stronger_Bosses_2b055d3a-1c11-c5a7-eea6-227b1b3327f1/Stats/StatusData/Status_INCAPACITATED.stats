@@ -6,8 +6,17 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6ef8f982-4eac-4b3c-a27e-2bccb7dd0384" />
         <field name="Name" type="NameTableFieldDefinition" value="NIGHTMARE_PARALYZED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bfab9815-2261-4720-8da4-8b98dc6b3a22" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="NIGHTMARE_PARALYZED" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="250a09a7-23c6-4cd1-a48a-9633b30c205e" />
+        <field name="Name" type="NameTableFieldDefinition" value="STUNNED_RAINMAKER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STUNNED_RAINMAKER" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -6,3 +6,13 @@ data "Rarity" "VeryRare"
 data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical)"
 data "BoostsOnEquipMainHand" "UnlockSpell(Projectile_PiercingShot);UnlockSpell(Projectile_MobileShooting);UnlockSpell(Target_NM_ConcentratedBlast)"
 
+new entry "MAG_WPN_Dagger_Adamantine_A"
+type "Weapon"
+using "WPN_Dagger_2"
+data "RootTemplate" "7e242098-5f77-4acd-9e07-3fbcfc1c6681"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);WeaponDamage(1d4, Cold)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New);"
+data "PassivesOnEquip" "UNI_Adamantine_CriticalVsItems_Passive;MAG_IgnorePiercingResistance_Passive;NM_MAG_AdamantineDagger"
+
