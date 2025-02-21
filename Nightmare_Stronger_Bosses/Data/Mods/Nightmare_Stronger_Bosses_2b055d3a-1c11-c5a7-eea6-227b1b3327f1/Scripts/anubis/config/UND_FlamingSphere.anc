@@ -1,0 +1,13 @@
+game.configs.UND_FlamingSphere = Config{
+    root=StateRef{game.roots.DefaultCharacter,
+        combat = StateRef{game.states.GLO_StateInTrigger,
+            DistanceToTrigger = 1.5,
+            InTriggerState = StateRef{game.states.DefaultCombat},
+            Trigger = [[S_UND_LavaElemental_SpiderPoint_002_dab28ab3-b6db-4f0b-a401-b70ffcb852b8]],
+        },
+        genericBehaviours = StateRef{game.states.GLO_StandAtTrigger,
+            trigger = [[S_UND_LavaElemental_SpiderPoint_002_dab28ab3-b6db-4f0b-a401-b70ffcb852b8]],
+        },
+        idle = StateRef{game.states.SitDefaultIdle},
+    }
+}

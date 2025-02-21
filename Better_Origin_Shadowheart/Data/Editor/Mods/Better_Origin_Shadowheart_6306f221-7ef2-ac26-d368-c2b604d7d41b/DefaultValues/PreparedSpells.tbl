@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a62accf3-b701-4088-8a83-ee3bafc8e05b">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7898503a-c24d-4c4b-8250-9fc9a499d03c" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="2a69e6ee-e807-4b80-8c57-132e375153dd" />
+        <field name="Origin" type="GuidTableFieldDefinition" value="2bb39cf2-4649-4238-8d0c-44f62b5a3dfd" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Prepare" type="StringTableFieldDefinition" value="Target_InflictWounds;Shout_SharAegis;Target_Command_Container" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="ShadowHeart" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dfced246-c003-458c-ae70-49c1bf785609" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="2a69e6ee-e807-4b80-8c57-132e375153dd" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Prepare" type="StringTableFieldDefinition" value="Target_InflictWounds;Shout_SharAegis;Target_Command_Container" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Nightbringer" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

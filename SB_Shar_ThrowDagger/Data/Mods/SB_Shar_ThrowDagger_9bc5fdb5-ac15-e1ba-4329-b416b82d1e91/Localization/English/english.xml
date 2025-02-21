@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h91bce5afg4af5g3248g0da1ge14964c86c43" version="1">Fighting Style: Dagger</content>
+  <content contentuid="hb687e8begd09cgd74egbe81g12e8fd5fbe43" version="1">Whenever you throw a dagger, you apply any poison it is coated with.</content>
+  <content contentuid="hf5d8d89fgefafg53c3g0718g77c69ba5ee34" version="1">Fighting Style: Dagger</content>
+  <content contentuid="h8bb28253gf0f1g44b4g411dgcfdddd6d0c50" version="1">Whenever you throw a dagger, you apply any poison it is coated with.</content>
+  <content contentuid="ha297162eg864eg5d58g375egd53d4af2ca64" version="1">Dagger Specialist</content>
+  <content contentuid="h77f796bdg7fddg7807g8d35gd2f307d87bdd" version="1">You apply bonuses from your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;attack&lt;/LSTag&gt; when throwing a dagger. Additionally, a &lt;LSTag Type="Status" Tooltip="WEAPON_COATED_WITH_POISON_MASTER"&gt;poisoned&lt;/LSTag&gt; dagger applies the poison it is coated with.</content>
+  <content contentuid="hc4421fbfg85e3g47ecga2e1gabbf1a5a4eaa" version="1">You also gain a +1 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for each dagger you are actively wielding.</content>
+  <content contentuid="h7de41558g3013ga3c4g7edeg13fa37ff5ec9" version="1">Dagger Specialist</content>
+  <content contentuid="hde36b24cgb111g1451g2453g7973839ebf65" version="1">You apply bonuses from your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;attack&lt;/LSTag&gt; when throwing a dagger. Additionally, a &lt;LSTag Type="Status" Tooltip="WEAPON_COATED_WITH_POISON_MASTER"&gt;poisoned&lt;/LSTag&gt; dagger applies the poison it is coated with.</content>
+  <content contentuid="h2c247daag589dgc14fgff96g5959923d8467" version="1">You also gain a +1 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for each dagger you are actively wielding.</content>
+  <content contentuid="h41cfa7a0g8029g58aagf39cgdd0ed92d9434" version="1">Versatile</content>
+  <content contentuid="h9f91ec55gaed4g63f5gcc67gfd69db0b125b" version="1">When wielding &lt;LSTag Tooltip="Versatile"&gt;Versatile&lt;/LSTag&gt; weapons you are &lt;LSTag Tooltip="WeaponProficiency"&gt;proficient&lt;/LSTag&gt; with, you use your &lt;LSTag Type="Ability" Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; modifier for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, or your &lt;LSTag Type="Ability" Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; modifier, whichever is higher.</content>
+  <content contentuid="hc92f419fge79dg48degc063g63eae270a3ae" version="1">Additionally, you gain a +1 bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;weapon attack&lt;/LSTag&gt; when wielding these weapons.</content>
+  <content contentuid="h8a541d86g5288g48d9g4cf1g19ac545bcef6" version="1">Throw a dagger with ruthless precision, dealing weapon damage + [1] and applying your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Attack&lt;/LSTag&gt; effects. The thrown dagger also applies any &lt;LSTag Type="Status" Tooltip="WEAPON_COATED_WITH_POISON_MASTER"&gt;Poison&lt;/LSTag&gt; it is coated with.</content>
+  <content contentuid="h598303dcg5f9bg8597g8c65g033472bb3b29" version="1">You always use your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; modifier when &lt;LSTag Tooltip="Thrown"&gt;throwing&lt;/LSTag&gt; a dagger, if it is higher than your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;.</content>
+  <content contentuid="ha792a72fgc199gb478gd9eagbccb18cd5d9d" version="1">The Blade Least Expected: Ki</content>
+  <content contentuid="h17ae9d5cg0127g8da5g6639g17629bfdd0e5" version="1">Bouncing Knives</content>
+  <content contentuid="hef803aedgf31egd2abgdb34g283eac0b616b" version="1">Throw a dagger with ruthless precision, applying your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Attack&lt;/LSTag&gt; effects. The dagger bounce on [1] more targets, applying weapon effects and poisons.</content>
+  <content contentuid="ha8800d3eg0949g3005g116fg545d38971cb1" version="1">Throw a dagger at your target, dealing weapon damage and applying your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Attack&lt;/LSTag&gt; effects. The thrown dagger also applies any &lt;LSTag Type="Status" Tooltip="WEAPON_COATED_WITH_POISON_MASTER"&gt;Poison&lt;/LSTag&gt; it is coated with.</content>
+  <content contentuid="h41e57f06gae65g971fg7d9ag4569c86317c0" version="1">Throw Dagger</content>
+  <content contentuid="hd87867c4gd4e4gfd68gf25bg512e3a96809b" version="1">Throw a dagger at your target, dealing weapon damage and applying your weapon &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Attack&lt;/LSTag&gt; effects. The thrown dagger also applies any &lt;LSTag Type="Status" Tooltip="WEAPON_COATED_WITH_POISON"&gt;Poison&lt;/LSTag&gt; it is coated with.</content>
+  <content contentuid="h83984ea8g0d27gb0c0geda2gca878a512841" version="1">You always use your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; modifier when &lt;LSTag Tooltip="Thrown"&gt;throwing&lt;/LSTag&gt; a dagger, if it is higher than your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;.</content>
+  <content contentuid="h26c4e11bgd392g1a3bgefc5g6f4fc8441037" version="1">Throw Dagger</content>
+  <content contentuid="h9fe36e96g2d30g3158g4efeg572c98f33e47" version="1">Fighting Style : Dagger (applier)</content>
+  <content contentuid="h0112fa33g5a92g76d0g39e7gd5a2920f3d8b" version="1">You can throw daggers. Use this if for some reason you've lost the condition (debug).</content>
+  <content contentuid="h36082dd7g2bc2g9e43gb9aeg80350974ccc2" version="1">Master Poisoner : Apply</content>
+  <content contentuid="h332475f0g4ec9ga323ge094g4e770a536ebc" version="1">You can apply poison and oil freely.&lt;br&gt;&lt;br&gt;Use this to apply the condition in case you lose it somehow.</content>
+  <content contentuid="hf399df9dg1a17gb9d5ge6d2gab3a587e9f7a" version="1">Eldritch Bliss Aura</content>
+  <content contentuid="h5109fa82gdb6bg19fcgd96bg2fa08270d459" version="1">Evokes some implacably strong emotion within nearby creatures.</content>
+  <content contentuid="he76b6618gd176g32c6ga528gc82e9929a8c1" version="1">Eldritch Bliss Aura</content>
+  <content contentuid="h3acc4a8fg26d4gbfaeg98fbga1f1f760b369" version="1">Evokes some implacably strong emotion within nearby creatures.</content>
+  <content contentuid="hdea3b27cg891fg6828g2c39g15bbed0bd0aa" version="1">Ephemeral</content>
+  <content contentuid="hff03bf31g9b3eg2f56gaaf8gf655db832b9d" version="1">This item may disintegrate at any moment.</content>
+  <content contentuid="hbd900c25gc5f1ga204gc808g4b2fcb82e115" version="2">Shadow Blade</content>
+</contentList>

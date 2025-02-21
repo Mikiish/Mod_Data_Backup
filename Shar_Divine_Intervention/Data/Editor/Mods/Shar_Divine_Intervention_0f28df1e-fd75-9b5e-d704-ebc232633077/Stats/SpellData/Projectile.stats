@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fbc0658-2d99-44d6-94de-0122ffe0de0f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shadowlift" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e25460e-7e64-4eb9-83fc-51c83c159afa" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had8f444fga3afg3bbbg10e0g45a3260a4875" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.33" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7cd9db11g97c1g1f62g941bg7793e19e5085" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="67709a42-d0ca-4c57-ab12-de411670b32d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="629d264b-5a78-46f6-b305-172372f21d8f" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

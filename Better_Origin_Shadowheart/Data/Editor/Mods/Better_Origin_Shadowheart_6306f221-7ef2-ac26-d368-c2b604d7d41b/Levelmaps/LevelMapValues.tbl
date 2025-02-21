@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="2d56f038-865d-492c-b434-c2b3e821cc13">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="DeathCoil" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5592f54f-d053-4100-a9e5-0decd2529746" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="7830cfef-4782-4deb-9b04-f6230aed63b2" />
+        <field name="Level5" type="StringTableFieldDefinition" value="1d10" />
+        <field name="Level2" type="StringTableFieldDefinition" value="1d8" />
+        <field name="Level11" type="StringTableFieldDefinition" value="2d6" />
+        <field name="Level8" type="StringTableFieldDefinition" value="1d12" />
+        <field name="Level14" type="StringTableFieldDefinition" value="2d8" />
+        <field name="Level17" type="StringTableFieldDefinition" value="2d10" />
+        <field name="Level20" type="StringTableFieldDefinition" value="4d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="DeathCoil_Tooltip_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b82b41f2-00cb-45e5-9418-7f8e7008dc0e" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="7830cfef-4782-4deb-9b04-f6230aed63b2" />
+        <field name="Level2" type="StringTableFieldDefinition" value="2d8" />
+        <field name="Level5" type="StringTableFieldDefinition" value="2d10" />
+        <field name="Level11" type="StringTableFieldDefinition" value="4d6" />
+        <field name="Level8" type="StringTableFieldDefinition" value="2d12" />
+        <field name="Level14" type="StringTableFieldDefinition" value="4d8" />
+        <field name="Level17" type="StringTableFieldDefinition" value="4d10" />
+        <field name="Level20" type="StringTableFieldDefinition" value="8d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="DeathCoil_Tooltip_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="785cfbcb-8bd5-4249-a11e-70d25e2e0dc9" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="7830cfef-4782-4deb-9b04-f6230aed63b2" />
+        <field name="Level2" type="StringTableFieldDefinition" value="3d8" />
+        <field name="Level5" type="StringTableFieldDefinition" value="3d10" />
+        <field name="Level11" type="StringTableFieldDefinition" value="6d6" />
+        <field name="Level8" type="StringTableFieldDefinition" value="3d12" />
+        <field name="Level14" type="StringTableFieldDefinition" value="6d8" />
+        <field name="Level17" type="StringTableFieldDefinition" value="6d10" />
+        <field name="Level20" type="StringTableFieldDefinition" value="12d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="DeathCoil_Tooltip_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dc39dcea-af8b-4c59-a2bb-824ff56345ed" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="7830cfef-4782-4deb-9b04-f6230aed63b2" />
+        <field name="Level2" type="StringTableFieldDefinition" value="4d8" />
+        <field name="Level5" type="StringTableFieldDefinition" value="4d10" />
+        <field name="Level11" type="StringTableFieldDefinition" value="8d6" />
+        <field name="Level8" type="StringTableFieldDefinition" value="4d12" />
+        <field name="Level14" type="StringTableFieldDefinition" value="8d8" />
+        <field name="Level17" type="StringTableFieldDefinition" value="8d10" />
+        <field name="Level20" type="StringTableFieldDefinition" value="16d6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="DeathCoil_Tooltip_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1342982f-cdba-478a-a941-4a3652170425" />
+        <field name="PreferredClass" type="GuidObjectTableFieldDefinition" value="7830cfef-4782-4deb-9b04-f6230aed63b2" />
+        <field name="Level2" type="StringTableFieldDefinition" value="5d8" />
+        <field name="Level5" type="StringTableFieldDefinition" value="5d10" />
+        <field name="Level11" type="StringTableFieldDefinition" value="10d6" />
+        <field name="Level8" type="StringTableFieldDefinition" value="5d12" />
+        <field name="Level14" type="StringTableFieldDefinition" value="10d8" />
+        <field name="Level17" type="StringTableFieldDefinition" value="10d10" />
+        <field name="Level20" type="StringTableFieldDefinition" value="20d6" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,273 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//REGION Act2a_StrongerBosses
+// Act2a All Characters
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+
+//REGION Vect
+// Bosses - Act2a Local-Global Characters / Legendary Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+
+// LittleChief - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+
+// DeathWarded - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+
+// StrongAlly - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+
+// TemporaryStunImmunity - Act2a Local Characters who gets weaker version of SG_Immunity
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Act2a Local Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+
+// RitualCaster - Act2a Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+
+// DrunkAtFirewine - Act2a Local Characters - Firewine Drunks (these get a status that make theim explode when taking fire damage, as well as giving theim resistance to fire damage).
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+
+// NamedSeeInvis - Act2a Local Characters - See Invisibility
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+
+// ScryingEyes - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ScryingEyes");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ScryingEyes");
+
+// ReactOnAllyDeath - Act2a Local Characters - Might do specific scripted things on ally death
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+
+// Bard - Act2a Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+
+// HoundMaster - Act2a Local Characters - Buff nearby beasts or monstrosities
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+
+// Destroyer - Act2a Local Characters - Deal double damage against items and constructs
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//END_REGION Vect
+//END_REGION
+//END_REGION Act2a_StrongerBosses
+
+//REGION Act2b_StrongerBosses
+// Act2b All Characters
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_HarperScout_002_a0fecf82-7dde-4dd7-af67-eb0ef5aa67e0);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab);
+DB_NightmareMode_StrongerBosses_LocalObjects(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7);
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+//DB_NightmareMode_StrongerBosses_LocalObjects();
+
+//REGION Vect
+// Bosses - Act2b Local-Global Characters / Legendary Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Ketheric_e9918f3e-5b87-40a3-a9bd-61545151573f,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SHA_Necromancer_53651a9f-7ea8-444f-ba2d-224390b72f7d,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_Drider_aa59ce01-3d2e-42e8-a539-c07e0ea292ab,"StrongerBoss");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerBoss");
+
+// LittleChief - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_HAV_FlamingSpy_acb1dd9e-952b-4281-8e30-ec6f671493a6,"LittleChief");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"LittleChief");
+
+// DeathWarded - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_RoofCultist_ebfd7bc7-0fd5-4dee-8fd5-308ded4d0a65,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_SCL_DriderCaravan_HalfOrcCaster_f9522205-623f-4a82-904a-128b26182707,"DeathWarded");
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_COL_ShowdownMindflayer_01_614345f7-8420-4d09-a233-744087eb0af7,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DeathWarded");
+
+// StrongAlly - Act2b Local Characters
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_GLO_Isobel_263bfbfc-6160-46f4-a9e1-1089cdb5c211,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongAlly");
+
+// TemporaryStunImmunity - Act2b Local Characters who gets weaker version of SG_Immunity
+DB_NightmareMode_StrongerBosses_LocalObjectsVect(S_MOO_Executioner_8e75eb3b-7551-485e-8f98-2bf2e51d3e84,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Act2b Local Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"StrongerChief");
+
+// RitualCaster - Act2b Local Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"RitualCaster");
+
+// DrunkAtFirewine - Act2b Local Characters - Firewine Drunks (these get a status that make theim explode when taking fire damage, as well as giving theim resistance to fire damage).
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"DrunkAtFirewine");
+
+// NamedSeeInvis - Act2b Local Characters - See Invisibility
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"NamedSeeInvis");
+
+// ScryingEyes - Act2b Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ScryingEyes");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ScryingEyes");
+
+// ReactOnAllyDeath - Act2b Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+
+// Bard - Act2b Local Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+
+// HoundMaster - Act2b Local Characters - Buff nearby beast and monstrosity
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+
+// Destroyer - Act2b Local Characters - Deal additionnal damage against items and constructs
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//END_REGION
+//END_REGION Act2b_StrongerBosses
+
+
+//REGION Global Characters - Act2
+// All Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharacters();
+//DB_NightmareMode_StrongerBosses_GlobalCharacters();
+
+//REGION Vect
+// Bosses - Global Characters / Legendary Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerBoss");
+
+// LittleChief - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"LittleChief");
+
+// DeathWarded - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DeathWarded");
+
+// StrongAlly - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongAlly");
+
+// TemporaryStunImmunity - Global Characters who gets weaker version of SG_Immunity
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"TemporaryStunImmunity");
+
+// StrongerChief - Global Characters - Stronger LittleChief
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"StrongerChief");
+
+// RitualCaster - Global Characters - Ritual Casters (special tag for character supposed to keep channeling whatever they channel)
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"RitualCaster");
+
+// DrunkAtFirewine - Global Characters - Firewine Drunks (these get a status that make theim explode when taking fire damage, as well as giving theim resistance to fire damage).
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DrunkAtFirewine");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"DrunkAtFirewine");
+
+// NamedSeeInvis - Global Characters - See Invisibility
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"NamedSeeInvis");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"NamedSeeInvis");
+
+// ScryingEyes - Global Characters
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"ScryingEyes");
+//DB_NightmareMode_StrongerBosses_GlobalCharactersVect(,"ScryingEyes");
+
+// ReactOnAllyDeath - Global Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"ReactOnAllyDeath");
+
+// Bard - Global Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Bard");
+
+// HoundMaster - Global Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"HoundMaster");
+
+// Destroyer - Global Characters
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//DB_NightmareMode_StrongerBosses_LocalObjectsVect(,"Destroyer");
+//END_REGION
+//END_REGION Global Characters - Act2
+
+//REGION Divine Avatars and VIPs.
+// All Characters
+//DB_NightmareMode_StrongerBosses_Gods();
+//DB_NightmareMode_StrongerBosses_Gods();
+
+//REGION Vect
+//DB_NightmareMode_StrongerBosses_GodsVect(,"");
+//DB_NightmareMode_StrongerBosses_GodsVect(,"");
+//END_REGION
+//END_REGION Divine Avatars and VIPs.
+
+KBSECTION
+IF
+LevelLoaded(_)
+AND
+DB_NightmareMode_StrongerBosses_Initialized(0)
+THEN
+TimerLaunch("NightmareMode_StrongerBosses_InitDelay", 0);
+
+IF
+SavegameLoaded()
+AND
+DB_NightmareMode_StrongerBosses_Initialized(0)
+THEN
+TimerLaunch("NightmareMode_StrongerBosses_InitDelay", 0);
+
+IF
+TimerFinished("NightmareMode_StrongerBosses_InitDelay")
+THEN
+NOT DB_NightmareMode_StrongerBosses_Initialized(0);
+DB_NightmareMode_StrongerBosses_Initialized(1);
+
+
+// This script initialize whenever you teleport to any way point, click a Wheel Door (one that teleports you somewhere) or load a save game.
+// Loading a save game doesn't automatically triggers LevelLoaded(_) event.
+
+// Below simply add passives and statues to all character stored in the INIT manually edited DB.
+
+EXITSECTION
+
+ENDEXITSECTION

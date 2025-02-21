@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="734b899b-096d-41d6-b737-59ea090e4a41" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivineIntervention_Shar" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4f9775fd-5f33-4e85-8da0-554bcbdc4f44" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h753e958aga67dgaa11gb3edg7627a201aae6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f06a2eeg2567gaf46ge2a2gd89497cbc59b" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SHADOW_CURSED_VINES)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0eea7dde-f8a4-4da1-be49-f80a478cd514" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivineIntervention_SharFriends" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h878f5d67g5deege077ga32bg9a9f36a827dc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56af2089g6de3gd959g3041ge4ad70251f5c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineIntervention_Weapon" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e0b1431-8f56-42f0-8d5e-6c6b4bfb8d70" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer_Shar_Madness" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9cd217fgd78ag0dccg391fg1a96b4a06cb7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1655219ag470cg11acg9be9gf5c1c19da888" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('SCL_SHADOW_CURSE_UNDEAD', context.Target) and Character() and not HasStatus('LOW_HOUSEOFGRIEF_SHARSFAVOUR', context.Target) and not Tagged('CLERIC_SHAR', context.Target) and not Tagged('PALADIN_SHAR', context.Target) and not Tagged('SHAR', context.Target) and not Tagged('SHAR_FRIENDS', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DIVINE_INTERVENTION_SHAR,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca5cb35b-5baa-4414-93fd-2e2f34c3d798" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer_Shar_Rise" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h668f10d9g2a25g23a5g5399gae07a31f84f7" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('SCL_SHADOW_CURSE_RISING_SHAR')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="GROUND:CreateSurface(3,10,DarknessCloud);GROUND:CreateSurface(3,-1,ShadowCursedVines)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1438f8b1-1ea1-424d-8478-133927db525c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer_Shar_TestAura" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h367f89aagab95g2efcgc0ffg2c518a0f805f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DIVINE_INTERVENTION_SHAR_APPLIER_TEST,100,5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b468e25-d8ae-4242-b5de-5f6e9d82d5a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer_Shar_Aura_Toggle_Test" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('DIVINE_INTERVENTION_SHAR_APPLIER_TEST')" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DIVINE_INTERVENTION_SHAR_APPLIER_TEST,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DIVINE_INTERVENTION_SHAR_APPLIER_TEST)" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Subtle_HeadFX_01:Dummy_HeadFX" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15db3878g75dcg3383g0887g3123f4e90c40" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca463ddag008egb869g7abeg346dd715fcbc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="75d96045-280b-4255-b3fb-46a2d37b2090" />
+        <field name="Name" type="NameTableFieldDefinition" value="HolyIdol_PassiveAura" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5ef24d6gb36cg9ec4g5699g70c55cc53ed0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3deff31fg5a9egf482geba0g533bfb25b977" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,HOLY_IDOL_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

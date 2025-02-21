@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6caff9ca-989c-4e38-a692-b844bd304232" />
+        <field name="Name" type="NameTableFieldDefinition" value="_CombatWeapons" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37cee654-fa7a-475b-8a6d-97254951444c" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42fca697-dd3a-4cbe-9a89-7c9b6688214f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_SHA_SharBlessing_Spear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2922cf49-9afa-4eb5-8397-519aecb72464" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="61f31bf6-47ec-41e1-9385-2f6c26facc87" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SHA_SharsBlessing_Darkness)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Rush_SpringAttack);UnlockSpell(Target_CripplingStrike);UnlockSpell(Target_SHA_Apprentice_DaggerOfShar_Spell)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_SHA_SharBlessing_Spear_Passive;MAG_Shadow_BlindImmunity_Ring_Passive" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="MAG_SHA_SHAR_BLESSING_SAVING_THROW_ADVANTAGE_TECHNICAL" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical)" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de5a31ea-283b-44ab-b8f4-8c7d30101077" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_SHA_SharBlessing_Spear_Dev" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42fca697-dd3a-4cbe-9a89-7c9b6688214f" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1e75885-800b-432c-bbf2-513789051bd3" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_ShadowBlade_Nightcloak" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="012fa9ca-257f-4f4a-887d-fbc94723a3fb" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d4" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.05" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85285d8f-c681-458b-849c-050170ef80dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_MAG_SHA_SharBlessing_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="98ccf770-7c89-4266-b2e0-b1f8f0587840" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.05" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DEN_Apprentice_DaggerOfShar_Spell);UnlockSpell(Target_BlessingOfTheNightbringer)" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_PiercingThrust);UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="DEN_Apprentice_DaggerOfShar_Passive;Nightbringer_SharEternalDagger_Passive" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c4bf213-81ea-4f55-9892-f9ad6b08a6e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="WPN_Dagger_MyCustomOrinDagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="81b0df91-640e-4dbf-893b-cf27f1b9256b" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4, Necrotic)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

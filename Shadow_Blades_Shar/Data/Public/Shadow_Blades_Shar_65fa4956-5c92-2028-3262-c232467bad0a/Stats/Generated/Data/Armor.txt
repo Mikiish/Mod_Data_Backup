@@ -1,0 +1,21 @@
+new entry "_TWN_a"
+type "Armor"
+
+new entry "MAG_Shadow_ShadowBlade_Ring"
+type "Armor"
+using "_Ring_Magic"
+data "RootTemplate" "8cc165d7-0372-4f4b-b4ac-f424f4069af1"
+data "ValueLevel" "5"
+data "ValueUUID" "3e8b9d6e-7e83-4fd7-bc99-bb4956d67a2a"
+data "Rarity" "VeryRare"
+data "Boosts" "UnlockSpell(Shout_ShadowBlade)"
+data "StatusOnEquip" "MAG_SHADOW_BLADE_RING_TECHNICAL_SHAR"
+data "Unique" "1"
+data "MinLevel" "1"
+
+new entry "MAG_JusticiarArmor_Gloves"
+type "Armor"
+using "SHA_JusticiarArmor_Gloves"
+data "RootTemplate" "518a925b-eb77-44e7-999d-e8c195b2261d"
+data "PassivesOnEquip" "MAG_DarkJusticiarGloves_Passive;LOW_HouseOfGrief_Cultists_Sight"
+

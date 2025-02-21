@@ -1,0 +1,20 @@
+new entry "INTERRUPT_SMITE_UNHOLY_VFX"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "_PASSIVES"
+data "SoundStart" "CrSpell_Impact_Brewer_MixChangeExplosion_Necrotic"
+data "StatusEffect" "366b5ab6-8280-44fa-84b0-56ef89216d08"
+
+new entry "NIGHTBRINGER_SHAR_EFFECT"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusEffect" "90d0a624-5278-43cf-9184-7e92880a722e"
+
+new entry "NIGHTCLOAK_SHADOWBLADE_OSIRISTRIGGER_EFFECT"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "ApplyEffect" "4c40f7ab-8513-49da-ae71-b7faae9079ca"
+data "StatusEffect" "4c40f7ab-8513-49da-ae71-b7faae9079ca"
+

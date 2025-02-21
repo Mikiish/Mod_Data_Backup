@@ -1,0 +1,57 @@
+INIT:
+
+ENDI
+KB:
+
+KBI
+EXIT:
+IF(CharacterLevelGreaterThan(3) and not CharacterLevelGreaterThan(7)):SpellSaveDC(1);
+IF(CharacterLevelGreaterThan(7) and not CharacterLevelGreaterThan(11)):SpellSaveDC(2);
+IF(CharacterLevelGreaterThan(11) and not CharacterLevelGreaterThan(15)):SpellSaveDC(3);
+IF(CharacterLevelGreaterThan(15)):SpellSaveDC(4);
+IF(CharacterLevelGreaterThan(3) and not CharacterLevelGreaterThan(4)):ActionResourceOverride(SpellSlot,2,3);
+IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ActionResourceOverride(SpellSlot,3,3);
+IF(CharacterLevelGreaterThan(10)):ActionResourceOverride(SpellSlot,4,3);
+IF(CharacterLevelGreaterThan(5) and not CharacterLevelGreaterThan(6)):ActionResourceOverride(SpellSlot,1,4);
+IF(CharacterLevelGreaterThan(6) and not CharacterLevelGreaterThan(11)):ActionResourceOverride(SpellSlot,2,4);
+IF(CharacterLevelGreaterThan(11)):ActionResourceOverride(SpellSlot,3,4);
+IF(CharacterLevelGreaterThan(7) and not CharacterLevelGreaterThan(8)):ActionResourceOverride(SpellSlot,1,5);
+IF(CharacterLevelGreaterThan(8) and not CharacterLevelGreaterThan(12)):ActionResourceOverride(SpellSlot,2,5);
+IF(CharacterLevelGreaterThan(12)):ActionResourceOverride(SpellSlot,3,5);
+IF(CharacterLevelGreaterThan(9) and not CharacterLevelGreaterThan(13)):ActionResourceOverride(SpellSlot,1,6);
+IF(CharacterLevelGreaterThan(13)):ActionResourceOverride(SpellSlot,2,6);
+
+// Warlock
+IF(not CharacterLevelGreaterThan(7)):UnlockSpell(Target_NM_GLO_SummonImp);
+IF(CharacterLevelGreaterThan(7)):UnlockSpell(Target_NM_GLO_SummonImpStrong);
+UnlockSpell(Projectile_NM_GLO_EldritchBlast,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_LOW_BhaalCultist_Slow,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_BlackTentacles,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_Blight,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_HoldMonster,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_FleshToStone,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_DissonantWhispers,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+
+// Wizard
+IF(CharacterLevelGreaterThan(5)):UnlockSpell(Target_NM_GLO_ConjureIceMephit);
+UnlockSpell(Zone_ConeOfCold,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_NM_GLO_GlobeOfInvulnerability,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_IceStorm,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Projectile_Fireball,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Zone_LightningBolt,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Projectile_AcidArrow,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_MistyStep,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Projectile_MagicMissile,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_Sleep,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+
+// Cleric
+IF(CharacterLevelGreaterThan(10)):UnlockSpell(Target_NM_GLO_PlanarAlly_Deva);
+UnlockSpell(Target_Command_Drop,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_CalmEmotions,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_LesserRestoration,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Shout_HealingWord_Mass,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Shout_NM_GLO_SpiritGuardians,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_FlameStrike,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_CureWounds_Mass,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+UnlockSpell(Target_PlanarBinding,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf,,);
+

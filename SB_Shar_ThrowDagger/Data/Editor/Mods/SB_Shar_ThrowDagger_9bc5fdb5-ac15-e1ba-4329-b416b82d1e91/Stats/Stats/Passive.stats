@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ae034ae-4593-4629-b438-8bb5e84534ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Poison_Simple_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ad9772d1-48e9-46b4-b287-9dd4f83ccdc6" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasStatus('POISON_SIMPLE_DIPPED',context.HitDescription.ThrownObject) or HasStatus('POISON_SIMPLE_DIPPED_MASTER',context.HitDescription.ThrownObject)) and not HasStatus('POISON_SIMPLE_CONDITION', context.Target) and not HasStatus('POISON_SIMPLE_CONDITION_MASTER', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsPoisonMaster()):ApplyStatus(POISON_SIMPLE_TECHNICAL_APPLIER_MASTER,100,0);IF(not IsPoisonMaster()):ApplyStatus(POISON_SIMPLE_TECHNICAL_APPLIER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36720481-a517-43e9-be4f-cc1941f8259c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Poison_Drow_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="914237ba-fee9-47ac-b842-02778f579b65" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasStatus('POISON_DROW_DIPPED',context.HitDescription.ThrownObject) or HasStatus('POISON_DROW_DIPPED_MASTER',context.HitDescription.ThrownObject)) and not HasStatus('POISON_DROW_CONDITION', context.Target) and not HasStatus('POISON_DROW_CONDITION_MASTER', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsPoisonMaster()):ApplyStatus(POISON_DROW_TECHNICAL_APPLIER_MASTER,100,0);IF(not IsPoisonMaster()):ApplyStatus(POISON_DROW_TECHNICAL_APPLIER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f553410-11c0-4b5d-a454-7369c1a481f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Poison_CrawlerMucus_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b01002c-d4bc-4994-9bf2-eabdb184299b" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasStatus('POISON_CRAWLER_MUCUS_DIPPED',context.HitDescription.ThrownObject) or HasStatus('POISON_CRAWLER_MUCUS_DIPPED_MASTER',context.HitDescription.ThrownObject)) and not HasStatus('POISON_CRAWLER_MUCUS_CONDITION', context.Target) and not HasStatus('POISON_CRAWLER_MUCUS_CONDITION_MASTER', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsPoisonMaster()):ApplyStatus(POISON_CRAWLER_MUCUS_TECHNICAL_APPLIER_MASTER,100,0);IF(not IsPoisonMaster()):ApplyStatus(POISON_CRAWLER_MUCUS_TECHNICAL_APPLIER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="faa1bfca-f684-49c7-8e9e-31b1c3f63e8b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Poison_Malice_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="338cb520-ec9f-49b4-8db1-7eb9922ee87b" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasStatus('POISON_MALICE_DIPPED',context.HitDescription.ThrownObject) or HasStatus('POISON_MALICE_DIPPED_MASTER',context.HitDescription.ThrownObject)) and not HasStatus('POISON_MALICE_CONDITION', context.Target) and not HasStatus('POISON_MALICE_CONDITION_MASTER', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsPoisonMaster()):ApplyStatus(POISON_MALICE_TECHNICAL_APPLIER_MASTER,100,0);IF(not IsPoisonMaster()):ApplyStatus(POISON_MALICE_TECHNICAL_APPLIER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3489602-41e7-4ed3-b122-720ca4af059e" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_Poison_Brewer_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="145f7472-424c-4ebd-8ae8-1ea8d1012dea" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasStatus('UNI_POISON_BREWER_DIPPED',context.HitDescription.ThrownObject) or HasStatus('UNI_POISON_BREWER_DIPPED_MASTER',context.HitDescription.ThrownObject)) and not HasStatus('UNI_POISON_BREWER_CONDITION', context.Target) and not HasStatus('UNI_POISON_BREWER_CONDITION_MASTER', context.Target)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsPoisonMaster()):ApplyStatus(UNI_POISON_BREWER_TECHNICAL_APPLIER_MASTER,100,0);IF(not IsPoisonMaster()):ApplyStatus(UNI_POISON_BREWER_TECHNICAL_APPLIER,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1df4391-c11d-4163-8f2f-5422626005ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_Basic_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="910970bc-0d26-4c3c-a8a3-b1669671a259" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_TOXIN_BASIC_DIPPED',context.HitDescription.ThrownObject) or HasStatus('ALCH_TOXIN_BASIC_DIPPED_MASTER',context.HitDescription.ThrownObject)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, 11)):ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1, AdvantageOnPoisoned(), IsPoisonMaster())" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e847ea1-e5aa-43ea-987a-360bad58c7a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_SerpentVenom_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ad1fa257-1954-4f03-b250-bb165d8e034f" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned(), IsPoisonMaster())" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('TOXIN_SERPENTVENOM_DIPPED',context.HitDescription.ThrownObject) or HasStatus('TOXIN_SERPENTVENOM_DIPPED_MASTER',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ef5ace7-2db5-4659-aeed-4125b11c8b33" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_Wyvern_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83af11bb-fdc7-4fe9-8b9c-0af4454797c4" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, 15)):ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,1, AdvantageOnPoisoned(), IsPoisonMaster())" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('TOXIN_WYVERN_DIPPED',context.HitDescription.ThrownObject) or HasStatus('TOXIN_WYVERN_DIPPED_MASTER',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="060af6d8-b788-42b1-8f03-cb62bbcdb59e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_PurpleWorm_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a014ce30-5b87-4585-b1d7-56a2a12e0f2f" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, 19)):ApplyStatus(ALCH_TOXIN_PURPLEWORM_CONDITION,100,1, AdvantageOnPoisoned(), IsPoisonMaster())" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('TOXIN_PURPLEWORM_DIPPED',context.HitDescription.ThrownObject) or HasStatus('TOXIN_PURPLEWORM_DIPPED_MASTER',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df045fc5-8093-4bc1-bf4e-bedac75aee47" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oil_Bane_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c70ba83d-98f9-4a5b-b5ef-68ceaa72f55d" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_OIL_BANE_DIPPED',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e9577fa-4349-422b-bbeb-8d4594928510" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oil_Frost_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c77566ef-70d2-4acb-a587-c3526e16a1a6" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_OIL_FROST_DIPPED',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f83806ad-153b-438e-8730-579d83d613f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oil_Reduce_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8ec84065-a23a-46c3-8cc1-31ee7fa0fe3a" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_OIL_REDUCE_DIPPED',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="974c83a1-2cd4-492c-a6e1-0fde87a02483" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oil_RemoveResistanceFire_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13e93b3d-3dbe-4a16-a4bd-5718198b3b6a" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_OIL_REMOVERESISTANCEFIRE_DIPPED',context.HitDescription.ThrownObject)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35f667f1-d0d8-474f-ab50-8e38d213e4ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oil_Combustion_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d21d4bca-489c-4db4-b108-0247863a4840" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ALCH_OIL_COMBUSTION_DIPPED',context.HitDescription.ThrownObject)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2; DealDamage(3d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="157165a0-ea9f-429e-9bf3-3c9c9e5d0767" />
+        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_Dagger" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7de41558g3013ga3c4g7edeg13fa37ff5ec9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde36b24cgb111g1451g2453g7973839ebf65" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Throw_Throw_Dagger_Base)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('FIGHTING_STYLE_DAGGER', context.Source)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FIGHTING_STYLE_DAGGER,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3184a4f0-8d53-4441-93c3-f05cd61f5404" />
+        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_Versatile" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e2c8917a-2082-475d-b1d7-27fc8eb5ee40" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41cfa7a0g8029g58aagf39cgdd0ed92d9434" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f91ec55gaed4g63f5gcc67gfd69db0b125b" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc92f419fge79dg48degc063g63eae270a3ae" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SpiritualWeapon_Spear" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMonkWeaponAttack()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RollBonus(Attack,1)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

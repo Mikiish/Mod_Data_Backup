@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="cc1701fc-f374-4681-a3ec-29a5ce8d05e8">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e90a2fe-9bd5-4683-a5f7-60a46bf83abf" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQP_CC_Nightbringer" />
+        <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="WPN_Spear" />
+        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Boots_Leather" />
+        <field name="3" type="StatReferenceTableFieldDefinition" value="OBJ_Scroll_Revivify" />
+        <field name="4" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="5" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="6" type="StatReferenceTableFieldDefinition" value="ARM_ChainShirt_Body_Shar" />
+        <field name="7" type="StatReferenceTableFieldDefinition" value="UNI_ShadowheartCirclet" />
+        <field name="8" type="StatReferenceTableFieldDefinition" value="OBJ_Camp_Pack" />
+        <field name="9" type="StatReferenceTableFieldDefinition" value="OBJ_Keychain" />
+        <field name="10" type="StatReferenceTableFieldDefinition" value="OBJ_Bag_AlchemyPouch" />
+        <field name="11" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Body" />
+        <field name="12" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Shoes" />
+        <field name="13" type="StatReferenceTableFieldDefinition" value="OBJ_Backpack_CampSupplies" />
+        <field name="14" type="StatReferenceTableFieldDefinition" value="WPN_Dagger" />
+        <field name="15" type="StatReferenceTableFieldDefinition" value="WPN_Dagger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cefe9bc4-e3de-4ea7-a500-e26c48373357" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQ_Shadowheart" />
+        <field name="InitialWeaponSet" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="WeaponSet" version="1" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="WPN_Spear" />
+        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Boots_Leather" />
+        <field name="3" type="StatReferenceTableFieldDefinition" value="OBJ_Scroll_Revivify" />
+        <field name="4" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="5" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="6" type="StatReferenceTableFieldDefinition" value="ARM_ChainShirt_Body_Shar" />
+        <field name="7" type="StatReferenceTableFieldDefinition" value="UNI_ShadowheartCirclet" />
+        <field name="8" type="StatReferenceTableFieldDefinition" value="OBJ_Camp_Pack" />
+        <field name="9" type="StatReferenceTableFieldDefinition" value="OBJ_Keychain" />
+        <field name="10" type="StatReferenceTableFieldDefinition" value="OBJ_Bag_AlchemyPouch" />
+        <field name="11" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Body_Shadowheart" />
+        <field name="12" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Shoes_Shadowheart" />
+        <field name="13" type="StatReferenceTableFieldDefinition" value="OBJ_Backpack_CampSupplies" />
+        <field name="14" type="StatReferenceTableFieldDefinition" value="ARM_Underwear_Shadowheart" />
+        <field name="15" type="StatReferenceTableFieldDefinition" value="WPN_Dagger" />
+        <field name="16" type="StatReferenceTableFieldDefinition" value="WPN_Dagger" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

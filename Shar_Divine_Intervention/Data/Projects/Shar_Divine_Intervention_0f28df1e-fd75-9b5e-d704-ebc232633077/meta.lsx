@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="0f28df1e-fd75-9b5e-d704-ebc232633077"/>
+            <attribute id="Name" type="LSString" value="Shar_Divine_Intervention"/>
+            <attribute id="UUID" type="LSString" value="e726f49c-88ed-6ccb-cc63-54396c309f24"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

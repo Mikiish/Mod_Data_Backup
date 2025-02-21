@@ -1,0 +1,129 @@
+using base
+
+
+//////////////////////////////////////////////////////////////////////////
+//  Brutal Difficulty base override
+//////////////////////////////////////////////////////////////////////////
+//Higher Hit/Miss reasoning, will target low AC targets much more frequently
+MODIFIER_HIT_CHANCE_STUPIDITY 					0.65
+
+//More biased toward killing blows
+MULTIPLIER_KILL_ENEMY 							1.5
+
+//Less likely to attack summons instead of players
+MULTIPLIER_TARGET_SUMMON						0.40
+
+//Has some bias towards attacking concentrating targets
+MODIFIER_CONCENTRATION_REMOVE_TARGET 			0.1
+
+//Slightly more likely to attack downed targets
+MULTIPLIER_TARGET_ENEMY_DOWNED					0.3
+
+//More biased to use instakills (chasms etc)
+INSTAKILL_BASE_SCORE							2.0
+
+//More biased to use fall damage against targets (shoving from high places, etc)
+MULTIPLIER_FALL_DAMAGE_ENEMY					0.50
+
+//AI will reason about relative player power when using control spells
+MODIFIER_CONTROL_STUPIDITY						0.75
+
+//////////////////////////////////////////////////////////////////////////
+// Tactitian specific base mods
+//////////////////////////////////////////////////////////////////////////
+
+// Combos are taking into account when positioning as well
+MULTIPLIER_COMBO_SCORE_INTERACTION				0.90
+MULTIPLIER_COMBO_SCORE_POSITIONING				0.50
+
+// More agressive on CC enemies
+MULTIPLIER_CONTROL_ENEMY_POS					1.5
+MULTIPLIER_CONTROL_ENEMY_NEG					1.5
+
+// Less prone to disregard targets that are already attacked by 1 or more characters
+MULTIPLIER_TARGET_HOSTILE_COUNT_ONE				0.90
+MULTIPLIER_TARGET_HOSTILE_COUNT_TWO_OR_MORE		0.60
+
+// A general multiplier for all reflected damage
+MULTIPLIER_REFLECT_DAMAGE						0.25
+
+//Wyll cares more about not damaging and killing allies/neutrals
+MULTIPLIER_DAMAGE_ALLY_NEG						5.5
+MULTIPLIER_DAMAGE_NEUTRAL_NEG					2.5
+MULTIPLIER_KILL_ALLY							2.00
+MULTIPLIER_KILL_ALLY_SUMMON						1.50
+
+//Nurse likes buffing themselves - through the doing of which she'll actually be buffing the Surgeon
+MULTIPLIER_BOOST_SELF_POS		 				1.15
+
+//Nurse doesn't want enemies too close
+MULTIPLIER_FALLBACK_ALLIES_NEARBY				0.00
+MULTIPLIER_FALLBACK_ENEMIES_NEARBY				-0.50
+FALLBACK_ENEMIES_NEARBY_MAX_DISTANCE			3.00
+
+//Nurse cares about picking up weapons
+WEAPON_PICKUP_MODIFIER 							1.0
+
+//Nurse prefers to pickup melee weapons
+WEAPON_PICKUP_PREFER_RANGED_ENABLED 			1
+
+//Nurse really wants to pick her weapon back up
+WEAPON_PICKUP_MODIFIER_PREVIOUSLY_EQUIPPED 1.5
+
+//////////////////////////////////////////////////////////////////////////
+// General Score mods
+// Remaps all scores - where a score of SCORE_MOD is the average dmg of this character.
+SCORE_MOD										100.0
+BASE_NEARBY_SCORE								0.2
+
+//////////////////////////////////////////////////////////////////////////
+// Archetype modifiers
+MULTIPLIER_DAMAGE_SELF_POS						1.0
+MULTIPLIER_DAMAGE_SELF_NEG						1.0
+MULTIPLIER_DAMAGE_ENEMY_POS						1.0
+MULTIPLIER_DAMAGE_ENEMY_NEG						1.0
+MULTIPLIER_DAMAGE_ALLY_POS						1.0
+MULTIPLIER_DAMAGE_ALLY_NEG						4.0 // Damaging allies looks pretty stupid.
+MULTIPLIER_DAMAGE_NEUTRAL_POS					1.0
+MULTIPLIER_DAMAGE_NEUTRAL_NEG					1.50 //Avoid damaging neutrals where possible
+
+MULTIPLIER_HEAL_SELF_POS						0.75 //We generally want AI damaging, not healing
+MULTIPLIER_HEAL_SELF_NEG						1.0
+
+//Beasts
+SPELL_JUMP_MINIMUM_DISTANCE						6.50
+FALLBACK_ENEMIES_NEARBY_MIN_DISTANCE			3.50
+FALLBACK_ENEMIES_NEARBY_MAX_DISTANCE			7.00
+MULTIPLIER_ENDPOS_FLANKED						0.00
+
+//Beasts reason less about Aura effects
+MULTIPLIER_POS_IN_AURA 							0.05
+MODIFIER_OWN_AURA 								0.05
+
+//Does not attack things like exploding barrels
+MULTIPLIER_USABLE_ITEM							0.0
+
+//Does not reason about removing control from allies
+MULTIPLIER_CONTROL_ALLY_POS		 				-1.0
+
+//Beasts reason less about dangerous surfaces
+MULTIPLIER_MOVEMENT_SURFACE						0.50
+MULTIPLIER_ENDPOS_NOT_IN_DANGEROUS_SURFACE		0.50
+
+//No bias toward Chasms
+MULTIPLIER_INSTAKILL_TARGET_HEALTH_BIAS			 0.0
+
+// + Designate 1+0.25x operation.
++ MULTIPLIER_KILL_ENEMY							0.25
+
+
+// (modder) This is made so that Bulette tries to get away from player to activate its Jump attack.
+ENDPOS_ENEMIES_NEARBY_MIN_DISTANCE				3.90
+ENDPOS_ENEMIES_NEARBY_MAX_DISTANCE				7.00
+
+//Bulette slightly prefers attacking monstrositities instead of players (definition in osiris)
+MULTIPLIER_TARGET_PREFERRED						3.50
+
+//Slightly reduce AC priority to lower Toxic Spit spam
+MULTIPLIER_BOOST_AC 0.3
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e078e210-b9ba-48e5-afe3-c5eb91ba8545">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49a2994e-2eed-437b-b323-5fbc2b5d8a5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_LOOT_AdamantineForge_DaggerMold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0dfb979b-824d-4acf-a631-14fd418ff254" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="891502e7-3ce7-4bf0-b92d-28f95d0a6ce3" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AttributeFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="114aebc9-b707-4335-b34d-81b8b3fed2a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_BLD_AdamantineForge_Dagger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0b371607-d5d4-49d2-9e06-4796005edac0" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3b70183c-b63f-43a4-b20a-d69d423512b7" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AttributeFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

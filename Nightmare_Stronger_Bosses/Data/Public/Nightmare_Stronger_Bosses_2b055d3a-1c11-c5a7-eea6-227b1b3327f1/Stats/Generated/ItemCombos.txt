@@ -1,0 +1,12 @@
+new ItemCombination "UNI_BLD_AdamantineForge_Dagger"
+data "Type 1" "Object"
+data "Object 1" "UNI_BLD_AdamantineForge"
+data "Transform 1" "Transform"
+data "Type 2" "Object"
+data "Object 2" "UNI_LOOT_AdamantineForge_DaggerMold"
+data "Transform 2" "Consume"
+
+new ItemCombinationResult "UNI_BLD_AdamantineForge_Dagger_1"
+data "Result 1" "UNI_BLD_AdamantineForge_Dagger"
+data "PreviewStatsID" "UNI_BLD_AdamantineForge_Dagger"
+

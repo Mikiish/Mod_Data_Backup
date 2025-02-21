@@ -1,0 +1,16 @@
+game.configs.UND_Rainmaker = Config{
+    root=StateRef{game.roots.DefaultCharacter,
+        genericBehaviours = StateRef{game.states.DefaultCombat},
+        idle = StateRef{game.states.GLO_LoopAnimation,
+            loopingAnimation = [[CUST_TheRiteOfThornsStill_01_Loop_bf6be5eb-5bf8-428b-a855-b054f476ef20]],
+        },
+        partyMember = StateRef{game.states.GLO_PlayLoopingAnimationAtTrigger,
+            PlayLoopingAnimation = StateRef{game.states.GLO_PlaySimpleLoopingAnimation,
+                loopAnim = [[CUST_TheRiteOfThornsStill_01_Loop_bf6be5eb-5bf8-428b-a855-b054f476ef20]],
+            },
+            StandAtTrigger = StateRef{game.states.GLO_PlaySimpleLoopingAnimation,
+                loopAnim = [[CUST_TheRiteOfThornsStill_01_Loop_bf6be5eb-5bf8-428b-a855-b054f476ef20]],
+            },
+        },
+    }
+}

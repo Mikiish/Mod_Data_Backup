@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="47014da6-a81c-40a9-9f3c-4a74b6ddc574">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2190d295-8abb-439d-b155-01a573d09b57" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHADOWFIEND_INVISIBLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb5cc1b1-a593-4ba5-882e-2d6ce450053b" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="90d0a624-5278-43cf-9184-7e92880a722e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

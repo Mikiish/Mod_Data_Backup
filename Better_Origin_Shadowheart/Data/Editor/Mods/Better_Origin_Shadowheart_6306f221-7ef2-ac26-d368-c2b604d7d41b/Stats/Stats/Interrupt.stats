@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da827336-c566-4f9a-ae00-3eb7bf1f0434" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc94caa0gc10ag7e16g96f6g7c0f0f0411c6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5821b2e7g97bdg81ddg71b3g77904d889560" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hba517213ge31dg499egc320gccd00ae24592" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Nightbringer_UnholySmite" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER')  or HasStatus('SG_Disguise')" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="adaed5ad-ab1c-43cb-a089-0c0062d2ca4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da827336-c566-4f9a-ae00-3eb7bf1f0434" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5149a5e4-3fda-4e3d-9cec-125f466f1703" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da827336-c566-4f9a-ae00-3eb7bf1f0434" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f23b92c6-848d-483b-9832-30ccf97eedfd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da827336-c566-4f9a-ae00-3eb7bf1f0434" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="421b63b6-c624-4e24-ab5d-4348efe366a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f23b92c6-848d-483b-9832-30ccf97eedfd" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb4f4abd-ebad-43cf-89cc-dbde6ca3bc6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f23b92c6-848d-483b-9832-30ccf97eedfd" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab05d7cd-41bf-4953-b0c6-21aeb5728800" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da827336-c566-4f9a-ae00-3eb7bf1f0434" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e8eddb0g85efg7a83gf28ag5a669658d417" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h022b8db6gf99cge13cg51f5gf51e21827914" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Nightbringer_UnholySmite" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0602cb90-8a47-420b-90a6-5aebd8ae274b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ab05d7cd-41bf-4953-b0c6-21aeb5728800" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7df4ddf3-e197-486b-93e1-9c06ed48a9bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ab05d7cd-41bf-4953-b0c6-21aeb5728800" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="edfb4aac-84aa-49a8-b73d-4046f7a96ad3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ab05d7cd-41bf-4953-b0c6-21aeb5728800" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);ApplyStatus(INTERRUPT_SMITE_UNHOLY_VFX,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98783680-b911-4e25-87ba-5f6bb577627e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edfb4aac-84aa-49a8-b73d-4046f7a96ad3" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3d7fe72-c1b3-4a7b-9585-d524dc9072df" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Unholy_Critical_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edfb4aac-84aa-49a8-b73d-4046f7a96ad3" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

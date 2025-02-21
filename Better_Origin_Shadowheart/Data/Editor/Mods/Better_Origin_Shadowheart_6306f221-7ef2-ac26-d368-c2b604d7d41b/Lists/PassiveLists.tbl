@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="11fa382c-a1d2-45ba-913c-b13062365ce8">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e4a04ca-0f77-4ff0-a4d7-12e07f596d39" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Myrkul_Auril" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_AurilResilience" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6352f92d-dbb5-4c0e-be9b-6043860a4305" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Zehir_Cyric 3" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_CyricWays,StolenSecrets_ZehirWays" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="342c60d4-8012-4aa0-9aa2-72f4c2172738" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Myrkul_Auril 7" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_AurilHand,StolenSecrets_MyrkulHand" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70605402-f0ef-4603-bb3b-84fe40e42b1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Zehir_Cyric 9" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_CyricWays_2,StolenSecrets_ZehirWays_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="05e732c4-7ec0-4005-b33a-7b68b645a094" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Myrkul_Auril 10" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_Myrkul_3,StolenSecrets_Auril_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dba23fb7-ed0f-4fb7-8b42-42f0e9c1b4e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Zehir_Cyric 12" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_CyricWays_3,StolenSecrets_ZehirWays_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2639256c-d3a0-4bb9-a0bf-b3b07c411ad7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_AurilResilience" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0aae379-d8f9-432a-9f57-ab7cae2e7e87" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 3" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_AurilResilience,StolenSecrets_CyricWays,StolenSecrets_ZehirWays" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7b73db0-7b86-422b-bb24-979b6815811c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 7" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_MyrkulHand,StolenSecrets_AurilResilience,StolenSecrets_AurilHand,StolenSecrets_CyricWays,StolenSecrets_ZehirWays" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba35537b-cb45-4f14-853c-36df18591cc5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 9" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_MyrkulHand,StolenSecrets_AurilResilience,StolenSecrets_AurilHand,StolenSecrets_CyricWays,StolenSecrets_CyricWays_2,StolenSecrets_ZehirWays,StolenSecrets_ZehirWays_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="313cce3b-88e6-4617-95a3-0580d505eb90" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 10" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_MyrkulHand,StolenSecrets_Myrkul_3,StolenSecrets_AurilResilience,StolenSecrets_AurilHand,StolenSecrets_Auril_3,StolenSecrets_CyricWays,StolenSecrets_CyricWays_2,StolenSecrets_ZehirWays,StolenSecrets_ZehirWays_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a04669b-d83a-42d8-8f10-67e0187da258" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightbringer Stolen Secret Info 12" />
+        <field name="Passives" type="StringTableFieldDefinition" value="StolenSecrets_MyrkulResilience,StolenSecrets_MyrkulHand,StolenSecrets_Myrkul_3,StolenSecrets_AurilResilience,StolenSecrets_AurilHand,StolenSecrets_Auril_3,StolenSecrets_CyricWays,StolenSecrets_CyricWays_2,StolenSecrets_CyricWays_3,StolenSecrets_ZehirWays,StolenSecrets_ZehirWays_2,StolenSecrets_ZehirWays_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a1afc8c-bbbc-4572-a4c7-b47ce1e53fa8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Nightcloak Fighting Style" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FightingStyle_Archery,FightingStyle_Versatile,FightingStyle_TwoWeaponFighting" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="547542b8-c7fa-4659-835a-ad5d65fd4052" />
+        <field name="Name" type="NameTableFieldDefinition" value="HandOfShar Fighting Style" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FightingStyle_Archery,FightingStyle_Defense,FightingStyle_GreatWeaponFighting,FightingStyle_Versatile" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2655a9a-8ddd-4375-b5fb-6be526b42ef9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnemyOfShar Fighting Style" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FightingStyle_Defense,FightingStyle_Versatile,FightingStyle_Protection" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

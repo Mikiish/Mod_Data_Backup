@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="CombatStart" type="LSString" value=""/>
+            <attribute id="CustomScripting" type="LSString" value=""/>
+            <attribute id="Description" type="LSString" value=""/>
+            <attribute id="Events" type="LSString" value=""/>
+            <attribute id="ExpectedToFight" type="bool" value="true"/>
+            <attribute id="LevelName" type="LSString" value=""/>
+            <attribute id="Name" type="LSString" value="UND_KethericCity_LavaElemental"/>
+            <attribute id="Notes" type="LSString" value=""/>
+            <attribute id="Scripter" type="LSString" value=""/>
+            <attribute id="Situation" type="LSString" value=""/>
+            <attribute id="UUID" type="LSString" value="022bbba6-88f8-8caf-93c5-c4170f0473b7"/>
+        </node>
+    </region>
+</save>

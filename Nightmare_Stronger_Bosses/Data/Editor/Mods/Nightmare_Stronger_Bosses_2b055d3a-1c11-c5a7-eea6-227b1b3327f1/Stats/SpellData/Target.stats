@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e988a674-28fe-49d2-a6ce-c5c1e0141f4c">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="079bd1b9-de5a-4788-b391-f8aca90ee469" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathWard_Nightmare" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9c64f7-ba32-4c9e-bb19-f18c4de8e077" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3383015-cbcf-4e95-8e1c-ac8357ca8c23" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_OpenGate_Melee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="344f9005-6d0f-49cb-aba2-6b454b991fa3" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="faab1bcf-c7ba-4bbd-a0b5-9188559a2338" />
+        <field name="Name" type="NameTableFieldDefinition" value="CommandersStrike_StrongerChief" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8e6fc7e-f4e1-4762-bb84-015dfdca4026" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COMMANDERS_STRIKE_D8,100,3)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffd74337-fcb3-4d59-ae71-10adf1a3040b" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_ConcentratedBlast" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f53d7862-772c-4eb3-9e15-4de5124fc608" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic,Magical)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2739ce93-0805-46bd-b609-0c67ed435f4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_GLO_RainmasterRain" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b2f40bff-3324-4422-bef2-d9fd0bf36852" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Tagged('CONSTRUCT')):ApplyStatus(WET,100,2);GROUND:CreateSurface(14,0,Water);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

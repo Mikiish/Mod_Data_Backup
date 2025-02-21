@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="48dba020-2ec6-4570-b5c9-46f05f002da1" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_CallForHelp_ScryingEye_NMQry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bddba4dc-2296-43f6-aa55-6dc42aabd99a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_ONLY:CAST:ApplyStatus(SELF,AI_STATUS_FAKE,100,3);AI_IGNORE:ApplyStatus(CALLING_FOR_HELP_SCRYINGEYE,100,2);IF(not Dead() and not Ally()):DealDamage(1d8, Psychic)" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f8fabf8-f332-4396-bbd0-e82e792afe60" />
+        <field name="Name" type="NameTableFieldDefinition" value="NM_GLO_RainmasterWave" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc0fce6-abb6-4bc8-bd61-7dbe9f5c8bd3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Thunder);Force(4.5)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d6/2,Thunder)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

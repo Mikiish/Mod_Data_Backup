@@ -1,0 +1,8 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "UND_KC_LavaElemental"
+CanMerge 1
+new subtable "-1"
+object category "I_UNI_LOOT_AdamantineForge_DaggerMold",1,0,0,0,0,0,0,0
+new treasuretable "UND_KC_Spiderling"
+new subtable "-1"
+object category "I_ALCH_Ingredient_Loot_CarrionCrawler",1,0,0,0,0,0,0,0

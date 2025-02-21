@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Dragonborn Void Cantrip"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BreathWeapon_Acid"/>
+                    <attribute id="UUID" type="guid" value="6a962ac0-fb0e-4e93-b127-703e07bb5a06"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Voidborn Level 9"/>
+                    <attribute id="Spells" type="LSString" value="Target_CripplingDarkness"/>
+                    <attribute id="UUID" type="guid" value="b966371c-dab4-48a6-ba93-c6d5aea4885f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer cantrips (Wisdom)"/>
+                    <attribute id="Spells" type="LSString" value="Target_SharsGuidance;Shout_Thaumaturgy;Shout_ProduceFlame;Target_ChillTouch;Projectile_PoisonSpray"/>
+                    <attribute id="UUID" type="guid" value="13953031-675f-42ed-bdd9-e0c4110aec60"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 1"/>
+                    <attribute id="Spells" type="LSString" value="Shout_SharAegis;Target_InflictWounds;Target_Command_Container;Target_HideousLaughter;Zone_Thunderwave;Target_Bane;Target_CreateDestroyWater;Target_ProtectionFromEvilAndGood;Target_SanctuaryShar"/>
+                    <attribute id="UUID" type="guid" value="0f478ce2-a991-4303-8c64-fedcf53b2a4c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_Blindness;Target_CalmEmotions;Target_HoldPerson;Target_ProtectionFromPoison;Target_Silence;Target_SpiritualWeapon"/>
+                    <attribute id="UUID" type="guid" value="84c98d91-50d9-4e53-96ed-bc8d7ab43c8a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_AnimateDead;Target_FeignDeath;Target_GlyphOfWarding;Target_RemoveCurse;Target_SpeakWithDead"/>
+                    <attribute id="UUID" type="guid" value="a7bc16cd-ba0c-4487-ad8e-e2f3f9fc50d0"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_Banishment;Target_DeathWard;Target_FreedomOfMovement;"/>
+                    <attribute id="UUID" type="guid" value="eba908b2-ce8f-429c-8d72-cf59cdf8d28e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_Contagion;Target_FlameStrike;Target_InsectPlague;Target_PlanarBinding"/>
+                    <attribute id="UUID" type="guid" value="006e2a86-7ae2-46c9-aa54-713d4e72ec33"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 6"/>
+                    <attribute id="Spells" type="LSString" value="Wall_BladeBarrier;Target_CreateUndead;Target_Harm;Shout_HeroesFeast;Target_PlanarAlly_Container"/>
+                    <attribute id="UUID" type="guid" value="c7dcd1ff-240b-4b0f-b5ae-1a3629bf3524"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer SLevel 7"/>
+                    <attribute id="Spells" type="LSString" value="Target_GenericSLevel7"/>
+                    <attribute id="UUID" type="guid" value="eebb6443-2e6a-4d02-9d31-9f03dc15f19d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Conduit"/>
+                    <attribute id="Spells" type="LSString" value="Target_BlessingOfTheTrickster;Target_InvokeDuplicity"/>
+                    <attribute id="UUID" type="guid" value="1c7289ac-c9fe-48ca-8bb9-a3946a93c8d1"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Conduit 6"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CloakOfShadows"/>
+                    <attribute id="UUID" type="guid" value="04328ffa-cb0c-4997-99c6-b406b4cc295c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Conduit 10"/>
+                    <attribute id="UUID" type="guid" value="3a2c3908-113e-4af6-92ba-3739144a229a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_CharmPerson;Shout_DisguiseSelf"/>
+                    <attribute id="UUID" type="guid" value="dddd592c-6214-4500-925c-98fb7ceab196"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_MirrorImage;Shout_PassWithoutTrace;Target_Teleport_Shadow_Nightcloak"/>
+                    <attribute id="UUID" type="guid" value="7114341d-6656-44c4-8576-eee4bf7ccfab"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 6"/>
+                    <attribute id="Spells" type="LSString" value="Target_BestowCurse;Zone_Fear"/>
+                    <attribute id="UUID" type="guid" value="cfd20868-6523-4208-b74f-09f78c2e37a2"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 7"/>
+                    <attribute id="Spells" type="LSString" value="Target_ConjureElementals_Minor_Shadowfiend;Target_Command_DevourDream"/>
+                    <attribute id="UUID" type="guid" value="6db3b36e-8ed4-4613-b5e3-24d56c1f08ff"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 8"/>
+                    <attribute id="UUID" type="guid" value="74acaf60-4653-4c58-b7df-e4ae4c931f6c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 9"/>
+                    <attribute id="Spells" type="LSString" value="Target_Polymorph;Teleportation_DimensionDoor;Target_ConjureElemental_Elemental_Shadowfiend"/>
+                    <attribute id="UUID" type="guid" value="a351fd4f-2fa2-4404-87b9-2e49f17423d9"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 11"/>
+                    <attribute id="Spells" type="LSString" value="Target_ConjureElemental_Shadowfiend_6"/>
+                    <attribute id="UUID" type="guid" value="7e2f7fc8-ad25-4f9d-a98f-f1f6557f7803"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 12"/>
+                    <attribute id="Spells" type="LSString" value="Target_DominatePerson;Target_Seeming"/>
+                    <attribute id="UUID" type="guid" value="652b2d8f-9b14-4b75-b405-d570e8dee30d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Shar Domain 15"/>
+                    <attribute id="UUID" type="guid" value="1bd72a9d-1287-4ea9-9679-426c8332bbc7"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Oath"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Lichborne;Target_ControlUndead"/>
+                    <attribute id="UUID" type="guid" value="4fbb8e25-a831-46f9-9765-7a21451343c7"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Oath 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_HandOfShar_ControlShadow;Target_Multiattack_HandOfShar"/>
+                    <attribute id="UUID" type="guid" value="ff76792e-1b4e-4bc4-ae94-558a6bf7a99d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Smite"/>
+                    <attribute id="Spells" type="LSString" value="Target_Smite_Unholy;Target_Smite_Unholy_Unlock;Target_Smite_Unholy_Critical_Unlock"/>
+                    <attribute id="UUID" type="guid" value="c57b00eb-5ba9-443a-a99e-645e293e9ce6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Domain 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_CompelledDuel;Target_Smite_Wrathful;Target_Heroism;Target_Smite_Searing;Target_Smite_Thunderous"/>
+                    <attribute id="UUID" type="guid" value="15b8f2f6-2cbb-4536-9705-77866c397908"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Domain 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_DeathPact"/>
+                    <attribute id="UUID" type="guid" value="48dcfa17-67c8-400e-93a4-1581d270187f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Domain 4"/>
+                    <attribute id="UUID" type="guid" value="4cca952c-bca3-4b15-83fa-69142e53f4fb"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Domain 5"/>
+                    <attribute id="UUID" type="guid" value="90e60ab0-095c-4fb4-b27e-c8a44805a5c3"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Hand Domain 6"/>
+                    <attribute id="UUID" type="guid" value="550196f3-ab90-4b6b-9667-2b41e735b467"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Monk"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CloakOfShadows_Monk"/>
+                    <attribute id="UUID" type="guid" value="b127332a-c35f-4624-ad40-eac4f02ae0b1"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 1"/>
+                    <attribute id="Spells" type="LSString" value="Target_Bless;Target_CureWounds;Target_HealingWord"/>
+                    <attribute id="UUID" type="guid" value="a91023d9-2ba5-4075-b0aa-ee0995316c77"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 2"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Aid;Target_LesserRestoration;Shout_PrayerOfHealing;Target_EnhanceAbility;Target_WardingBond"/>
+                    <attribute id="UUID" type="guid" value="5135d2ac-bb4b-4917-b58b-cef30633e8a4"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 3"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_Revivify;Shout_BeaconOfHope;Target_Daylight_Container;Shout_HealingWord_Mass;Target_ProtectionFromEnergy;Shout_SpiritGuardians;Teleportation_Revivify"/>
+                    <attribute id="UUID" type="guid" value="a6286571-5760-4ef6-91b2-eae5ec278261"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_GuardianOfFaith"/>
+                    <attribute id="UUID" type="guid" value="6199aac4-00c0-45a8-9856-200b66ba083e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_GreaterRestoration;Target_CureWounds_Mass;Shout_DispelEvilAndGood"/>
+                    <attribute id="UUID" type="guid" value="f0905b8a-e5c2-4665-8e88-319935513e20"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Enemy Domain 6"/>
+                    <attribute id="Spells" type="LSString" value="Target_Heal"/>
+                    <attribute id="UUID" type="guid" value="3d045bbe-9410-49a1-a16a-c6791eebc868"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 1"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CreateKiPoint_Nightcloak;Shout_ShadowBlade_Nighcloak;Shout_Hide_BonusAction"/>
+                    <attribute id="UUID" type="guid" value="eafdca45-9472-43ef-bf5d-b4a50abcb023"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 2"/>
+                    <attribute id="Spells" type="LSString" value="Throw_Throw_Ricochet"/>
+                    <attribute id="UUID" type="guid" value="b17f73a5-4e12-4819-bb8b-f478020e321f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CloakOfShadows_Monk;Target_ShadowStep_Nightcloak"/>
+                    <attribute id="UUID" type="guid" value="6813a591-ce76-4619-8def-1275ae791dbe"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Nightcloak_DivineKiInfusion"/>
+                    <attribute id="UUID" type="guid" value="a5ad2ed6-3c85-42a2-b7c0-c0a33a839655"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_ShadowStrike_Instant;Target_ShadowStrike_Instant_Unarmed"/>
+                    <attribute id="UUID" type="guid" value="3ac64582-d900-4e3d-a518-c9101f0cf8b6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer Cloak Domain 6"/>
+                    <attribute id="UUID" type="guid" value="ef002570-68bf-4720-9a3c-afbd3c49deca"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer, Shar Domain spell scroll list"/>
+                    <attribute id="Spells" type="LSString" value="Target_BlessingOfTheTrickster;Target_CharmPerson;Shout_DisguiseSelf;Shout_MirrorImage;Shout_PassWithoutTrace;Target_BestowCurse;Zone_Fear;Target_ConjureElementals_Minor_Shadowfiend;Target_Command_DevourDream;Target_Polymorph;Teleportation_DimensionDoor;Target_ConjureElemental_Elemental_Shadowfiend;Target_DominatePerson;Target_Seeming"/>
+                    <attribute id="UUID" type="guid" value="8a63c2e7-8ab8-4605-835b-866aad07021a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer, Enemy Domain spell scroll list"/>
+                    <attribute id="Spells" type="LSString" value="Target_Bless;Target_CureWounds;Target_HealingWord;Shout_Aid;Target_LesserRestoration;Shout_PrayerOfHealing;Teleportation_Revivify;Shout_BeaconOfHope;Target_Daylight_Container;Shout_HealingWord_Mass;Target_GuardianOfFaith;Target_GreaterRestoration;Target_CureWounds_Mass;Target_Heal"/>
+                    <attribute id="UUID" type="guid" value="e95087eb-8405-480b-a6dc-422129f22766"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer, Hand Domain spell scroll list"/>
+                    <attribute id="Spells" type="LSString" value="Target_CompelledDuel;Target_Smite_Wrathful;Target_Heroism;Target_Smite_Searing;Target_Smite_Thunderous;Target_DeathPact"/>
+                    <attribute id="UUID" type="guid" value="c7dc4180-580a-4d37-a6e8-9078ab88264c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Nightbringer, Cloak Domain spell scroll list"/>
+                    <attribute id="UUID" type="guid" value="a9b9ce91-3a01-4f88-aa69-8bfac5697cf8"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,14 @@
+using beast
+
+// Spiderling doesn't care about Lava
+MULTIPLIER_DAMAGE_SELF_POS						0.00
+
+// Spiderling tends to jump
+FALLBACK_JUMP_OVER_WALK_PREFERRED_DISTANCE		0.00 // character will prefer doing a fallback jump forward instead of a future action walk if linear_distance_to_target+[value] < walk_distance
+FALLBACK_JUMP_BASE_SCORE						40.00 // any fallback jump action will score at least this value
+FALLBACK_MULTIPLIER_VS_FALLBACK_JUMP			0.50 // multiplier applied to regular fallback score in case we can do a fallback jump
+FALLBACK_FUTURE_SCORE							10
+FALLBACK_ATTACK_BLOCKER_SCORE					0.12 // base score for attacking an item that is blocking the path to the closest enemy
+
++ MULTIPLIER_GROUNDED								0.02
+

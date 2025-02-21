@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h22bb5650gd083g6685g8540g99bcb1364f5c" version="2">Shadow Blades</content>
+  <content contentuid="hc4dc9ebcg6a4bg0c2agb522g302600a24aab" version="2">Weave shadowy daggers in your hands that deals [1]. </content>
+  <content contentuid="h06ee67ecgb365g4db4g037dg3ef5a7a93a6e" version="2">When you use the sword to attack a target that is in dim light or darkness, you make the &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;The shadow blade can be unequipped and equipped again, but cannot be thrown. Usefull when you end up with empty hands.</content>
+  <content contentuid="hf58234c7gf223g68ceg984dga60bb4e867b2" version="1">Shadow Blade</content>
+  <content contentuid="hf62860aag9263g0da0g9a12gae2ca2b3003a" version="1">This entity is wielding daggers made of pure shadow.</content>
+  <content contentuid="h358640d3g3583g8a46gf8d1g5644182454d6" version="4">Shadow Blade</content>
+  <content contentuid="h4a99867fg248bgba53gc5ecgde45e087e339" version="4">Umbral claws sweep through the long slender facets of the blade.</content>
+  <content contentuid="h26916cd4g799bg1775g4a16g5bb1a9cca4ed" version="1">Shar's Darkness</content>
+  <content contentuid="h411a48deg87b7gd577gc9c5gbccf4c199ea1" version="1">Shar's Aegis</content>
+  <content contentuid="h7eb1882eg9e45gcbd5gac7fg114d22908f42" version="1">Encase yourself with a shimmering field of magic that increases your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 2.</content>
+  <content contentuid="h429c7d7ag90aag1659g7ec1gfd2154c4d524" version="1">Shar's Aegis</content>
+  <content contentuid="ha83e1aa0g22fega6bcg5f69gefda2144ee4b" version="1">Encase yourself with a shimmering field of magic that increases your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 2.</content>
+  <content contentuid="h95e1553eg952dgf312gb24fgaa67b83532a0" version="1">Ever-poisoned</content>
+  <content contentuid="h9aa1a4edgefc1g35edg3727g3f84f6a98f1f" version="1">A wierd poison seems to radiate... cold magic ?</content>
+  <content contentuid="hd9a1645eg0497g4a42g8a34g97dc45e86e6d" version="5">Spear of Night</content>
+  <content contentuid="h91a26eaag7205g33aeg7e94g9182f69eb64d" version="6">Shar's Sting</content>
+  <content contentuid="hb7ac0b4fgedcbg4e10ge87cgdb615de7eee7" version="6">The blade is sharp, and the handle firm. Yet death exudes from this dagger as it might from a fresh corpse.</content>
+  <content contentuid="h4c9dabe0g379fg6662g9876g79255ffcb152" version="1">Ever-poisoned</content>
+  <content contentuid="h5ff6d503gf714gdccbg012bg18001504ad6d" version="1">A wierd poison seems to radiate... cold magic ?</content>
+  <content contentuid="h3b28ad10g3888gd108ga05bgacd10829abf3" version="4">Syringe (+1)</content>
+  <content contentuid="h0d4c914ag0224g84b6g0452g127cab415aab" version="1">Dagger of Shar</content>
+  <content contentuid="hcaa081afg2969g3273gf9ecgb7247a256fda" version="1">Assassin's Touch</content>
+  <content contentuid="hd4b442d1g1a00g4574g4b02g94ec11f147bb" version="1">Murderous Cut</content>
+  <content contentuid="hdc9f6529gc150g3c49gecdbgd1471ca3dacd" version="1">Syringe (+1)</content>
+  <content contentuid="h8cd9aaeag8cbag5202ga6bdgd7219dec0d68" version="1">Hunter's Dagger</content>
+  <content contentuid="hc305d718g3f5ag5950g5fa9g80cad2ec3ed2" version="1">Blade of the First Blood</content>
+  <content contentuid="hb70bcff0gb074g7a7bg1b50g35f4ac9031c1" version="1">Dread Iron Dagger</content>
+  <content contentuid="hcf620e82g7d1dgd0d6g2e86gfbfcc7e1e10f" version="1">Sussur Dagger</content>
+  <content contentuid="hf51e3f3cg2390g3604g4ab2g3fe632ccc134" version="1">Rhapsody</content>
+  <content contentuid="h4c08cabdg6bb8gbf6fg2f4fg20f98583198e" version="1">Shadow Blade</content>
+  <content contentuid="h518c97ddgfcd3g1684g43cagd19b74d44daa" version="1">Shar's Sting</content>
+  <content contentuid="h6a56d5f9g3473gd0e8g1195g93d3467ca806" version="1">Ritual Dagger</content>
+  <content contentuid="h813cdb76g104ag4776gb7ecgd63ea81d0e5a" version="4">Dagger of Shar</content>
+  <content contentuid="h37ddff25gd2d2g4aadga190gd469ee08b124" version="5">Assassin's Touch</content>
+  <content contentuid="hde32801bg3ed1g4affg9fb1g388047b2a1a1" version="4">This long, slender blade fits perfectly between the ribs of any unsuspecting victim.</content>
+  <content contentuid="h06c4a911g24b5g4d32ga1a4gc7e56b321688" version="5">Murderous Cut</content>
+  <content contentuid="h6a033c3fgdd7fg44a7gb7c4g75064625a4e7" version="4">Odd to think that dark gods like Bhaal were once mortal. One wonders if they ever thumbed a wagon ride, thought about the weather, or ate flavoured yoghurt.</content>
+  <content contentuid="h33bf11edg0743g4481g889fgcf85cefe2f0d" version="5">Hunter's Dagger</content>
+  <content contentuid="hda22a120g5589g4c91g9e4fg2548c7781176" version="4">Prey often thinks it has escaped the worst of the predator's bloodthirst and fury - but there are always further torments to be meted out. </content>
+  <content contentuid="h90423de7gc766g4bfbg96e3gec1739eb223e" version="5">Blade of the First Blood</content>
+  <content contentuid="hedb18a99gd26fg4995ga388gaab39c341962" version="4">The Lord of Murder wasn't always a lord. He was once just a petty killer. When Bhaal first drew blood in a Baldurian back-alley, it dropped to the ground and lingered. When he ascended, this dried blood-drop grew, warped - and became sharp. </content>
+  <content contentuid="h13bde8a9gb225g4a2cgb084g9fb891b82126" version="5">Dread Iron Dagger</content>
+  <content contentuid="h304b39d6g5f0bg44b9gac26gc7b110216ef3" version="4">A web of veins runs the length of the blade - it has become a slender iron mortuary for all the innocents it has tasted. </content>
+  <content contentuid="hd3f607a8gbd0fg4b9aga683g965c06fb6055" version="4">Sussur Dagger</content>
+  <content contentuid="h1c4249a3gb72dg4f30g8ce2gb48f01e7a2c0" version="4">&lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silences&lt;/LSTag&gt; targets on hit.</content>
+  <content contentuid="h0496d826gfd8dg4ac2gbab7gf8d8bf831be0" version="4">Smoke-like whorls of sussur sap darken the metal of this dagger's blade and silence its victims.</content>
+  <content contentuid="h8e7ec137gffcag4653gb2e6g66bd55418d41" version="6">Rhapsody</content>
+  <content contentuid="hf1642298gcb05g406egadabgde4f364f8bde" version="7">Cazador's love of poetry arose after he read one on the naked stomach of a dead child in his homeland. The child was hung from the lowest branch of a tree. Cazador read the poem, and looked at the child, and he knew that here was the artform for him. </content>
+  <content contentuid="h24e75b44g22eeg4277gb039g846b403e82f9" version="4">Ritual Dagger</content>
+  <content contentuid="h71869741g5b1ag4b20g991fgf3bde92abe84" version="4">The leather handle is smooth with use, and slick with fresh blood.</content>
+  <content contentuid="ha418c804g991fg62e9gd35fgd8285dd12334" version="1">Eternal Shadow</content>
+  <content contentuid="hbb85b745g4980gb0d1g094fg6b9ae72fc60e" version="1">This blade appears forged from pure shadows, an ethereal substance that paradoxically feels solid and firm in your grip.</content>
+  <content contentuid="h3ece63b1gf6bagc5f8g3e29gfba73b6a3a61" version="1">Dagger of Shar</content>
+</contentList>
